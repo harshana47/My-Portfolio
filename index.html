@@ -134,7 +134,7 @@
             font-family: Inter;
             font-weight: normal;
             text-shadow: 3px 3px 5px #3CBEFF;
-            z-index: 1;
+            z-index: 2;
         }
         /*about section background image*/
         body>main:nth-child(3)>section:nth-child(2)>img {
@@ -145,6 +145,7 @@
             overflow: hidden;
             position: absolute;
             filter: grayscale(100%);
+            z-index: 1;
         }
         /*border line blue*/
         body>main:nth-child(3)>section:nth-child(3)>div:first-child{
@@ -352,8 +353,9 @@
             border: 3.5px solid #3CBEFF;
             height: 60px;
             width: 120px;
-            top: 0;
-            left: 0;
+            top: -25px;
+            left: -20px;
+            position: absolute;
         }
 
     </style>
@@ -515,10 +517,22 @@
 
         <!--margin box design in education-->
         <section>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <section>
+                <div></div>
+                <div></div>
+            </section>
+            <section>
+                <div></div>
+                <div></div>
+            </section>
+            <section>
+                <div></div>
+                <div></div>
+            </section>
+            <section>
+                <div></div>
+                <div></div>
+            </section>
         </section>
     </main>
 <!--skills section-->
