@@ -249,7 +249,7 @@
             width: 370px;
             height: 240px;
             background: black;
-            box-shadow: 8px 8px 8px #3CBEFF;
+            box-shadow: 5px 5px 8px #3CBEFF;
             position: absolute;
             top: 120px;
             left: 585px;
@@ -283,7 +283,7 @@
             width: 370px;
             height: 240px;
             background: black;
-            box-shadow: 8px 8px 8px #3CBEFF;
+            box-shadow: 5px 5px 8px #3CBEFF;
             position: absolute;
             top: 420px;
             left: 70px;
@@ -318,7 +318,7 @@
             width: 370px;
             height: 240px;
             background: black;
-            box-shadow: 8px 8px 8px #3CBEFF;
+            box-shadow: 5px 5px 8px #3CBEFF;
             position: absolute;
             top: 420px;
             right: 70px;
@@ -455,7 +455,27 @@
             font-weight: normal;
             text-shadow: 3px 3px 5px #3CBEFF;
             z-index: 1;
+        }
 
+        /*html circle*/
+        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(1){
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 150px;
+            background: #E0E0E0;
+            z-index: 1;
+            box-shadow: 5px 5px 8px #3CBEFF;
+        }
+        /*html logo*/
+        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(1)>img{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            left: 10px;
+            top: 15px;
         }
     </style>
 </head>
@@ -642,16 +662,24 @@
 
     <!--images-->
     <section>
+        <div>
         <img src="assets/images/html.png" height="30" width="30">
+        </div>
         <h1>HTML</h1>
+        </div>
         <br><br>
         <img src="assets/images/css.png" height="30" width="30">
+        </div>
         <h1>CSS</h1>
         <br><br>
+        </div>
         <img src="assets/images/javaScript.png" height="30" width="30">
+        </div>
         <h1>JavaScript</h1>
         <br><br>
+        </div>
         <img src="assets/images/java.png" height="30" width="30">
+        </div>
         <h1>Java</h1>
     </section>
 
