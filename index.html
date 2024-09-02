@@ -762,10 +762,11 @@
             height: 550px;
             width: 600px;
             position: absolute;
-            border: 1px solid #3CBEFF;
+            border: 2px solid #3CBEFF;
             top: 100px;
             left: 450px;
             overflow: auto;
+            box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*card 1 background*/
         body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div{
@@ -920,6 +921,49 @@
             top: 250px;
             left: 55px;
             z-index: 1;
+        }
+
+        /*card 6 background*/
+        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div{
+            width: 350px;
+            height: 300px;
+            background: black;
+            position: absolute;
+            top: 2630px;
+            left: 120px;
+            box-shadow: 5px 5px 8px #3CBEFF;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10%;
+        }
+        /*card 6 image*/
+        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div>img{
+            position: absolute;
+            height: 230px;
+            width: 350px;
+            border-radius: 10%;
+        }
+        /*card 6 title*/
+        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div>a{
+            color: white;
+            text-decoration: none;
+            font-size: 27px;
+            position: absolute;
+            top: 250px;
+            left: 130px;
+            z-index: 1;
+        }
+
+        /*scrollbar*/
+        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar{
+            width: 8px;
+            border-radius: 10%;
+        }
+
+        /*thumb*/
+        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar-thumb{
+            background-color: #3CBEFF;
+            border-radius: 10px;
         }
     </style>
 </head>
@@ -1234,7 +1278,7 @@
             <section>
                 <div>
                     <img src="assets/images/project.png" height="120" width="150"><br>
-                    <a href="https://github.com/harshana47/To-Do-List"sample></a>
+                    <a href="https://github.com/harshana47/To-Do-List">sample</a>
                 </div>
             </section>
         </div>
