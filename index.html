@@ -1091,17 +1091,50 @@
             text-shadow: 3px 3px 5px #3CBEFF;
             z-index: 1;
         }
-        /*card 1*/
-        body>main:nth-child(7)>section:nth-child(2)>section>div:nth-child(1){
+        /* Card Container */
+        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(1)>div {
             background: #3CBEFF;
             height: 250px;
             width: 370px;
             border-radius: 10px;
-            position: absolute;
+            position: relative;
             top: 100px;
             left: 30px;
             z-index: 1;
+            overflow: hidden;
         }
+
+        /* Image inside the card */
+        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(1)>div>img {
+            height: 250px;
+            width: 370px;
+            border-radius: 10px;
+            display: block;
+        }
+
+        /* Description overlay */
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+            padding: 10px; /
+        }
+
+        /* Show description on hover */
+        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(1)>div:hover .description {
+            opacity: 1;
+        }
+
     </style>
 </head>
 <body>
@@ -1460,13 +1493,12 @@
         <section>
             <div>
                 <img src="assets/images/my/inovesta.jpg" height="120" width="150"><br>
-                <a href="https://github.com/harshana47/To-Do-List">Project 1</a>
+                <div class="description">This is the description that appears on hover.</div>
             </div>
         </section>
         <section>
             <div>
                 <img src="assets/images/project.png" height="120" width="150"><br>
-                <a href="https://github.com/harshana47/To-Do-List">Project 2</a>
             </div>
         </section>
     </section>
