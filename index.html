@@ -1283,6 +1283,38 @@
             filter: grayscale(80%);
         }
 
+        /*Gallery title*/
+        .gallery{
+            color: #3CBEFF;
+            left: 45%;
+            position: absolute;
+            top: -20px;
+            font-size: 50px;
+            font-family: Inter;
+            font-weight: normal;
+            text-shadow: 3px 3px 5px #3CBEFF;
+            z-index: 1;
+        }
+
+        .img1{
+            width: 220px;
+            height: 80vh;
+            position: absolute;
+            z-index: 2;
+            top: 100px;
+            left: 40px;
+            object-fit: cover;
+        }
+        .img2{
+            width: 220px;
+            height: 80vh;
+            position: absolute;
+            z-index: 2;
+            top: 100px;
+            left: 300px;
+            object-fit: cover;
+        }
+
     </style>
 </head>
 <body>
@@ -1682,14 +1714,14 @@
 <!--Gallery-->
 <main>
     <section>
-        <h1>Gallery</h1>
+        <h1 class="gallery">Gallery</h1>
 
         <br>
         <img class="img1" src="assets/images/my/background4.jpeg" height="400" width="200"><br>
-        <img src="assets/images/my/pitawalaPathana.jpg" height="400" width="200"><br>
-        <img src="assets/images/my/pattipola.jpeg" height="400" width="200"><br>
-        <img src="assets/images/my/myjump.jpg" height="400" width="200"><br>
-        <img src="assets/images/my/pitawalaPathana.jpg" height="400" width="200"><br><br>
+        <img class="img2" src="assets/images/my/pitawalaPathana.jpg" height="400" width="200"><br>
+        <img class="img3" src="assets/images/my/pattipola.jpeg" height="400" width="200"><br>
+        <img class="img4" src="assets/images/my/myjump.jpg" height="400" width="200"><br>
+        <img class="img5" src="assets/images/my/pitawalaPathana.jpg" height="400" width="200"><br><br>
         <!--Arrow Head-->
         <img src="assets/images/arrowHead.png" height="25" width="25"><br>
         <!--Background in Gallery-->
