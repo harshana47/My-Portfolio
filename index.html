@@ -1285,7 +1285,7 @@
 
         /*Gallery title*/
         .gallery{
-            color: #3CBEFF;
+            color: #1b1a1a;
             left: 45%;
             position: absolute;
             top: -20px;
@@ -1294,54 +1294,6 @@
             font-weight: normal;
             text-shadow: 3px 3px 5px #3CBEFF;
             z-index: 1;
-        }
-
-        .img1{
-            width: 220px;
-            height: 80vh;
-            position: absolute;
-            z-index: 1;
-            top: 100px;
-            left: 40px;
-            object-fit: cover;
-        }
-        .img2{
-            width: 220px;
-            height: 80vh;
-            position: absolute;
-            z-index: 1;
-            top: 100px;
-            left: 300px;
-            object-fit: cover;
-        }
-        .img3{
-            width: 220px;
-            height: 80vh;
-            position: absolute;
-            z-index: 1;
-            top: 100px;
-            left: 560px;
-            object-fit: cover;
-            object-position: 80% 0;
-        }
-        .img4{
-            width: 220px;
-            height: 80vh;
-            position: absolute;
-            z-index: 1;
-            top: 100px;
-            left: 820px;
-            object-fit: cover;
-        }
-        .img5{
-            width: 220px;
-            height: 80vh;
-            position: absolute;
-            z-index: 1;
-            top: 100px;
-            left: 1080px;
-            object-fit: cover;
-            object-position: 45% 0;
         }
         .arrow{
             width: 70px;
@@ -1352,6 +1304,73 @@
             left: 1380px;
             object-fit: cover;
             transform: rotate(180deg);
+        }
+        .img1, .img2, .img3, .img4, .img5 {
+            width: 220px;
+            height: 80vh;
+            position: absolute;
+            z-index: 1;
+            top: 100px;
+            object-fit: cover;
+            transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+        }
+
+        .img1 {
+            left: 40px;
+        }
+
+        .img2 {
+            left: 300px;
+        }
+
+        .img3 {
+            left: 560px;
+            object-position: 80% 0;
+        }
+
+        .img4 {
+            left: 820px;
+        }
+
+        .img5 {
+            left: 1080px;
+            object-position: 45% 0;
+        }
+
+        .img1:hover{
+            transform: scale(1.15); /* Scales the image up by 10% */
+            height: 80vh;
+            width: 400px;
+            object-position: 50% 0;
+            z-index: 2;
+        }
+        .img2:hover{
+            transform: scale(1.15); /* Scales the image up by 10% */
+            height: 90vh;
+            width: 400px;
+            object-position: 80% 0;
+            z-index: 2;
+        }
+        .img3:hover{
+            transform: scale(1.15); /* Scales the image up by 10% */
+            height: 90vh;
+            width: 400px;
+            object-position: 90% 0%;
+            z-index: 2;
+        }
+        .img4:hover{
+            transform: scale(1.15); /* Scales the image up by 10% */
+            height: 90vh;
+            width: 400px;
+            object-position: 70% 0;
+            z-index: 2;
+        }
+        .img5:hover{
+            transform: scale(1.15); /* Scales the image up by 10% */
+            height: 90vh;
+            width: 400px;
+            object-position: 50% 0;
+            z-index: 2;
         }
     </style>
 </head>
@@ -1761,9 +1780,11 @@
         <img class="img4" src="assets/images/my/myjump.jpg" height="400" width="200"><br>
         <img class="img5" src="assets/images/my/NuwaraEliya.jpg" height="400" width="200"><br><br>
         <!--Arrow Head-->
-        <img class="arrow" src="assets/images/arrowHead.png" height="25" width="25"><br>
+        <a class="arrowLink" href="https://www.facebook.com/paboda.harshana.3/photos_by" target="_blank">
+            <img class="arrow" src="assets/images/arrowHead.png" height="25" width="25"><br>
+        </a>
         <!--Background in Gallery-->
-        <img class="background" src="assets/images/my/background4.jpeg" height="200" width="300"><br>
+            <img class="background" src="assets/images/my/background4.jpeg" height="200" width="300" alt="Descriptive text">
     </section>
     <br><br>
 </main>
