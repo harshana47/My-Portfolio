@@ -784,7 +784,7 @@
             align-items: center;
             border-radius: 10%;
             box-shadow: 2px 2px 8px #3CBEFF;
-            animation: bounce 1s infinite;
+            animation: bounce 1.4s infinite;
         }
         /*card 1 image*/
         body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div>img{
@@ -966,27 +966,26 @@
             font-family: "Arial Rounded MT Bold";
         }
 
+        /* scrollbar*/
+        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar {
+            width: 8px;
+            border-radius: 10%;
+            display: none;
+        }
+        /* Thumb */
+        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar-thumb {
+            background-color: #ffffff;
+            border-radius: 10px;
+        }
+
         /* Bounce Animation */
         @keyframes bounce {
             0%, 100% {
                 transform: translateY(0);
             }
             50% {
-                transform: translateY(-15px);
+                transform: translateY(-25px);
             }
-        }
-
-        /* Adjust scrollbar appearance */
-        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar {
-            width: 8px;
-            border-radius: 10%;
-            display: none;
-        }
-
-        /* Thumb */
-        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar-thumb {
-            background-color: #ffffff;
-            border-radius: 10px;
         }
 
 
