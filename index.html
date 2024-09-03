@@ -9,13 +9,30 @@
 
 
     <style>
-        body{
+        html,body{
             margin: 0;
             padding: 0;
+            height: 100%;
+            overflow: hidden;
             font-family: Arial, sans-serif;
         }
+        .container {
+            height: 100vh;
+            overflow-y: scroll;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+        }
+
+        .page {
+            height: 100vh;
+            scroll-snap-align: start; /*snap alignment*/
+            display: flex;
+            color: white;
+            position: relative;
+        }
+
         /*1st page main*/
-        body>main:nth-child(2){
+        body>main:nth-child(1){
             background: black;
             display: flex;
             width: 100%;
@@ -24,7 +41,7 @@
             padding: 0;
         }
         /*hey im*/
-        body>header>h1{
+        body>main:nth-child(1)>section:nth-child(4)>h1{
             color: white;
             position: absolute;
             left: 240px;
@@ -35,7 +52,7 @@
             margin-top: 20px;
         }
         /*name*/
-        body>header>h2{
+        body>main:nth-child(1)>section:nth-child(4)>h2{
             color: #3CBEFF;
             position: absolute;
             left: 240px;
@@ -46,7 +63,7 @@
             text-shadow: 3px 3px 5px #3CBEFF;
         }
         /*background image*/
-        body>main:nth-child(2)>section>div:first-child>img{
+        body>main:nth-child(1)>section>div:first-child>img{
             width: 48vw;
             height: 100vh;
             margin: auto;
@@ -56,7 +73,7 @@
             filter: grayscale(80%);
         }
         /*my image*/
-        body>main:nth-child(2)>section>div:nth-child(2)>img{
+        body>main:nth-child(1)>section>div:nth-child(2)>img{
             width: 24vw;
             height: 44vh;
             margin: auto;
@@ -67,7 +84,7 @@
             box-shadow: 6px 6px 3px rgb(26, 145, 214);
         }
         /*navigation bar section*/
-        body>main:nth-child(2)>section:nth-child(2)>section:first-child>div{
+        body>main:nth-child(1)>section:nth-child(2)>section:first-child>div{
             background-image: linear-gradient(#E0E0E0 1%, #000000 53%);
             height: 470px;
             width: 15px;
@@ -81,7 +98,7 @@
         }
 
         /*navigation bar images*/
-        body>main:nth-child(2)>section:nth-child(2)>section:first-child>div:first-child>nav:first-child {
+        body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:first-child>nav:first-child {
             display: inline;
             justify-content: space-around;
             align-self: center;
@@ -92,7 +109,7 @@
             position: absolute;
         }
         /*contact bar images*/
-        body>main:nth-child(2)>section:nth-child(3)>section>div>nav{
+        body>main:nth-child(1)>section:nth-child(3)>section>div>nav{
             justify-content: space-around;
             position: absolute;
             align-self: center;
@@ -103,7 +120,7 @@
             display: block;
         }
         /*contact bar*/
-        body>main:nth-child(2)>section:nth-child(3)>section>div {
+        body>main:nth-child(1)>section:nth-child(3)>section>div {
             height: 470px;
             width: 15px;
             border-radius: 25px;
@@ -115,7 +132,7 @@
             background: transparent;
         }
         /*2nd page main*/
-        body>main:nth-child(3){
+        body>main:nth-child(2){
             background: black;
             display: flex;
             width: 100%;
@@ -126,7 +143,7 @@
         }
 
         /*topic*/
-        body>main:nth-child(3)>section:first-child>h1{
+        body>main:nth-child(2)>section:first-child>h1{
             color: #3CBEFF;
             left: 45%;
             position: absolute;
@@ -137,7 +154,7 @@
             z-index: 2;
         }
         /*about section background image*/
-        body>main:nth-child(3)>section:nth-child(2)>img {
+        body>main:nth-child(2)>section:nth-child(2)>img {
             height: 98vh;
             width: 51vw;
             margin: auto;
@@ -148,7 +165,7 @@
             z-index: 1;
         }
         /*border line blue*/
-        body>main:nth-child(3)>section:nth-child(3)>div:first-child{
+        body>main:nth-child(2)>section:nth-child(3)>div:first-child{
             border: 2px solid #3CBEFF;
             left: 27%;
             top: 135px;
@@ -158,7 +175,7 @@
             z-index: 1;
         }
         /*paragraph*/
-        body>main:nth-child(3)>section:nth-child(3)>div:first-child>p{
+        body>main:nth-child(2)>section:nth-child(3)>div:first-child>p{
             font-size: 14px;
             color: #E0E0E0;
             font-family: sans-serif;
@@ -167,7 +184,7 @@
             margin-left: 8px;
         }
         /*cv button*/
-        body>main:nth-child(3)>section:nth-child(3)>button{
+        body>main:nth-child(2)>section:nth-child(3)>button{
             width: 125px;
             height: 40px;
             background: white;
@@ -184,7 +201,7 @@
             justify-content: center;
         }
         /*my image*/
-        body>main:nth-child(3)>section:nth-child(4)>img{
+        body>main:nth-child(2)>section:nth-child(4)>img{
             width: 200px;
             height: 300px;
             z-index: 4;
@@ -196,7 +213,7 @@
             object-position: 100% 0;
         }
         /*contact bar in about page*/
-        body>main:nth-child(3)>section:nth-child(5)>div:first-child{
+        body>main:nth-child(2)>section:nth-child(5)>div:first-child{
             height: 470px;
             width: 15px;
             border-radius: 25px;
@@ -210,7 +227,7 @@
             background: none;
         }
         /*contact bar images*/
-        body>main:nth-child(3)>section:nth-child(5)>div:first-child>nav{
+        body>main:nth-child(2)>section:nth-child(5)>div:first-child>nav{
             justify-content: space-around;
             position: absolute;
             align-self: center;
@@ -222,7 +239,7 @@
         }
 
         /*education section*/
-        body>main:nth-child(4){
+        body>main:nth-child(3){
             background: black;
             display: flex;
             width: 100%;
@@ -233,7 +250,7 @@
 
         }
         /*topic*/
-        body>main:nth-child(4)>section:nth-child(1)>h1{
+        body>main:nth-child(3)>section:nth-child(1)>h1{
             color: #3CBEFF;
             left: 44%;
             position: absolute;
@@ -246,7 +263,7 @@
         }
 
         /*card 1 background*/
-        body>main:nth-child(4)>section:nth-child(2)>div{
+        body>main:nth-child(3)>section:nth-child(2)>div{
             width: 370px;
             height: 240px;
             background: black;
@@ -258,7 +275,7 @@
         }
 
         /*card 1 image*/
-        body>main:nth-child(4)>section:nth-child(2)>div>img{
+        body>main:nth-child(3)>section:nth-child(2)>div>img{
             width: 370px;
             height: 170px;
             border-radius: 10%;
@@ -269,7 +286,7 @@
         }
 
         /*card 1 name*/
-        body>main:nth-child(4)>section:nth-child(2)>div>h1{
+        body>main:nth-child(3)>section:nth-child(2)>div>h1{
             font-size: 24px;
             color: white;
             position: absolute;
@@ -280,7 +297,7 @@
         }
 
         /*card 2 background*/
-        body>main:nth-child(4)>section:nth-child(3)>div{
+        body>main:nth-child(3)>section:nth-child(3)>div{
             width: 370px;
             height: 240px;
             background: black;
@@ -292,7 +309,7 @@
         }
 
         /*card 2 image*/
-        body>main:nth-child(4)>section:nth-child(3)>div>img{
+        body>main:nth-child(3)>section:nth-child(3)>div>img{
             width: 370px;
             height: 170px;
             border-radius: 10%;
@@ -303,7 +320,7 @@
         }
 
         /*card 2 name*/
-        body>main:nth-child(4)>section:nth-child(3)>div>h1{
+        body>main:nth-child(3)>section:nth-child(3)>div>h1{
             font-size: 24px;
             color: white;
             position: absolute;
@@ -315,7 +332,7 @@
         }
 
         /*card 3 background*/
-        body>main:nth-child(4)>section:nth-child(4)>div{
+        body>main:nth-child(3)>section:nth-child(4)>div{
             width: 370px;
             height: 240px;
             background: black;
@@ -327,7 +344,7 @@
         }
 
         /*card 3 image*/
-        body>main:nth-child(4)>section:nth-child(4)>div>img{
+        body>main:nth-child(3)>section:nth-child(4)>div>img{
             width: 370px;
             height: 170px;
             border-radius: 10%;
@@ -338,7 +355,7 @@
         }
 
         /*card 3 name*/
-        body>main:nth-child(4)>section:nth-child(4)>div>h1{
+        body>main:nth-child(3)>section:nth-child(4)>div>h1{
             font-size: 24px;
             color: white;
             position: absolute;
@@ -349,7 +366,7 @@
             text-align: center;
         }
         /*design box 1.1*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 60px;
             width: 120px;
@@ -358,7 +375,7 @@
             position: absolute;
         }
         /*design box 1.2*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(1)>div:nth-child(2){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 50px;
             width: 100px;
@@ -368,7 +385,7 @@
         }
 
         /*design box 2.1*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 60px;
             width: 120px;
@@ -377,7 +394,7 @@
             position: absolute;
         }
         /*design box 2.2*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 50px;
             width: 100px;
@@ -387,7 +404,7 @@
         }
 
         /*design box 3.1*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 40px;
             width: 70px;
@@ -396,7 +413,7 @@
             position: absolute;
         }
         /*design box 3.2*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 30px;
             width: 50px;
@@ -406,7 +423,7 @@
         }
 
         /*design box 4.1*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 50px;
             width: 100px;
@@ -415,7 +432,7 @@
             position: absolute;
         }
         /*design box 4.2*/
-        body>main:nth-child(4)>section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
+        body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 40px;
             width: 80px;
@@ -424,7 +441,7 @@
             position: absolute;
         }
         /*skills page*/
-        body>main:nth-child(5) {
+        body>main:nth-child(4) {
             background: black;
             display: flex;
             width: 100%;
@@ -435,7 +452,7 @@
             z-index: 2;
         }
         /*background image*/
-        body>main:nth-child(5)>section:nth-child(3)>img{
+        body>main:nth-child(4)>section:nth-child(3)>img{
             justify-content: space-around;
             position: absolute;
             align-self: center;
@@ -447,7 +464,7 @@
             filter: grayscale(40%);
         }
         /*skills title*/
-        body>main:nth-child(5)>section:nth-child(1)>h1{
+        body>main:nth-child(4)>section:nth-child(1)>h1{
             color: #3CBEFF;
             left: 39%;
             position: absolute;
@@ -460,7 +477,7 @@
         }
 
         /*html circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(1){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -472,7 +489,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*html logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(1)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -480,7 +497,7 @@
             top: 15px;
         }
         /*html h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h1{
+        body>main:nth-child(4)>section:nth-child(2)>h1{
             font-size: 25px;
             color: #3CBEFF;
             position: absolute;
@@ -492,7 +509,7 @@
         }
 
         /*css circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(3){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -504,7 +521,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*css logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(3)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -512,7 +529,7 @@
             top: 15px;
         }
         /*css h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h2{
+        body>main:nth-child(4)>section:nth-child(2)>h2{
             font-size: 26px;
             color: #3CBEFF;
             position: absolute;
@@ -524,7 +541,7 @@
         }
 
         /*js circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(5){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -536,7 +553,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*js logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(5)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -544,7 +561,7 @@
             top: 10px;
         }
         /*js h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h3{
+        body>main:nth-child(4)>section:nth-child(2)>h3{
             font-size: 25px;
             color: #3CBEFF;
             position: absolute;
@@ -556,7 +573,7 @@
         }
 
         /*java circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(7){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -568,7 +585,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*java logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(7)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -576,7 +593,7 @@
             top: 10px;
         }
         /*java h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h4{
+        body>main:nth-child(4)>section:nth-child(2)>h4{
             font-size: 30px;
             color: #3CBEFF;
             position: absolute;
@@ -588,7 +605,7 @@
         }
 
         /*figma circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(9){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -600,7 +617,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*figma logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(9)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -608,7 +625,7 @@
             top: 10px;
         }
         /*figma h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h5{
+        body>main:nth-child(4)>section:nth-child(2)>h5{
             font-size: 26px;
             color: #3CBEFF;
             position: absolute;
@@ -620,7 +637,7 @@
         }
 
         /*MySql circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(11){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -632,7 +649,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*MySql logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(11)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11)>img{
             width: 70px;
             height: 70px;
             position: absolute;
@@ -640,7 +657,7 @@
             top: 14px;
         }
         /*MySql h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h6{
+        body>main:nth-child(4)>section:nth-child(2)>h6{
             font-size: 25px;
             color: #3CBEFF;
             position: absolute;
@@ -652,7 +669,7 @@
         }
 
         /*GitHub circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(13){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -664,7 +681,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*GitHub logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(13)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -672,7 +689,7 @@
             top: 10px;
         }
         /*GitHub h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h7{
+        body>main:nth-child(4)>section:nth-child(2)>h7{
             font-size: 27px;
             color: #3CBEFF;
             position: absolute;
@@ -684,7 +701,7 @@
         }
 
         /*Notion circle*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(15){
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15){
             width: 100px;
             height: 100px;
             border-radius: 50%;
@@ -696,7 +713,7 @@
             box-shadow: 5px 5px 8px #3CBEFF;
         }
         /*Notion logo*/
-        body>main:nth-child(5)>section:nth-child(2)>div:nth-child(15)>img{
+        body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15)>img{
             width: 80px;
             height: 80px;
             position: absolute;
@@ -704,7 +721,7 @@
             top: 10px;
         }
         /*Notion h tag*/
-        body>main:nth-child(5)>section:nth-child(2)>h8{
+        body>main:nth-child(4)>section:nth-child(2)>h8{
             font-size: 27px;
             color: #3CBEFF;
             position: absolute;
@@ -716,7 +733,7 @@
         }
 
         /*paragraph margin*/
-        body>main:nth-child(5)>section:nth-child(4)>div{
+        body>main:nth-child(4)>section:nth-child(4)>div{
             width: 36%;
             height: 520px;
             position: absolute;
@@ -726,7 +743,7 @@
             z-index: 2;
         }
         /*paragraph text*/
-        body>main:nth-child(5)>section:nth-child(4)>div>p{
+        body>main:nth-child(4)>section:nth-child(4)>div>p{
             font-size: 18px;
             color: white;
             margin-left: 10px;
@@ -738,7 +755,7 @@
             right: 10px;
         }
         /*projects section*/
-        body>main:nth-child(6){
+        body>main:nth-child(5){
             background: black;
             display: flex;
             width: 100%;
@@ -749,7 +766,7 @@
             overflow: hidden;
         }
         /*project title*/
-        body>main:nth-child(6)>section:nth-child(1)>h1{
+        body>main:nth-child(5)>section:nth-child(1)>h1{
             color: #3CBEFF;
             left: 45%;
             position: absolute;
@@ -761,7 +778,7 @@
             z-index: 1;
         }
         /*box*/
-        body>main:nth-child(6)>section:nth-child(2)>div {
+        body>main:nth-child(5)>section:nth-child(2)>div {
             height: 550px;
             width: 600px;
             position: absolute;
@@ -773,7 +790,7 @@
             z-index: 1;
         }
         /*card 1 background*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div{
             width: 450px;
             height: 300px;
             background: black;
@@ -787,14 +804,14 @@
             animation: bounce 1.4s infinite;
         }
         /*card 1 image*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div>img{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>img{
             position: absolute;
             height: 230px;
             width: 450px;
             border-radius: 10%;
         }
         /*card 1 title*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div>a{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>a{
             color: white;
             text-decoration: none;
             font-size: 27px;
@@ -806,7 +823,7 @@
         }
 
         /*card 2 background*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div{
             width: 450px;
             height: 300px;
             background: black;
@@ -819,14 +836,14 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 2 image*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div>img{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>img{
             position: absolute;
             height: 230px;
             width: 450px;
             border-radius: 10%;
         }
         /*card 2 title*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div>a{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>a{
             color: white;
             text-decoration: none;
             font-size: 27px;
@@ -838,7 +855,7 @@
         }
 
         /*card 3 background*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div{
             width: 450px;
             height: 300px;
             background: black;
@@ -851,14 +868,14 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 3 image*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div>img{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>img{
             position: absolute;
             height: 230px;
             width: 450px;
             border-radius: 10%;
         }
         /*card 3 title*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div>a{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>a{
             color: white;
             text-decoration: none;
             font-size: 27px;
@@ -870,7 +887,7 @@
         }
 
         /*card 4 background*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div{
             width: 450px;
             height: 300px;
             background: black;
@@ -883,14 +900,14 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 4 image*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div>img{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>img{
             position: absolute;
             height: 230px;
             width: 450px;
             border-radius: 10%;
         }
         /*card 4 title*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div>a{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>a{
             color: white;
             text-decoration: none;
             font-size: 27px;
@@ -902,7 +919,7 @@
         }
 
         /*card 5 background*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div{
             width: 450px;
             height: 300px;
             background: black;
@@ -915,14 +932,14 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 5 image*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div>img{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>img{
             position: absolute;
             height: 230px;
             width: 450px;
             border-radius: 10%;
         }
         /*card 5 title*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div>a{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>a{
             color: white;
             text-decoration: none;
             font-size: 27px;
@@ -934,7 +951,7 @@
         }
 
         /*card 6 background*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div{
             width: 450px;
             height: 300px;
             background: black;
@@ -948,14 +965,14 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 6 image*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div>img{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>img{
             position: absolute;
             height: 230px;
             width: 450px;
             border-radius: 10%;
         }
         /*card 6 title*/
-        body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div>a{
+        body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>a{
             color: white;
             text-decoration: none;
             font-size: 27px;
@@ -967,13 +984,13 @@
         }
 
         /* scrollbar*/
-        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar {
+        body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar {
             width: 8px;
             border-radius: 10%;
             display: none;
         }
         /* Thumb */
-        body>main:nth-child(6)>section:nth-child(2)>div::-webkit-scrollbar-thumb {
+        body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar-thumb {
             background-color: #ffffff;
             border-radius: 10px;
         }
@@ -990,7 +1007,7 @@
 
 
         /*design box 1.1*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(1)>div:nth-child(1){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 60px;
             width: 120px;
@@ -1000,7 +1017,7 @@
             z-index: 1;
         }
         /*design box 1.2*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(1)>div:nth-child(2){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 50px;
             width: 100px;
@@ -1010,7 +1027,7 @@
         }
 
         /*design box 3.1*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 40px;
             width: 70px;
@@ -1019,7 +1036,7 @@
             position: absolute;
         }
         /*design box 3.2*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 30px;
             width: 50px;
@@ -1029,7 +1046,7 @@
         }
 
         /*design box 4.1*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(4)>div:nth-child(1){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(4)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 50px;
             width: 100px;
@@ -1038,7 +1055,7 @@
             position: absolute;
         }
         /*design box 4.2*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(4)>div:nth-child(2){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(4)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 40px;
             width: 80px;
@@ -1048,7 +1065,7 @@
         }
 
         /*design box 5.1*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(5)>div:nth-child(1){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 50px;
             width: 100px;
@@ -1057,7 +1074,7 @@
             position: absolute;
         }
         /*design box 5.2*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(5)>div:nth-child(2){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 40px;
             width: 80px;
@@ -1067,7 +1084,7 @@
         }
 
         /*design box 6.1*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(6)>div:nth-child(1){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(6)>div:nth-child(1){
             border: 3.5px solid #3CBEFF;
             height: 40px;
             width: 70px;
@@ -1076,7 +1093,7 @@
             position: absolute;
         }
         /*design box 6.2*/
-        body>main:nth-child(6)>section:nth-child(3)>section:nth-child(6)>div:nth-child(2){
+        body>main:nth-child(5)>section:nth-child(3)>section:nth-child(6)>div:nth-child(2){
             border: 2px solid #3CBEFF;
             height: 30px;
             width: 50px;
@@ -1085,7 +1102,7 @@
             position: absolute;
         }
         /*Achievement section*/
-        body>main:nth-child(7){
+        body>main:nth-child(6){
             background: black;
             display: flex;
             width: 100%;
@@ -1096,7 +1113,7 @@
             overflow: hidden;
         }
         /*Achievement title*/
-        body>main:nth-child(7)>section:nth-child(1)>h1{
+        body>main:nth-child(6)>section:nth-child(1)>h1{
             color: #3CBEFF;
             left: 40%;
             position: absolute;
@@ -1108,7 +1125,7 @@
             z-index: 1;
         }
         /* Card Container */
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(1)>div {
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(1)>div {
             background: #3CBEFF;
             height: 230px;
             width: 350px;
@@ -1122,7 +1139,7 @@
         }
 
         /* Image inside the card */
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(1)>div>img {
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(1)>div>img {
             height: 230px;
             width: 350px;
             border-radius: 10px;
@@ -1148,11 +1165,11 @@
         }
 
         /* Show description on hover */
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(1)>div:hover .description {
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(1)>div:hover .description {
             opacity: 1;
         }
         /* Card 2 Container */
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(2)>div {
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(2)>div {
             background: white;
             height: 230px;
             width: 350px;
@@ -1166,17 +1183,17 @@
         }
 
         /* Image inside the card 2*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(2)>div>img {
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(2)>div>img {
             height: 230px;
             width: 350px;
             border-radius: 10px;
             display: block;
         }
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(2)>div:hover .description {
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(2)>div:hover .description {
             opacity: 1;
         }
         /*card 3 container*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(3)>div{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(3)>div{
             background: white;
             height: 230px;
             width: 350px;
@@ -1189,17 +1206,17 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 3 image*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(3)>div>img{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(3)>div>img{
             height: 230px;
             width: 350px;
             border-radius: 10px;
             display: block;
         }
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(3)>div:hover .description{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(3)>div:hover .description{
             opacity: 1;
         }
         /*card 4 container*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(4)>div{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(4)>div{
             background: white;
             height: 230px;
             width: 350px;
@@ -1212,18 +1229,18 @@
             box-shadow: 2px 2px 8px #3CBEFF;
         }
         /*card 4 image*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(4)>div>img{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(4)>div>img{
             height: 230px;
             width: 350px;
             border-radius: 10px;
             display: block;
         }
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(4)>div:hover .description{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(4)>div:hover .description{
             opacity: 1;
         }
 
         /*card 5 container*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(5)>div{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(5)>div{
             background: white;
             height: 230px;
             width: 350px;
@@ -1237,18 +1254,18 @@
 
         }
         /*card 5 image*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(5)>div>img{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(5)>div>img{
             height: 230px;
             width: 350px;
             border-radius: 10px;
             display: block;
         }
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(5)>div:hover .description{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(5)>div:hover .description{
             opacity: 1;
         }
 
         /*card 6 container*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(6)>div{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(6)>div{
             background: white;
             height: 230px;
             width: 350px;
@@ -1262,17 +1279,17 @@
 
         }
         /*card 6 image*/
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(6)>div>img{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(6)>div>img{
             height: 230px;
             width: 350px;
             border-radius: 10px;
             display: block;
         }
-        body>main:nth-child(7)>section:nth-child(2)>section:nth-child(6)>div:hover .description{
+        body>main:nth-child(6)>section:nth-child(2)>section:nth-child(6)>div:hover .description{
             opacity: 1;
         }
         /*gallery section*/
-        body>main:nth-child(8){
+        body>main:nth-child(7){
             background: black;
             display: flex;
             width: 100%;
@@ -1386,13 +1403,8 @@
         }
     </style>
 </head>
-<body>
-<!--hello section-->
-<header>
-    <h1>Hey! im</h1>
-    <h2>Pabodha Harshana</h2>
-</header>
-<main id="1st-page">
+<body class="container">
+<main class="page" id="page1">
     <section>
         <div>
             <img src="assets/images/background.png" alt="background png">
@@ -1451,10 +1463,14 @@
             </div>
         </section>
     </section>
+    <section>
+        <h1>Hey! im</h1>
+        <h2>Pabodha Harshana</h2>
+    </section>
 </main>
 
 <!--about section-->
-<main>
+<main class="page" id="page2">
     <section>
         <h1>About me</h1>
     </section>
@@ -1510,7 +1526,7 @@
 </main>
 
 <!--education section-->
-    <main>
+    <main class="page" id="page3">
         <!--topic-->
         <section>
             <h1>Education</h1>
@@ -1562,7 +1578,7 @@
 
 
 <!--skills section-->
-<main>
+<main class="page" id="page4">
     <section>
         <h1>Streams & Skills</h1>
     </section>
@@ -1656,7 +1672,7 @@
 <!--</main>-->
 
 <!--projects section-->
-<main>
+<main class="page" id="page5">
     <section>
         <h1>Projects</h1>
     </section>
@@ -1733,7 +1749,7 @@
 </main>
 
 <!--Achievements-->
-<main>
+<main class="page" id="page6">
     <section>
         <h1>Achievements</h1>
     </section>
@@ -1782,7 +1798,7 @@
 </main>
 
 <!--Gallery-->
-<main>
+<main class="page" id="page7">
     <section>
         <h1 class="gallery">Gallery</h1>
 
@@ -1803,7 +1819,7 @@
 </main>
 
 <!--Contact-->
-<main>
+<main class="page" id="page8">
     <section>
         <br>
         <form>
