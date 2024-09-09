@@ -71,13 +71,14 @@
             overflow: hidden;
             position: absolute;
             filter: grayscale(80%);
+
         }
         /*my image*/
         body>main:nth-child(1)>section>div:nth-child(2)>img{
-            width: 24vw;
+            width: 21vw;
             height: 44vh;
             margin: auto;
-            left: 240px;
+            left: 250px;
             top: 220px;
             position: absolute;
             border-radius: 50%;
@@ -155,7 +156,7 @@
         }
         /*about section background image*/
         body>main:nth-child(2)>section:nth-child(2)>img {
-            height: 98vh;
+            height: 100vh;
             width: 51vw;
             margin: auto;
             left: 0;
@@ -1401,6 +1402,123 @@
             object-position: 50% 0;
             z-index: 2;
         }
+
+        body>main:nth-child(8){
+            background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .fName>label{
+            font-family: Inter;
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 170px;
+            right: 620px;
+            z-index: 1;
+            font-weight: bold;
+        }
+        .fName>input{
+            width: 220px;
+            right: 480px;
+            top: 100px;
+            position: absolute;
+            height: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 100px;
+            font-family: Inter;
+            font-size: 18px;
+            color: black;
+            background: white;
+        }
+        .lName>label{
+            font-family: Inter;
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 170px;
+            right: 220px;
+            z-index: 1;
+            font-weight: bold;
+        }
+        .lName>input{
+            width: 220px;
+            right: 80px;
+            top: 100px;
+            position: absolute;
+            height: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 100px;
+            font-family: Inter;
+            font-size: 18px;
+            color: black;
+            background: white;
+        }
+        .emails>label{
+            font-family: Inter;
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 280px;
+            right: 665px;
+            z-index: 1;
+            font-weight: bold;
+        }
+        .emails>input{
+            width: 220px;
+            right: 480px;
+            top: 210px;
+            position: absolute;
+            height: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 100px;
+            font-family: Inter;
+            font-size: 18px;
+            color: black;
+            background: white;
+        }
+        .phone>label{
+            font-family: Inter;
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 280px;
+            right: 185px;
+            z-index: 1;
+            font-weight: bold;
+        }
+        .phone>input{
+            width: 220px;
+            right: 80px;
+            top: 210px;
+            position: absolute;
+            height: 20px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-top: 100px;
+            font-family: Inter;
+            font-size: 18px;
+            color: black;
+            background: white;
+        }
+        .subject>label{
+            font-family: Inter;
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 400px;
+            right: 650px;
+            z-index: 1;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body class="container">
@@ -1823,21 +1941,28 @@
     <section>
         <br>
         <form>
-            <section>
+            <section class="fName">
                 <label for="fname">First Name:</label><br>
                 <input type="text" id="fname" name="fname"><br>
             </section>
-            <section>
+            <section class="lName">
                 <label for="lname">Last Name:</label><br>
                 <input type="text" id="lname" name="lname"><br>
             </section>
-            <section>
+            <section class="emails">
                 <label for="email">Email:</label><br>
                 <input type="text" id="email" name="email"><br>
             </section>
-            <section>
+            <section class="phone">
                 <label for="phone">Phone Number:</label><br>
                 <input type="text" id="phone" name="phone"><br>
+            </section>
+            <section class="subject">
+                <label for="subject">Subject:</label><br>
+                <section>
+                    <input type="radio" id="Web design">
+                    <label for="Web design">Web Design</label><br>
+                </section>
             </section>
             <section>
                 <label for="subject">Subject:</label><br>
