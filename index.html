@@ -1514,7 +1514,7 @@
             font-size: 20px;
             color: black;
             position: absolute;
-            top: 400px;
+            top: 430px;
             right: 650px;
             z-index: 1;
             font-weight: bold;
@@ -1522,30 +1522,32 @@
         .webdesign{
             position: absolute;
             right: 615px;
-            top: 435px;
+            top: 465px;
             color: black;
         }
         .software{
             position: absolute;
             right: 455px;
-            top: 435px;
+            top: 465px;
             color: black;
         }
         .complaint{
             position: absolute;
             right: 295px;
-            top: 435px;
+            top: 465px;
             color: black;
         }
         .other{
             position: absolute;
             right: 135px;
-            top: 435px;
+            top: 465px;
             color: black;
         }
         .message>textarea{
-            width: 500px;
+            width: 640px;
             height: 50px;
+            right: 75px;
+            top: 580px;
             position: absolute;
             font-family: Inter;
             font-size: 18px;
@@ -1554,9 +1556,19 @@
         }
         .messageButton{
             position: absolute;
-            right: 30px;
+            right: 75px;
             top: 650px;
             color: black;
+        }
+        .message>label{
+            font-family: Inter;
+            font-size: 20px;
+            color: black;
+            position: absolute;
+            top: 550px;
+            right: 650px;
+            z-index: 1;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -1999,19 +2011,19 @@
             <section class="subject">
                 <label for="subject">Subject:</label><br>
                 <section class="webdesign">
-                    <input type="radio" id="Web design" checked>
+                    <input type="radio" id="Web design" name="checkbox" checked>
                     <label for="Web design">Web Design</label><br>
                 </section>
                 <section class="software">
-                    <input type="radio" id="software">
+                    <input type="radio" id="software" name="checkbox">
                     <label for="Web design">Software</label><br>
                 </section>
                 <section class="complaint">
-                    <input type="radio" id="complaint">
+                    <input type="radio" id="complaint" name="checkbox">
                     <label for="Web design">Complaint</label><br>
                 </section>
                 <section class="other">
-                    <input type="radio" id="other">
+                    <input type="radio" id="other" name="checkbox">
                     <label for="Web design">Other</label><br>
                 </section>
             </section>
