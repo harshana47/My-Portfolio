@@ -1525,6 +1525,39 @@
             top: 435px;
             color: black;
         }
+        .software{
+            position: absolute;
+            right: 455px;
+            top: 435px;
+            color: black;
+        }
+        .complaint{
+            position: absolute;
+            right: 295px;
+            top: 435px;
+            color: black;
+        }
+        .other{
+            position: absolute;
+            right: 135px;
+            top: 435px;
+            color: black;
+        }
+        .message>textarea{
+            width: 500px;
+            height: 50px;
+            position: absolute;
+            font-family: Inter;
+            font-size: 18px;
+            color: black;
+            background: white;
+        }
+        .messageButton{
+            position: absolute;
+            right: 30px;
+            top: 650px;
+            color: black;
+        }
     </style>
 </head>
 <body class="container">
@@ -1966,16 +1999,28 @@
             <section class="subject">
                 <label for="subject">Subject:</label><br>
                 <section class="webdesign">
-                    <input type="radio" id="Web design">
+                    <input type="radio" id="Web design" checked>
                     <label for="Web design">Web Design</label><br>
                 </section>
+                <section class="software">
+                    <input type="radio" id="software">
+                    <label for="Web design">Software</label><br>
+                </section>
+                <section class="complaint">
+                    <input type="radio" id="complaint">
+                    <label for="Web design">Complaint</label><br>
+                </section>
+                <section class="other">
+                    <input type="radio" id="other">
+                    <label for="Web design">Other</label><br>
+                </section>
             </section>
-            <section>
+            <section class="message">
                 <label for="subject">Subject:</label><br>
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea><br>
+                <textarea id="subject" name="subject" placeholder="Write something.." ></textarea><br>
             </section>
 
-            <section>
+            <section class="messageButton">
                 <input type="submit" value="Send Message">
             </section>
         </form>
