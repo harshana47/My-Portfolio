@@ -2,7 +2,6 @@ html,body{
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
     font-family: Arial, sans-serif;
 }
 .container {
@@ -12,13 +11,13 @@ html,body{
     scroll-behavior: smooth;
 }
 
-.page {
-    height: 100vh;
-    scroll-snap-align: start; /*snap alignment*/
-    display: flex;
-    color: white;
-    position: relative;
-}
+/*.page {*/
+/*    height: 100vh;*/
+/*    scroll-snap-align: start; !*snap alignment*!*/
+/*    display: flex;*/
+/*    color: white;*/
+/*    position: relative;*/
+/*}*/
 
 /*1st page main*/
 body>main:nth-child(1){
