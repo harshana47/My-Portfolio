@@ -63,8 +63,8 @@ body>main:nth-child(1)>section>div:first-child>img{
 }
 /*my image*/
 body>main:nth-child(1)>section>div:nth-child(2)>img{
-    width: 21vw;
-    height: 44vh;
+    width: 22vw;
+    height: 46vh;
     margin: auto;
     left: 250px;
     top: 220px;
@@ -1106,7 +1106,7 @@ body>main:nth-child(6)>section:nth-child(1)>h1{
     color: #3CBEFF;
     left: 40%;
     position: absolute;
-    top: -50px;
+    top: -40px;
     font-size: 50px;
     font-family: Inter;
     font-weight: normal;
