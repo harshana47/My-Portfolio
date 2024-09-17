@@ -1401,6 +1401,24 @@ body>main:nth-child(8){
     position: relative;
     overflow: hidden;
 }
+.contact1{
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 250px;
+    font-size: 40px;
+    font-family: Inter;
+    font-weight: bold;
+}
+.o{
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 735px;
+    font-size: 45px;
+    font-family: Poppins;
+    font-weight: bold;
+}
 .fName>label{
     font-family: Inter;
     font-size: 20px;
