@@ -1414,7 +1414,7 @@ body>main:nth-child(8){
     color: white;
     position: absolute;
     top: 23px;
-    left: 733px;
+    left: 727px;
     font-size: 47px;
     font-family: Poppins;
     font-weight: bold;
@@ -1643,21 +1643,21 @@ body>main:nth-child(8){
     left: 145px;
     top: 400px;
 }
-.contacts>img:nth-child(1){
+.contacts>a:nth-child(1){
     left: 130px;
     bottom: 130px;
     height: 40px;
     width: 40px;
     position: absolute;
 }
-.contacts>img:nth-child(2){
+.contacts>a:nth-child(2){
     left: 240px;
     bottom: 130px;
     height: 40px;
     width: 40px;
     position: absolute;
 }
-.contacts>img:nth-child(3){
+.contacts>a:nth-child(3){
     left: 350px;
     bottom: 130px;
     height: 40px;
