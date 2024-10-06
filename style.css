@@ -1391,7 +1391,257 @@ body>main:nth-child(7){
     z-index: 2;
 }
 
-body>main:nth-child(8){
+body>main:nth-child(8) {
+    background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+.assignment>h1{
+    color: #3CBEFF;
+    left: 40%;
+    position: absolute;
+    top: -50px;
+    font-size: 50px;
+    font-family: Inter;
+    font-weight: normal;
+    text-shadow: 3px 3px 5px #3CBEFF;
+    z-index: 1;
+}
+.rectangle{
+    width: 85vw;
+    height: 85vh;
+    border: 5px solid #3CBEFF;
+    overflow: hidden;
+    position: absolute;
+    top: 70px;
+    left: 110px;
+    background-color: #4f504f;
+}
+.rectangle>h3{
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Inter;
+    font-weight: normal;
+    margin-top: 10px;
+    padding: 0;
+    text-align: center;
+}
+.card1 {
+    background-color: white;
+    width: 200px;
+    height: 220px;
+    position: absolute;
+    top: 80px;
+    left: 100px;
+    z-index: 2;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure the text stays within the card */
+    transition: transform 0.3s; /* Smooth scaling */
+}
+
+.card1 > img {
+    width: 100%;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; /* Round only the top corners */
+    z-index: 1; /* Ensure the image is below the text */
+}
+
+.card1 > h3 {
+    color: #3CBEFF;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: normal;
+    margin-top: 65px;
+    padding: 0;
+    text-align: center;
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for opacity */
+    z-index: 2; /* Ensure the text is above the image */
+    position: relative; /* Ensure it respects z-index */
+}
+
+/* Hover effects */
+.card1:hover {
+    transform: scale(1.05);
+}
+
+.card1:hover > h3 {
+    opacity: 1; /* Show the text on hover */
+}
+
+.card1:hover > img {
+    filter: brightness(0.4); /* Optional: dim the image on hover */
+}
+
+.github-button {
+    display: block; /* Makes the button take the full width */
+    margin: 60px 35px; /* Center the button */
+    padding: 10px 20px; /* Add padding */
+    background-color: #3CBEFF; /* Button color */
+    color: white; /* Text color */
+    text-align: center; /* Center the text */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.github-button:hover {
+    background-color: #2a9bd5; /* Darker shade on hover */
+}
+
+
+/*.assignment>div:nth-child(3){*/
+/*    background-color: white;*/
+/*    width: 200px;*/
+/*    height: 250px;*/
+/*    position: absolute;*/
+/*    top: 100px;*/
+/*    right: 50px;*/
+/*    z-index: 2;*/
+/*    border-radius: 20px;*/
+/*}*/
+/*.assignment>div:nth-child(3)>img{*/
+/*    width: 100%;*/
+/*    height: 120px;*/
+/*    object-fit: cover;*/
+/*    text-align: center;*/
+/*    border-radius: 20px;*/
+/*}*/
+/*.view{*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background-color: #3CBEFF;*/
+/*    border-radius: 20px;*/
+/*    left: 12%;*/
+/*    position: absolute;*/
+/*    top: 135px;*/
+/*}*/
+/*.view>a{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 57px;*/
+/*    color: white;*/
+/*}*/
+/*.try{*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background-color: #3CBEFF;*/
+/*    border-radius: 20px;*/
+/*    left: 12%;*/
+/*    position: absolute;*/
+/*    top: 195px;*/
+/*}*/
+/*.try>a{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 100px;*/
+/*    color: white;*/
+/*}*/
+/*!*=======================================================*!*/
+/*.assignment>div:nth-child(6){*/
+/*    background-color: white;*/
+/*    width: 200px;*/
+/*    height: 250px;*/
+/*    position: absolute;*/
+/*    top: 400px;*/
+/*    right: 50px;*/
+/*    z-index: 2;*/
+/*    border-radius: 20px;*/
+/*}*/
+/*.assignment>div:nth-child(6)>img{*/
+/*    width: 100%;*/
+/*    height: 120px;*/
+/*    object-fit: cover;*/
+/*    text-align: center;*/
+/*    border-radius: 20px;*/
+/*}*/
+/*.view{*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background-color: #3CBEFF;*/
+/*    border-radius: 20px;*/
+/*    left: 12%;*/
+/*    position: absolute;*/
+/*    top: 135px;*/
+/*}*/
+/*.view>a{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 57px;*/
+/*    color: white;*/
+/*}*/
+/*.try{*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background-color: #3CBEFF;*/
+/*    border-radius: 20px;*/
+/*    left: 12%;*/
+/*    position: absolute;*/
+/*    top: 195px;*/
+/*}*/
+/*.try>a{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 57px;*/
+/*    color: white;*/
+/*}*/
+/*!*=======================================================*!*/
+/*.assignment>div:nth-child(9){*/
+/*    background-color: white;*/
+/*    width: 200px;*/
+/*    height: 250px;*/
+/*    position: absolute;*/
+/*    top: 400px;*/
+/*    right: 300px;*/
+/*    z-index: 2;*/
+/*    border-radius: 20px;*/
+/*}*/
+/*.assignment>div:nth-child(9)>img{*/
+/*    width: 100%;*/
+/*    height: 120px;*/
+/*    object-fit: cover;*/
+/*    text-align: center;*/
+/*    border-radius: 20px;*/
+/*}*/
+/*.view{*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background-color: #3CBEFF;*/
+/*    border-radius: 20px;*/
+/*    left: 12%;*/
+/*    position: absolute;*/
+/*    top: 135px;*/
+/*}*/
+/*.view>a{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 57px;*/
+/*    color: white;*/
+/*}*/
+/*.try{*/
+/*    width: 150px;*/
+/*    height: 40px;*/
+/*    background-color: #3CBEFF;*/
+/*    border-radius: 20px;*/
+/*    left: 12%;*/
+/*    position: absolute;*/
+/*    top: 195px;*/
+/*}*/
+/*.try>a{*/
+/*    position: absolute;*/
+/*    top: 10px;*/
+/*    left: 57px;*/
+/*    color: white;*/
+/*}*/
+body>main:nth-child(9){
     background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
     display: flex;
     width: 100%;
@@ -1717,8 +1967,8 @@ body>main:nth-child(8){
     body>main:nth-child(1)>section:nth-child(4)>h1{
         color: white;
         position: absolute;
-        left: 20px;
-        top: 70px;
+        left: 30px;
+        top: 80px;
         font-size: 20px;
         font-family: Inter;
         font-weight: lighter;
@@ -1728,8 +1978,8 @@ body>main:nth-child(8){
     body>main:nth-child(1)>section:nth-child(4)>h2{
         color: #3CBEFF;
         position: absolute;
-        left: 20px;
-        top: 95px;
+        left: 30px;
+        top: 105px;
         font-size: 20px;
         font-family: Inter;
         font-weight: normal;
@@ -1751,7 +2001,7 @@ body>main:nth-child(8){
         width: 50vw;
         height: 25vh;
         margin: auto;
-        left: 60px;
+        left: 80px;
         top: 210px;
         position: absolute;
         border-radius: 50%;
@@ -1765,7 +2015,7 @@ body>main:nth-child(8){
         border-radius: 25px;
         padding: 20px;
         top: 20px;
-        left: 30px;
+        left: 50px;
         bottom: 0;
         position: absolute;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
@@ -1793,8 +2043,8 @@ body>main:nth-child(8){
     body>main:nth-child(1)>section:nth-child(3)>section>div>nav{
         position: absolute;
         align-self: center;
-        bottom: -420px;
-        left: -175px;
+        bottom: -400px;
+        left: -155px;
         gap: 14px;
         display: flex;
         flex-direction: row;
@@ -1913,7 +2163,7 @@ body>main:nth-child(8){
         background: black;
         display: flex;
         width: 100%;
-        height: 100vh;
+        height: 85vh;
         margin: 0;
         padding: 0;
         position: relative;
@@ -1922,10 +2172,10 @@ body>main:nth-child(8){
     /*topic*/
     body>main:nth-child(3)>section:nth-child(1)>h1{
         color: #3CBEFF;
-        left: 44%;
+        left: 36%;
         position: absolute;
-        top: -25px;
-        font-size: 50px;
+        top: 5px;
+        font-size: 25px;
         font-family: Inter;
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
@@ -1934,20 +2184,20 @@ body>main:nth-child(8){
 
     /*card 1 background*/
     body>main:nth-child(3)>section:nth-child(2)>div{
-        width: 370px;
-        height: 240px;
+        width: 210px;
+        height: 120px;
         background: black;
         box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
-        top: 120px;
-        left: 585px;
+        top: 80px;
+        left: 55px;
         border-radius: 10%;
     }
 
     /*card 1 image*/
     body>main:nth-child(3)>section:nth-child(2)>div>img{
-        width: 370px;
-        height: 170px;
+        width: 210px;
+        height: 120px;
         border-radius: 10%;
         position: absolute;
         top: 0;
@@ -1968,20 +2218,20 @@ body>main:nth-child(8){
 
     /*card 2 background*/
     body>main:nth-child(3)>section:nth-child(3)>div{
-        width: 370px;
-        height: 240px;
+        width: 210px;
+        height: 120px;
         background: black;
         box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
-        top: 420px;
-        left: 70px;
+        top: 240px;
+        left: 55px;
         border-radius: 10%;
     }
 
     /*card 2 image*/
     body>main:nth-child(3)>section:nth-child(3)>div>img{
-        width: 370px;
-        height: 170px;
+        width: 210px;
+        height: 120px;
         border-radius: 10%;
         position: absolute;
         top: 0;
@@ -2003,20 +2253,20 @@ body>main:nth-child(8){
 
     /*card 3 background*/
     body>main:nth-child(3)>section:nth-child(4)>div{
-        width: 370px;
-        height: 240px;
+        width: 210px;
+        height: 120px;
         background: black;
         box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
-        top: 420px;
-        right: 70px;
+        top: 400px;
+        left: 55px;
         border-radius: 10%;
     }
 
     /*card 3 image*/
     body>main:nth-child(3)>section:nth-child(4)>div>img{
-        width: 370px;
-        height: 170px;
+        width: 210px;
+        height: 120px;
         border-radius: 10%;
         position: absolute;
         top: 0;
@@ -2038,84 +2288,54 @@ body>main:nth-child(8){
     /*design box 1.1*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
         border: 3.5px solid #3CBEFF;
-        height: 60px;
-        width: 120px;
-        top: -25px;
-        left: -20px;
+        height: 30px;
+        width: 90px;
+        top: -10px;
+        left: -50px;
         position: absolute;
     }
     /*design box 1.2*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(2){
         border: 2px solid #3CBEFF;
-        height: 50px;
-        width: 100px;
+        height: 30px;
+        width: 60px;
         top: 15px;
-        left: 60px;
+        left: 20px;
         position: absolute;
     }
 
     /*design box 2.1*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
-        border: 3.5px solid #3CBEFF;
-        height: 60px;
-        width: 120px;
-        top: 140px;
-        right: 200px;
-        position: absolute;
+        display: none;
     }
     /*design box 2.2*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
-        border: 2px solid #3CBEFF;
-        height: 50px;
-        width: 100px;
-        top: 180px;
-        right: 140px;
-        position: absolute;
+        display: none;
     }
 
     /*design box 3.1*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
-        border: 3.5px solid #3CBEFF;
-        height: 40px;
-        width: 70px;
-        top: 360px;
-        left: 440px;
-        position: absolute;
+        display: none;
     }
     /*design box 3.2*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
-        border: 2px solid #3CBEFF;
-        height: 30px;
-        width: 50px;
-        top: 390px;
-        left: 490px;
-        position: absolute;
+        display: none;
     }
 
     /*design box 4.1*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
-        border: 3.5px solid #3CBEFF;
-        height: 50px;
-        width: 100px;
-        bottom: 40px;
-        right: 540px;
-        position: absolute;
+        display: none;
     }
     /*design box 4.2*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
-        border: 2px solid #3CBEFF;
-        height: 40px;
-        width: 80px;
-        bottom: 20px;
-        right: 490px;
-        position: absolute;
+        display: none;
     }
     /*skills page*/
     body>main:nth-child(4) {
         background: black;
         display: flex;
         width: 100%;
-        height: 100vh;
+        height: 85vh;
         margin: 0;
         padding: 0;
         position: relative;
@@ -2136,10 +2356,10 @@ body>main:nth-child(8){
     /*skills title*/
     body>main:nth-child(4)>section:nth-child(1)>h1{
         color: #3CBEFF;
-        left: 39%;
+        left: 26%;
         position: absolute;
-        top: -25px;
-        font-size: 50px;
+        top: -5px;
+        font-size: 25px;
         font-family: Inter;
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
@@ -2148,31 +2368,31 @@ body>main:nth-child(8){
 
     /*html circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 120px;
-        left: 100px;
+        top: 60px;
+        left: 20px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 6px #3CBEFF;
     }
     /*html logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1)>img{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 10px;
-        top: 15px;
+        left: 5px;
+        top: 7px;
     }
     /*html h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h1{
-        font-size: 25px;
+        font-size: 17px;
         color: #3CBEFF;
         position: absolute;
-        top: 210px;
-        left: 120px;
+        top: 105px;
+        left: 25px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2180,31 +2400,31 @@ body>main:nth-child(8){
 
     /*css circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 320px;
-        left: 100px;
+        top: 60px;
+        left: 130px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*css logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3)>img{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 10px;
-        top: 15px;
+        left: 5px;
+        top: 7px;
     }
     /*css h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h2{
-        font-size: 26px;
+        font-size: 17px;
         color: #3CBEFF;
         position: absolute;
-        top: 410px;
-        left: 130px;
+        top: 105px;
+        left: 142px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2212,31 +2432,31 @@ body>main:nth-child(8){
 
     /*js circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 520px;
-        left: 100px;
+        top: 60px;
+        left: 240px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*js logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5)>img{
-        width: 80px;
-        height: 80px;
+        width: 38px;
+        height: 38px;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 6px;
+        top: 6px;
     }
     /*js h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h3{
-        font-size: 25px;
+        font-size: 18px;
         color: #3CBEFF;
         position: absolute;
-        top: 603px;
-        left: 105px;
+        top: 100px;
+        left: 230px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2244,31 +2464,31 @@ body>main:nth-child(8){
 
     /*java circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 120px;
-        left: 400px;
+        top: 165px;
+        left: 20px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*java logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7)>img{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 5px;
+        top: 5px;
     }
     /*java h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h4{
-        font-size: 30px;
+        font-size: 19px;
         color: #3CBEFF;
         position: absolute;
-        top: 185px;
-        left: 425px;
+        top: 200px;
+        left: 27px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2276,31 +2496,31 @@ body>main:nth-child(8){
 
     /*figma circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 320px;
-        left: 400px;
+        top: 165px;
+        left: 130px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*figma logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9)>img{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 5px;
+        top: 5px;
     }
     /*figma h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h5{
-        font-size: 26px;
+        font-size: 18px;
         color: #3CBEFF;
         position: absolute;
-        top: 384px;
-        left: 420px;
+        top: 195px;
+        left: 135px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2308,31 +2528,31 @@ body>main:nth-child(8){
 
     /*MySql circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 520px;
-        left: 400px;
+        top: 165px;
+        left: 240px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*MySql logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11)>img{
-        width: 70px;
-        height: 70px;
+        width: 30px;
+        height: 30px;
         position: absolute;
-        left: 16px;
-        top: 14px;
+        left: 11px;
+        top: 11px;
     }
     /*MySql h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h6{
-        font-size: 25px;
+        font-size: 17px;
         color: #3CBEFF;
         position: absolute;
-        top: 570px;
-        left: 419px;
+        top: 185px;
+        left: 245px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2340,31 +2560,31 @@ body>main:nth-child(8){
 
     /*GitHub circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 120px;
-        left: 700px;
+        top: 270px;
+        left: 20px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*GitHub logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13)>img{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 5.5px;
+        top: 5px;
     }
     /*GitHub h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h7{
-        font-size: 27px;
+        font-size: 17px;
         color: #3CBEFF;
         position: absolute;
-        top: 225px;
-        left: 715px;
+        top: 330px;
+        left: 21px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2372,31 +2592,31 @@ body>main:nth-child(8){
 
     /*Notion circle*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15){
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         border-radius: 50%;
         position: absolute;
-        top: 320px;
-        left: 700px;
+        top: 270px;
+        left: 130px;
         background: #c5c5c5;
         z-index: 1;
-        box-shadow: 5px 5px 8px #3CBEFF;
+        box-shadow: 3px 3px 5px #3CBEFF;
     }
     /*Notion logo*/
     body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15)>img{
-        width: 80px;
-        height: 80px;
+        width: 40px;
+        height: 40px;
         position: absolute;
-        left: 10px;
-        top: 10px;
+        left: 5px;
+        top: 5px;
     }
     /*Notion h tag*/
     body>main:nth-child(4)>section:nth-child(2)>h8{
-        font-size: 27px;
+        font-size: 18px;
         color: #3CBEFF;
         position: absolute;
-        top: 425px;
-        left: 715px;
+        top: 330px;
+        left: 131px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -2404,20 +2624,20 @@ body>main:nth-child(8){
 
     /*paragraph margin*/
     body>main:nth-child(4)>section:nth-child(4)>div{
-        width: 36%;
-        height: 520px;
+        width: 280px;
+        height: 190px;
         position: absolute;
-        right: 100px;
-        top: 120px;
+        right: 20px;
+        top: 360px;
         border: 1px solid #3CBEFF;
         z-index: 2;
     }
     /*paragraph text*/
     body>main:nth-child(4)>section:nth-child(4)>div>p{
-        font-size: 18px;
+        font-size: 5px;
         color: white;
         margin-left: 10px;
-        margin-top: 10px;
+        margin-top: 0;
         font-family: Inter;
         text-align: left;
         position: absolute;
