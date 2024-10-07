@@ -3744,7 +3744,7 @@ body>main:nth-child(9){
     body>main:nth-child(2)>section:nth-child(3)>div:first-child{
         border: 2px solid #3CBEFF;
         left: 5%;
-        top: 60px;
+        top: 100px;
         width: 285px;
         height: 445px;
         position: absolute;
@@ -3766,7 +3766,7 @@ body>main:nth-child(9){
         background: white;
         border-radius: 50px 20px;
         position: absolute;
-        bottom: 10px;
+        bottom: 30px;
         left: 60%;
         font-family: Katibeh;
         font-size: 15px;
@@ -3828,7 +3828,7 @@ body>main:nth-child(9){
         background: black;
         box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
-        top: 80px;
+        top: 100px;
         left: 55px;
         border-radius: 10%;
     }
@@ -3853,6 +3853,7 @@ body>main:nth-child(9){
         left: 57px;
         font-family: Inter;
         font-weight: lighter;
+        display: none;
     }
 
     /*card 2 background*/
@@ -3862,7 +3863,7 @@ body>main:nth-child(9){
         background: black;
         box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
-        top: 240px;
+        top: 290px;
         left: 55px;
         border-radius: 10%;
     }
@@ -3888,6 +3889,7 @@ body>main:nth-child(9){
         font-family: Inter;
         font-weight: lighter;
         text-align: center;
+        display: none;
     }
 
     /*card 3 background*/
@@ -3897,7 +3899,7 @@ body>main:nth-child(9){
         background: black;
         box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
-        top: 400px;
+        top: 480px;
         left: 55px;
         border-radius: 10%;
     }
@@ -3918,11 +3920,12 @@ body>main:nth-child(9){
         font-size: 24px;
         color: white;
         position: absolute;
-        top: 170px;
+        top: 200px;
         left: 135px;
         font-family: Inter;
         font-weight: lighter;
         text-align: center;
+        display: none;
     }
     /*design box 1.1*/
     body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
@@ -4264,23 +4267,23 @@ body>main:nth-child(9){
     /*paragraph margin*/
     body>main:nth-child(4)>section:nth-child(4)>div{
         width: 280px;
-        height: 190px;
+        height: 280px;
         position: absolute;
         right: 20px;
-        top: 360px;
+        top: 365px;
         border: 1px solid #3CBEFF;
         z-index: 2;
     }
     /*paragraph text*/
     body>main:nth-child(4)>section:nth-child(4)>div>p{
-        font-size: 5px;
+        font-size: 9.5px;
         color: white;
         margin-left: 10px;
         margin-top: 0;
         font-family: Inter;
         text-align: left;
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 10px;
     }
     /*projects section*/
@@ -4297,10 +4300,10 @@ body>main:nth-child(9){
     /*project title*/
     body>main:nth-child(5)>section:nth-child(1)>h1{
         color: #3CBEFF;
-        left: 45%;
+        left: 40%;
         position: absolute;
-        top: -25px;
-        font-size: 50px;
+        top: 10px;
+        font-size: 25px;
         font-family: Inter;
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
@@ -4308,209 +4311,222 @@ body>main:nth-child(9){
     }
     /*box*/
     body>main:nth-child(5)>section:nth-child(2)>div {
-        height: 550px;
-        width: 600px;
+        height: 380px;
+        width: 280px;
         position: absolute;
         border: 0 solid #3CBEFF;
-        top: 100px;
-        left: 450px;
+        top: 220px;
+        left: 20px;
         overflow: auto;
         background: transparent;
         z-index: 1;
     }
-    /*card 1 background*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div{
-        width: 450px;
-        height: 300px;
+    /* Card 1 background */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(1) > div {
+        width: 200px;
+        height: 230px;
         background: black;
         position: absolute;
-        top: 130px;
-        left: 80px;
+        top: 60px;
+        left: 40px;
         justify-content: center;
         align-items: center;
         border-radius: 10%;
         box-shadow: 2px 2px 8px #3CBEFF;
         animation: bounce 1.4s infinite;
     }
-    /*card 1 image*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>img{
+
+    /* Card 1 image */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(1) > div > img {
         position: absolute;
-        height: 230px;
-        width: 450px;
+        height: 150px;
+        width: 200px;
         border-radius: 10%;
     }
-    /*card 1 title*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>a{
+
+    /* Card 1 title */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(1) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 24px;
         position: absolute;
-        top: 250px;
-        left: 80px;
+        top: 170px;
+        left: 12px;
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
 
-    /*card 2 background*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div{
-        width: 450px;
-        height: 300px;
+    /* Card 2 background */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(2) > div {
+        width: 200px; /* Changed to match card 1 */
+        height: 230px; /* Changed to match card 1 */
         background: black;
         position: absolute;
-        top: 630px;
-        left: 80px;
+        top: 410px; /* Adjusted position */
+        left: 40px; /* Adjusted position */
         justify-content: center;
         align-items: center;
         border-radius: 10%;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
-    /*card 2 image*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>img{
+
+    /* Card 2 image */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(2) > div > img {
         position: absolute;
-        height: 230px;
-        width: 450px;
+        height: 150px; /* Changed to match card 1 */
+        width: 200px; /* Changed to match card 1 */
         border-radius: 10%;
     }
-    /*card 2 title*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>a{
+
+    /* Card 2 title */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(2) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 24px; /* Changed to match card 1 */
         position: absolute;
-        top: 250px;
-        left: 115px;
+        top: 170px; /* Changed to match card 1 */
+        left: 12px; /* Changed to match card 1 */
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
 
-    /*card 3 background*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div{
-        width: 450px;
-        height: 300px;
+    /* Card 3 background */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(3) > div {
+        width: 200px; /* Changed to match card 1 */
+        height: 230px; /* Changed to match card 1 */
         background: black;
         position: absolute;
-        top: 1130px;
-        left: 80px;
+        top: 770px; /* Adjusted position */
+        left: 40px; /* Adjusted position */
         justify-content: center;
         align-items: center;
         border-radius: 10%;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
-    /*card 3 image*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>img{
+
+    /* Card 3 image */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(3) > div > img {
         position: absolute;
-        height: 230px;
-        width: 450px;
+        height: 150px; /* Changed to match card 1 */
+        width: 200px; /* Changed to match card 1 */
         border-radius: 10%;
     }
-    /*card 3 title*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>a{
+
+    /* Card 3 title */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(3) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 24px; /* Changed to match card 1 */
         position: absolute;
-        top: 250px;
-        left: 65px;
+        top: 170px; /* Changed to match card 1 */
+        left: 12px; /* Changed to match card 1 */
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
 
-    /*card 4 background*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div{
-        width: 450px;
-        height: 300px;
+    /* Card 4 background */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(4) > div {
+        width: 200px; /* Changed to match card 1 */
+        height: 230px; /* Changed to match card 1 */
         background: black;
         position: absolute;
-        top: 1630px;
-        left: 80px;
+        top: 1130px; /* Adjusted position */
+        left: 40px; /* Adjusted position */
         justify-content: center;
         align-items: center;
         border-radius: 10%;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
-    /*card 4 image*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>img{
+
+    /* Card 4 image */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(4) > div > img {
         position: absolute;
-        height: 230px;
-        width: 450px;
+        height: 150px; /* Changed to match card 1 */
+        width: 200px; /* Changed to match card 1 */
         border-radius: 10%;
     }
-    /*card 4 title*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>a{
+
+    /* Card 4 title */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(4) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 24px; /* Changed to match card 1 */
         position: absolute;
-        top: 250px;
-        left: 113px;
+        top: 170px; /* Changed to match card 1 */
+        left: 12px; /* Changed to match card 1 */
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
 
-    /*card 5 background*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div{
-        width: 450px;
-        height: 300px;
+    /* Card 5 background */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(5) > div {
+        width: 200px; /* Changed to match card 1 */
+        height: 230px; /* Changed to match card 1 */
         background: black;
         position: absolute;
-        top: 2130px;
-        left: 80px;
+        top: 1490px; /* Adjusted position */
+        left: 40px; /* Adjusted position */
         justify-content: center;
         align-items: center;
         border-radius: 10%;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
-    /*card 5 image*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>img{
+
+    /* Card 5 image */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(5) > div > img {
         position: absolute;
-        height: 230px;
-        width: 450px;
+        height: 150px; /* Changed to match card 1 */
+        width: 200px; /* Changed to match card 1 */
         border-radius: 10%;
     }
-    /*card 5 title*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>a{
+
+    /* Card 5 title */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(5) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 24px; /* Changed to match card 1 */
         position: absolute;
-        top: 250px;
-        left: 55px;
+        top: 170px; /* Changed to match card 1 */
+        left: 12px; /* Changed to match card 1 */
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
 
-    /*card 6 background*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div{
-        width: 450px;
-        height: 300px;
+    /* Card 6 background */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(6) > div {
+        width: 200px; /* Changed to match card 1 */
+        height: 230px; /* Changed to match card 1 */
         background: black;
         position: absolute;
-        top: 2630px;
-        left: 80px;
+        top: 1850px; /* Adjusted position */
+        left: 40px; /* Adjusted position */
         margin-bottom: 100px;
         justify-content: center;
         align-items: center;
         border-radius: 10%;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
-    /*card 6 image*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>img{
+
+    /* Card 6 image */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(6) > div > img {
         position: absolute;
-        height: 230px;
-        width: 450px;
+        height: 150px; /* Changed to match card 1 */
+        width: 200px; /* Changed to match card 1 */
         border-radius: 10%;
     }
-    /*card 6 title*/
-    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>a{
+
+    /* Card 6 title */
+    body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(6) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 27px;
+        font-size: 24px; /* Changed to match card 1 */
         position: absolute;
-        top: 250px;
-        left: 130px;
+        top: 170px; /* Changed to match card 1 */
+        left: 12px; /* Changed to match card 1 */
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
+
 
     /* scrollbar*/
     body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar {
@@ -4538,8 +4554,8 @@ body>main:nth-child(9){
     /*design box 1.1*/
     body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(1){
         border: 3.5px solid #3CBEFF;
-        height: 60px;
-        width: 120px;
+        height: 40px;
+        width: 80px;
         top: -25px;
         left: -20px;
         position: absolute;
@@ -4548,29 +4564,29 @@ body>main:nth-child(9){
     /*design box 1.2*/
     body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(2){
         border: 2px solid #3CBEFF;
-        height: 50px;
-        width: 100px;
-        top: 15px;
-        left: 60px;
+        height: 30px;
+        width: 60px;
+        top: 8px;
+        left: 40px;
         position: absolute;
     }
 
     /*design box 3.1*/
     body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
-        border: 3.5px solid #3CBEFF;
-        height: 40px;
-        width: 70px;
-        top: 300px;
+        border: 2.5px solid #3CBEFF;
+        height: 20px;
+        width: 50px;
+        top: 100px;
         left: 250px;
         position: absolute;
     }
     /*design box 3.2*/
     body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
         border: 2px solid #3CBEFF;
-        height: 30px;
-        width: 50px;
-        top: 330px;
-        left: 310px;
+        height: 20px;
+        width: 40px;
+        top: 115px;
+        left: 280px;
         position: absolute;
     }
 
@@ -4579,8 +4595,8 @@ body>main:nth-child(9){
         border: 3.5px solid #3CBEFF;
         height: 50px;
         width: 100px;
-        bottom: 40px;
-        right: 140px;
+        bottom: 80px;
+        left: -20px;
         position: absolute;
     }
     /*design box 4.2*/
@@ -4588,27 +4604,27 @@ body>main:nth-child(9){
         border: 2px solid #3CBEFF;
         height: 40px;
         width: 80px;
-        bottom: 20px;
-        right: 90px;
+        bottom: 55px;
+        left: 30px;
         position: absolute;
     }
 
     /*design box 5.1*/
     body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(1){
-        border: 3.5px solid #3CBEFF;
-        height: 50px;
-        width: 100px;
-        bottom: 80px;
+        border: 2px solid #3CBEFF;
+        height: 30px;
+        width: 70px;
+        bottom: 580px;
         left: 30px;
         position: absolute;
     }
     /*design box 5.2*/
     body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(2){
-        border: 2px solid #3CBEFF;
-        height: 40px;
-        width: 80px;
-        bottom: 60px;
-        left: 90px;
+        border: 1px solid #3CBEFF;
+        height: 30px;
+        width: 60px;
+        bottom: 565px;
+        left: 85px;
         position: absolute;
     }
 
@@ -4617,7 +4633,7 @@ body>main:nth-child(9){
         border: 3.5px solid #3CBEFF;
         height: 40px;
         width: 70px;
-        top: 420px;
+        top: 520px;
         right: 20px;
         position: absolute;
     }
@@ -4626,7 +4642,7 @@ body>main:nth-child(9){
         border: 2px solid #3CBEFF;
         height: 30px;
         width: 50px;
-        top: 450px;
+        top: 550px;
         right: -20px;
         position: absolute;
     }
