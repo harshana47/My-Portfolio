@@ -4,8 +4,8 @@ var buttons = document.getElementsByClassName("sliderButton");
 
 // Variable to keep track of the current position
 var currentTranslation = 0;
-var slideAmount = 1310; // Amount to slide each time
-var maxTranslation = -3290; // Max translation (stop sliding left at this point)
+var slideAmount = 1310;
+var maxTranslation = -3290;
 
 // Function to update the transform on all elements
 function updateTransform() {

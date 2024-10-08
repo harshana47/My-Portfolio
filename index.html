@@ -399,44 +399,45 @@
 
     <!--cards-->
     <section>
-        <section>
+        <div>
+        <section class="os">
             <div data-aos="fade-right">
                 <img src="assets/images/my/inovesta.jpg" height="120" width="150"><br>
                 <div class="description">Completed the software project for Coats Group and was awarded at Innovesta 2024🌟</div>
             </div>
         </section>
-        <section>
+        <section class="os">
             <div data-aos="fade-down">
                 <img src="assets/images/dehigama.png" height="120" width="150"><br>
                 <div class="description">Awarded Runner-Up at the 33rd JJP Dehigama Memorial Orienteering Competition 🥈🏆</div>
-
             </div>
         </section>
-        <section>
+        <section class="os">
             <div data-aos="fade-left">
                 <img src="assets/images/scout2.png" height="120" width="150"><br>
                 <div class="description">Successfully completed the Chief Commissioner’s Award in my scouting career 🏅</div>
             </div>
         </section>
 
-        <section>
+        <section class="os">
             <div data-aos="fade-right">
                 <img src="assets/images/DP.png" height="120" width="150"><br>
                 <div class="description">Achieved the Python for Beginners Certificate from DP Education, Sri Lanka 🎓🐍</div>
             </div>
         </section>
-        <section>
+        <section class="os">
             <div data-aos="fade-up">
                 <img src="assets/images/HackerRank.png" height="120" width="150"><br>
                 <div class="description">Achieved the SQL Certificate from HackerRank 🎓📊 </div>
             </div>
         </section>
-        <section>
+        <section class="os">
             <div data-aos="fade-left">
                 <img src="assets/images/openUOM2.png" height="120" width="150"><br>
                 <div class="description">Achieved the Python programming Certificate from DP Education, Sri Lanka 🎓🐍</div>
             </div>
         </section>
+        </div>
     </section>
 </main>
 
@@ -761,8 +762,17 @@
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
-    AOS.init();
+    AOS.init({
+        disable: function() {
+            var maxWidth = 320; // Set maximum width to disable AOS
+            // Check if the current viewport width is 320px or less,
+            // and if the element is within the specified section
+            return window.innerWidth <= maxWidth && document.querySelector('#page6');
+        }
+    });
+
 </script>
+
 
 <script src="lib/fontawesome-free-6.6.0-web/js/all.min.js"></script>
 </body>
