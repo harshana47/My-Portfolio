@@ -3576,7 +3576,7 @@ body>main:nth-child(9){
 }
 
 @media all and (max-width: 320px) {
-    html,body{
+    html, body {
         margin: 0;
         padding: 0;
         width: 100%;
@@ -3592,9 +3592,8 @@ body>main:nth-child(9){
     /*    color: white;*/
     /*    position: relative;*/
     /*}*/
-
     /*1st page main*/
-    body>main:nth-child(1){
+    body > main:nth-child(1) {
         background: black;
         display: flex;
         width: 100%;
@@ -3602,8 +3601,9 @@ body>main:nth-child(9){
         margin: 0;
         padding: 0;
     }
+
     /*hey im*/
-    body>main:nth-child(1)>section:nth-child(4)>h1{
+    body > main:nth-child(1) > section:nth-child(4) > h1 {
         color: white;
         position: absolute;
         left: 30px;
@@ -3613,8 +3613,9 @@ body>main:nth-child(9){
         font-weight: lighter;
         margin-top: 20px;
     }
+
     /*name*/
-    body>main:nth-child(1)>section:nth-child(4)>h2{
+    body > main:nth-child(1) > section:nth-child(4) > h2 {
         color: #3CBEFF;
         position: absolute;
         left: 30px;
@@ -3624,8 +3625,9 @@ body>main:nth-child(9){
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*background image*/
-    body>main:nth-child(1)>section>div:first-child>img{
+    body > main:nth-child(1) > section > div:first-child > img {
         width: 100%;
         height: 56vh;
         margin: auto;
@@ -3635,26 +3637,28 @@ body>main:nth-child(9){
         filter: grayscale(80%);
 
     }
+
     /*my image*/
-    body>main:nth-child(1)>section>div:nth-child(2)>img{
-        width: 50vw;
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 60vw;
         height: 25vh;
         margin: auto;
-        left: 80px;
-        top: 210px;
+        left: 60px;
+        top: 240px;
         position: absolute;
         border-radius: 50%;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
     }
+
     /*navigation bar section*/
-    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div{
+    body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
         background-image: linear-gradient(#E0E0E0 1%, #000000 53%);
         height: 1px;
-        width: 180px;
+        width: 200px;
         border-radius: 25px;
         padding: 20px;
         top: 20px;
-        left: 50px;
+        left: 35px;
         bottom: 0;
         position: absolute;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
@@ -3674,15 +3678,15 @@ body>main:nth-child(9){
 
     /* Optional: Styling for images within the nav */
     body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:first-child > nav:first-child img {
-        height: 16px;
-        width: 16px;
+        height: 18px;
+        width: 18px;
     }
 
     /*contact bar images*/
-    body>main:nth-child(1)>section:nth-child(3)>section>div>nav{
+    body > main:nth-child(1) > section:nth-child(3) > section > div > nav {
         position: absolute;
         align-self: center;
-        bottom: -400px;
+        bottom: -550px;
         left: -155px;
         gap: 14px;
         display: flex;
@@ -3690,13 +3694,13 @@ body>main:nth-child(9){
         justify-content: normal;
     }
 
-    body>main:nth-child(1)>section:nth-child(3)>section>div>nav img{
-        width: 20px;
-        height: 20px;
+    body > main:nth-child(1) > section:nth-child(3) > section > div > nav img {
+        width: 22px;
+        height: 22px;
     }
 
     /*contact bar*/
-    body>main:nth-child(1)>section:nth-child(3)>section>div {
+    body > main:nth-child(1) > section:nth-child(3) > section > div {
         height: 470px;
         width: 15px;
         border-radius: 25px;
@@ -3707,8 +3711,9 @@ body>main:nth-child(9){
         position: absolute;
         background: transparent;
     }
+
     /*2nd page main*/
-    body>main:nth-child(2){
+    body > main:nth-child(2) {
         background: black;
         display: flex;
         width: 100%;
@@ -3719,7 +3724,7 @@ body>main:nth-child(9){
     }
 
     /*topic*/
-    body>main:nth-child(2)>section:first-child>h1{
+    body > main:nth-child(2) > section:first-child > h1 {
         color: #3CBEFF;
         left: 35%;
         position: absolute;
@@ -3729,8 +3734,9 @@ body>main:nth-child(9){
         text-shadow: 3px 3px 5px #3CBEFF;
         z-index: 2;
     }
+
     /*about section background image*/
-    body>main:nth-child(2)>section:nth-child(2)>img {
+    body > main:nth-child(2) > section:nth-child(2) > img {
         width: 100%;
         height: 48vh;
         margin: auto;
@@ -3740,8 +3746,9 @@ body>main:nth-child(9){
         filter: grayscale(100%);
         z-index: 1;
     }
+
     /*border line blue*/
-    body>main:nth-child(2)>section:nth-child(3)>div:first-child{
+    body > main:nth-child(2) > section:nth-child(3) > div:first-child {
         border: 2px solid #3CBEFF;
         left: 5%;
         top: 100px;
@@ -3750,8 +3757,9 @@ body>main:nth-child(9){
         position: absolute;
         z-index: 1;
     }
+
     /*paragraph*/
-    body>main:nth-child(2)>section:nth-child(3)>div:first-child>p{
+    body > main:nth-child(2) > section:nth-child(3) > div:first-child > p {
         font-size: 10px;
         color: #E0E0E0;
         font-family: sans-serif;
@@ -3759,8 +3767,9 @@ body>main:nth-child(9){
         margin-right: 5px;
         margin-left: 5px;
     }
+
     /*cv button*/
-    body>main:nth-child(2)>section:nth-child(3)>button{
+    body > main:nth-child(2) > section:nth-child(3) > button {
         width: 110px;
         height: 25px;
         background: white;
@@ -3777,16 +3786,19 @@ body>main:nth-child(9){
         justify-content: center;
         z-index: 2;
     }
+
     /*my image*/
-    body>main:nth-child(2)>section:nth-child(4)>img{
+    body > main:nth-child(2) > section:nth-child(4) > img {
         display: none;
     }
+
     /*contact bar in about page*/
-    body>main:nth-child(2)>section:nth-child(5)>div:first-child{
+    body > main:nth-child(2) > section:nth-child(5) > div:first-child {
         display: none;
     }
+
     /*contact bar images*/
-    body>main:nth-child(2)>section:nth-child(5)>div:first-child>nav{
+    body > main:nth-child(2) > section:nth-child(5) > div:first-child > nav {
         justify-content: space-around;
         position: absolute;
         align-self: center;
@@ -3798,7 +3810,7 @@ body>main:nth-child(9){
     }
 
     /*education section*/
-    body>main:nth-child(3){
+    body > main:nth-child(3) {
         background: black;
         display: flex;
         width: 100%;
@@ -3808,8 +3820,9 @@ body>main:nth-child(9){
         position: relative;
 
     }
+
     /*topic*/
-    body>main:nth-child(3)>section:nth-child(1)>h1{
+    body > main:nth-child(3) > section:nth-child(1) > h1 {
         color: #3CBEFF;
         left: 36%;
         position: absolute;
@@ -3822,7 +3835,7 @@ body>main:nth-child(9){
     }
 
     /*card 1 background*/
-    body>main:nth-child(3)>section:nth-child(2)>div{
+    body > main:nth-child(3) > section:nth-child(2) > div {
         width: 210px;
         height: 120px;
         background: black;
@@ -3834,7 +3847,7 @@ body>main:nth-child(9){
     }
 
     /*card 1 image*/
-    body>main:nth-child(3)>section:nth-child(2)>div>img{
+    body > main:nth-child(3) > section:nth-child(2) > div > img {
         width: 210px;
         height: 120px;
         border-radius: 10%;
@@ -3845,7 +3858,7 @@ body>main:nth-child(9){
     }
 
     /*card 1 name*/
-    body>main:nth-child(3)>section:nth-child(2)>div>h1{
+    body > main:nth-child(3) > section:nth-child(2) > div > h1 {
         font-size: 24px;
         color: white;
         position: absolute;
@@ -3857,7 +3870,7 @@ body>main:nth-child(9){
     }
 
     /*card 2 background*/
-    body>main:nth-child(3)>section:nth-child(3)>div{
+    body > main:nth-child(3) > section:nth-child(3) > div {
         width: 210px;
         height: 120px;
         background: black;
@@ -3869,7 +3882,7 @@ body>main:nth-child(9){
     }
 
     /*card 2 image*/
-    body>main:nth-child(3)>section:nth-child(3)>div>img{
+    body > main:nth-child(3) > section:nth-child(3) > div > img {
         width: 210px;
         height: 120px;
         border-radius: 10%;
@@ -3880,7 +3893,7 @@ body>main:nth-child(9){
     }
 
     /*card 2 name*/
-    body>main:nth-child(3)>section:nth-child(3)>div>h1{
+    body > main:nth-child(3) > section:nth-child(3) > div > h1 {
         font-size: 24px;
         color: white;
         position: absolute;
@@ -3893,7 +3906,7 @@ body>main:nth-child(9){
     }
 
     /*card 3 background*/
-    body>main:nth-child(3)>section:nth-child(4)>div{
+    body > main:nth-child(3) > section:nth-child(4) > div {
         width: 210px;
         height: 120px;
         background: black;
@@ -3905,7 +3918,7 @@ body>main:nth-child(9){
     }
 
     /*card 3 image*/
-    body>main:nth-child(3)>section:nth-child(4)>div>img{
+    body > main:nth-child(3) > section:nth-child(4) > div > img {
         width: 210px;
         height: 120px;
         border-radius: 10%;
@@ -3916,7 +3929,7 @@ body>main:nth-child(9){
     }
 
     /*card 3 name*/
-    body>main:nth-child(3)>section:nth-child(4)>div>h1{
+    body > main:nth-child(3) > section:nth-child(4) > div > h1 {
         font-size: 24px;
         color: white;
         position: absolute;
@@ -3927,8 +3940,9 @@ body>main:nth-child(9){
         text-align: center;
         display: none;
     }
+
     /*design box 1.1*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(1) > div:nth-child(1) {
         border: 3.5px solid #3CBEFF;
         height: 30px;
         width: 90px;
@@ -3936,8 +3950,9 @@ body>main:nth-child(9){
         left: -50px;
         position: absolute;
     }
+
     /*design box 1.2*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(2){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(1) > div:nth-child(2) {
         border: 2px solid #3CBEFF;
         height: 30px;
         width: 60px;
@@ -3947,33 +3962,37 @@ body>main:nth-child(9){
     }
 
     /*design box 2.1*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(2) > div:nth-child(1) {
         display: none;
     }
+
     /*design box 2.2*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(2) > div:nth-child(2) {
         display: none;
     }
 
     /*design box 3.1*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) {
         display: none;
     }
+
     /*design box 3.2*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) {
         display: none;
     }
 
     /*design box 4.1*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) {
         display: none;
     }
+
     /*design box 4.2*/
-    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
+    body > main:nth-child(3) > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) {
         display: none;
     }
+
     /*skills page*/
-    body>main:nth-child(4) {
+    body > main:nth-child(4) {
         background: black;
         display: flex;
         width: 100%;
@@ -3983,8 +4002,9 @@ body>main:nth-child(9){
         position: relative;
         z-index: 2;
     }
+
     /*background image*/
-    body>main:nth-child(4)>section:nth-child(3)>img{
+    body > main:nth-child(4) > section:nth-child(3) > img {
         justify-content: space-around;
         position: absolute;
         align-self: center;
@@ -3995,8 +4015,9 @@ body>main:nth-child(9){
         display: block;
         filter: grayscale(40%);
     }
+
     /*skills title*/
-    body>main:nth-child(4)>section:nth-child(1)>h1{
+    body > main:nth-child(4) > section:nth-child(1) > h1 {
         color: #3CBEFF;
         left: 26%;
         position: absolute;
@@ -4009,7 +4030,7 @@ body>main:nth-child(9){
     }
 
     /*html circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(1) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4020,16 +4041,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 6px #3CBEFF;
     }
+
     /*html logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(1) > img {
         width: 40px;
         height: 40px;
         position: absolute;
         left: 5px;
         top: 7px;
     }
+
     /*html h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h1{
+    body > main:nth-child(4) > section:nth-child(2) > h1 {
         font-size: 17px;
         color: #3CBEFF;
         position: absolute;
@@ -4041,7 +4064,7 @@ body>main:nth-child(9){
     }
 
     /*css circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(3) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4052,16 +4075,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*css logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(3) > img {
         width: 40px;
         height: 40px;
         position: absolute;
         left: 5px;
         top: 7px;
     }
+
     /*css h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h2{
+    body > main:nth-child(4) > section:nth-child(2) > h2 {
         font-size: 17px;
         color: #3CBEFF;
         position: absolute;
@@ -4073,7 +4098,7 @@ body>main:nth-child(9){
     }
 
     /*js circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(5) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4084,16 +4109,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*js logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(5) > img {
         width: 38px;
         height: 38px;
         position: absolute;
         left: 6px;
         top: 6px;
     }
+
     /*js h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h3{
+    body > main:nth-child(4) > section:nth-child(2) > h3 {
         font-size: 18px;
         color: #3CBEFF;
         position: absolute;
@@ -4105,7 +4132,7 @@ body>main:nth-child(9){
     }
 
     /*java circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(7) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4116,16 +4143,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*java logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(7) > img {
         width: 40px;
         height: 40px;
         position: absolute;
         left: 5px;
         top: 5px;
     }
+
     /*java h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h4{
+    body > main:nth-child(4) > section:nth-child(2) > h4 {
         font-size: 19px;
         color: #3CBEFF;
         position: absolute;
@@ -4137,7 +4166,7 @@ body>main:nth-child(9){
     }
 
     /*figma circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(9) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4148,16 +4177,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*figma logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(9) > img {
         width: 40px;
         height: 40px;
         position: absolute;
         left: 5px;
         top: 5px;
     }
+
     /*figma h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h5{
+    body > main:nth-child(4) > section:nth-child(2) > h5 {
         font-size: 18px;
         color: #3CBEFF;
         position: absolute;
@@ -4169,7 +4200,7 @@ body>main:nth-child(9){
     }
 
     /*MySql circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(11) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4180,16 +4211,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*MySql logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(11) > img {
         width: 30px;
         height: 30px;
         position: absolute;
         left: 11px;
         top: 11px;
     }
+
     /*MySql h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h6{
+    body > main:nth-child(4) > section:nth-child(2) > h6 {
         font-size: 17px;
         color: #3CBEFF;
         position: absolute;
@@ -4201,7 +4234,7 @@ body>main:nth-child(9){
     }
 
     /*GitHub circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(13) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4212,16 +4245,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*GitHub logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(13) > img {
         width: 40px;
         height: 40px;
         position: absolute;
         left: 5.5px;
         top: 5px;
     }
+
     /*GitHub h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h7{
+    body > main:nth-child(4) > section:nth-child(2) > h7 {
         font-size: 17px;
         color: #3CBEFF;
         position: absolute;
@@ -4233,7 +4268,7 @@ body>main:nth-child(9){
     }
 
     /*Notion circle*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15){
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(15) {
         width: 50px;
         height: 50px;
         border-radius: 50%;
@@ -4244,16 +4279,18 @@ body>main:nth-child(9){
         z-index: 1;
         box-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*Notion logo*/
-    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15)>img{
+    body > main:nth-child(4) > section:nth-child(2) > div:nth-child(15) > img {
         width: 40px;
         height: 40px;
         position: absolute;
         left: 5px;
         top: 5px;
     }
+
     /*Notion h tag*/
-    body>main:nth-child(4)>section:nth-child(2)>h8{
+    body > main:nth-child(4) > section:nth-child(2) > h8 {
         font-size: 18px;
         color: #3CBEFF;
         position: absolute;
@@ -4265,7 +4302,7 @@ body>main:nth-child(9){
     }
 
     /*paragraph margin*/
-    body>main:nth-child(4)>section:nth-child(4)>div{
+    body > main:nth-child(4) > section:nth-child(4) > div {
         width: 280px;
         height: 280px;
         position: absolute;
@@ -4274,8 +4311,9 @@ body>main:nth-child(9){
         border: 1px solid #3CBEFF;
         z-index: 2;
     }
+
     /*paragraph text*/
-    body>main:nth-child(4)>section:nth-child(4)>div>p{
+    body > main:nth-child(4) > section:nth-child(4) > div > p {
         font-size: 9.5px;
         color: white;
         margin-left: 10px;
@@ -4286,8 +4324,9 @@ body>main:nth-child(9){
         top: 10px;
         right: 10px;
     }
+
     /*projects section*/
-    body>main:nth-child(5){
+    body > main:nth-child(5) {
         background: black;
         display: flex;
         width: 100%;
@@ -4297,8 +4336,9 @@ body>main:nth-child(9){
         position: relative;
         overflow: hidden;
     }
+
     /*project title*/
-    body>main:nth-child(5)>section:nth-child(1)>h1{
+    body > main:nth-child(5) > section:nth-child(1) > h1 {
         color: #3CBEFF;
         left: 40%;
         position: absolute;
@@ -4309,8 +4349,9 @@ body>main:nth-child(9){
         text-shadow: 3px 3px 5px #3CBEFF;
         z-index: 1;
     }
+
     /*box*/
-    body>main:nth-child(5)>section:nth-child(2)>div {
+    body > main:nth-child(5) > section:nth-child(2) > div {
         height: 380px;
         width: 280px;
         position: absolute;
@@ -4321,6 +4362,7 @@ body>main:nth-child(9){
         background: transparent;
         z-index: 1;
     }
+
     /* Card 1 background */
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(1) > div {
         width: 200px;
@@ -4529,16 +4571,18 @@ body>main:nth-child(9){
 
 
     /* scrollbar*/
-    body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar {
+    body > main:nth-child(5) > section:nth-child(2) > div::-webkit-scrollbar {
         width: 8px;
         border-radius: 10%;
         display: none;
     }
+
     /* Thumb */
-    body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar-thumb {
+    body > main:nth-child(5) > section:nth-child(2) > div::-webkit-scrollbar-thumb {
         background-color: #ffffff;
         border-radius: 10px;
     }
+
 
     /* Bounce Animation */
     @keyframes bounce {
@@ -4552,7 +4596,7 @@ body>main:nth-child(9){
 
 
     /*design box 1.1*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(1){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
         border: 3.5px solid #3CBEFF;
         height: 40px;
         width: 80px;
@@ -4561,8 +4605,9 @@ body>main:nth-child(9){
         position: absolute;
         z-index: 1;
     }
+
     /*design box 1.2*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(2){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
         border: 2px solid #3CBEFF;
         height: 30px;
         width: 60px;
@@ -4572,7 +4617,7 @@ body>main:nth-child(9){
     }
 
     /*design box 3.1*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(3) > div:nth-child(1) {
         border: 2.5px solid #3CBEFF;
         height: 20px;
         width: 50px;
@@ -4580,8 +4625,9 @@ body>main:nth-child(9){
         left: 250px;
         position: absolute;
     }
+
     /*design box 3.2*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(3) > div:nth-child(2) {
         border: 2px solid #3CBEFF;
         height: 20px;
         width: 40px;
@@ -4591,7 +4637,7 @@ body>main:nth-child(9){
     }
 
     /*design box 4.1*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(4)>div:nth-child(1){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(4) > div:nth-child(1) {
         border: 3.5px solid #3CBEFF;
         height: 50px;
         width: 100px;
@@ -4599,8 +4645,9 @@ body>main:nth-child(9){
         left: -20px;
         position: absolute;
     }
+
     /*design box 4.2*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(4)>div:nth-child(2){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(4) > div:nth-child(2) {
         border: 2px solid #3CBEFF;
         height: 40px;
         width: 80px;
@@ -4610,7 +4657,7 @@ body>main:nth-child(9){
     }
 
     /*design box 5.1*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(1){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(5) > div:nth-child(1) {
         border: 2px solid #3CBEFF;
         height: 30px;
         width: 70px;
@@ -4618,8 +4665,9 @@ body>main:nth-child(9){
         left: 30px;
         position: absolute;
     }
+
     /*design box 5.2*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(2){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(5) > div:nth-child(2) {
         border: 1px solid #3CBEFF;
         height: 30px;
         width: 60px;
@@ -4629,7 +4677,7 @@ body>main:nth-child(9){
     }
 
     /*design box 6.1*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(6)>div:nth-child(1){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(6) > div:nth-child(1) {
         border: 3.5px solid #3CBEFF;
         height: 40px;
         width: 70px;
@@ -4637,8 +4685,9 @@ body>main:nth-child(9){
         right: 20px;
         position: absolute;
     }
+
     /*design box 6.2*/
-    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(6)>div:nth-child(2){
+    body > main:nth-child(5) > section:nth-child(3) > section:nth-child(6) > div:nth-child(2) {
         border: 2px solid #3CBEFF;
         height: 30px;
         width: 50px;
@@ -4646,8 +4695,9 @@ body>main:nth-child(9){
         right: -20px;
         position: absolute;
     }
+
     /*Achievement section*/
-    body>main:nth-child(6){
+    body > main:nth-child(6) {
         background: black;
         display: flex;
         width: 100%;
@@ -4657,12 +4707,13 @@ body>main:nth-child(9){
         position: relative;
         overflow: hidden;
     }
+
     /*Achievement title*/
-    body>main:nth-child(6)>section:nth-child(1)>h1{
+    body > main:nth-child(6) > section:nth-child(1) > h1 {
         color: #3CBEFF;
-        left: 40%;
+        left: 25%;
         position: absolute;
-        top: 10px;
+        top: 20px;
         font-size: 25px;
         font-family: Inter;
         font-weight: normal;
@@ -4672,11 +4723,11 @@ body>main:nth-child(9){
 
 
     /*=============================================================================================================================*/
-    body>main:nth-child(6)>section:nth-child(2)>div{
+    body > main:nth-child(6) > section:nth-child(2) > div {
         height: 600px;
         width: 280px;
         position: absolute;
-        border: 1px solid #3CBEFF;
+        border: 0 solid #3CBEFF;
         top: 100px;
         left: 20px;
         overflow: auto;
@@ -4685,7 +4736,7 @@ body>main:nth-child(9){
     }
 
     /* Card Container */
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div {
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(1) > div {
         background: #3CBEFF;
         height: 200px;
         width: 230px;
@@ -4699,7 +4750,7 @@ body>main:nth-child(9){
     }
 
     /* Image inside the card */
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div>img {
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(1) > div > img {
         height: 100%;
         width: 100%;
         border-radius: 10px;
@@ -4721,15 +4772,17 @@ body>main:nth-child(9){
         text-align: center;
         opacity: 0;
         transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
-        padding: 10px; /
+        padding: 10px;
+    /
     }
 
     /* Show description on hover */
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div:hover .description {
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(1) > div:hover .description {
         opacity: 1;
     }
+
     /* Card 2 Container */
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div {
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(2) > div {
         background: white;
         height: 200px;
         width: 230px;
@@ -4743,17 +4796,19 @@ body>main:nth-child(9){
     }
 
     /* Image inside the card 2*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div>img {
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(2) > div > img {
         height: 100%;
         width: 100%;
         border-radius: 10px;
         display: block;
     }
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div:hover .description {
+
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(2) > div:hover .description {
         opacity: 1;
     }
+
     /*card 3 container*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(3) > div {
         background: white;
         height: 200px;
         width: 230px;
@@ -4765,18 +4820,21 @@ body>main:nth-child(9){
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
+
     /*card 3 image*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div>img{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(3) > div > img {
         height: 100%;
         width: 100%;
         border-radius: 10px;
         display: block;
     }
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div:hover .description{
+
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(3) > div:hover .description {
         opacity: 1;
     }
+
     /*card 4 container*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(4) > div {
         background: white;
         height: 200px;
         width: 230px;
@@ -4788,19 +4846,21 @@ body>main:nth-child(9){
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
     }
+
     /*card 4 image*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div>img{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(4) > div > img {
         height: 100%;
         width: 100%;
         border-radius: 10px;
         display: block;
     }
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div:hover .description{
+
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(4) > div:hover .description {
         opacity: 1;
     }
 
     /*card 5 container*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(5) > div {
         background: white;
         height: 200px;
         width: 230px;
@@ -4814,18 +4874,19 @@ body>main:nth-child(9){
     }
 
     /*card 5 image*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div>img{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(5) > div > img {
         height: 100%;
         width: 100%;
         border-radius: 10px;
         display: block;
     }
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div:hover .description{
+
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(5) > div:hover .description {
         opacity: 1;
     }
 
     /*card 6 container*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(6) > div {
         background: white;
         height: 200px;
         width: 230px;
@@ -4838,20 +4899,22 @@ body>main:nth-child(9){
         box-shadow: 2px 2px 8px #3CBEFF;
 
     }
+
     /*card 6 image*/
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div>img{
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(6) > div > img {
         height: 100%;
         width: 100%;
         border-radius: 10px;
         display: block;
     }
-    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div:hover .description{
+
+    body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(6) > div:hover .description {
         opacity: 1;
     }
 
 
     /*=======================================================================================================================*/
-    body>main:nth-child(8) {
+    body > main:nth-child(8) {
         background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
         display: flex;
         width: 100%;
@@ -4861,7 +4924,8 @@ body>main:nth-child(9){
         position: relative;
         overflow: hidden;
     }
-    .assignment>h1{
+
+    .assignment > h1 {
         color: #3CBEFF;
         left: 30%;
         position: absolute;
@@ -4872,7 +4936,8 @@ body>main:nth-child(9){
         text-shadow: 3px 3px 5px #3CBEFF;
         z-index: 1;
     }
-    .box{
+
+    .box {
         width: 88vw;
         height: 85vh;
         border: 0 solid #3CBEFF;
@@ -4884,19 +4949,22 @@ body>main:nth-child(9){
         overflow-x: hidden;
         overflow-y: auto;
     }
-    .temp{
+
+    .temp {
         animation: animation-slide 7s infinite alternate-reverse;
         justify-content: center;
         align-items: center;
         width: fit-content;
 
     }
-    .rectangle{
+
+    .rectangle {
         width: 85vw;
         height: 98%;
         background-color: transparent;
     }
-    .rectangle>h3{
+
+    .rectangle > h3 {
         color: #ffffff;
         font-size: 30px;
         font-family: Inter;
@@ -4905,6 +4973,7 @@ body>main:nth-child(9){
         padding: 0;
         text-align: center;
     }
+
     /*card 1*/
     .card1 {
         background-color: white;
@@ -5125,28 +5194,31 @@ body>main:nth-child(9){
     .github-button:hover {
         background-color: #2a9bd5;
     }
-    .sliderButton{
+
+    .sliderButton {
         position: absolute;
         right: 10px;
         top: 400px
     }
-    .previousButton{
+
+    .previousButton {
         position: absolute;
         left: 5px;
         top: 400px
     }
 
     /*====================================================================================================================*/
-    .rectangle1{
+    .rectangle1 {
         width: 85vw;
         height: 100%;
-        background-color: #4f504f;
+        background-color: transparent;
         z-index: 4;
         left: 1310px;
         position: absolute;
         top: 0;
     }
-    .rectangle1>h3{
+
+    .rectangle1 > h3 {
         color: #ffffff;
         font-size: 30px;
         font-family: Inter;
@@ -5155,14 +5227,15 @@ body>main:nth-child(9){
         padding: 0;
         text-align: center;
     }
+
     /*card 1*/
     .card11 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
         top: 80px;
-        left: 100px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5179,7 +5252,7 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card11 > h3 {
+    .card11 > h3, card22 > h3, card33 > h3, card44 > h3, card55 > h3, card66 > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -5225,11 +5298,11 @@ body>main:nth-child(9){
     /*card 2*/
     .card22 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
         top: 350px;
-        left: 100px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5246,20 +5319,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card22 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card22:hover {
         transform: scale(1.05);
@@ -5273,17 +5332,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block;
-        margin: 85px 35px;
-        padding: 10px 20px;
-        background-color: #3CBEFF;
-        color: white;
-        text-align: center;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-    }
 
     .github-button:hover {
         background-color: #2a9bd5;
@@ -5292,11 +5340,11 @@ body>main:nth-child(9){
     /*card 3*/
     .card33 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 80px;
-        left: 550px;
+        top: 640px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden;
@@ -5313,20 +5361,6 @@ body>main:nth-child(9){
         z-index: 1;
     }
 
-    .card33 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s;
-        z-index: 2;
-        position: relative;
-    }
-
     /* Hover effects */
     .card33:hover {
         transform: scale(1.05);
@@ -5340,17 +5374,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
 
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
@@ -5359,11 +5382,11 @@ body>main:nth-child(9){
     /*card 4*/
     .card44 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 350px;
-        left: 550px;
+        top: 930px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5380,20 +5403,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card44 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card44:hover {
         transform: scale(1.05);
@@ -5407,18 +5416,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
@@ -5427,11 +5424,11 @@ body>main:nth-child(9){
     /*card 5*/
     .card55 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 80px;
-        left: 1000px;
+        top: 1220px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5448,20 +5445,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card55 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card55:hover {
         transform: scale(1.05);
@@ -5475,18 +5458,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
@@ -5494,11 +5465,11 @@ body>main:nth-child(9){
     /*card 6*/
     .card66 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 350px;
-        left: 1000px;
+        top: 1510px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5515,20 +5486,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card66 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card66:hover {
         transform: scale(1.05);
@@ -5542,33 +5499,22 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
 
     /*====================================================================================================================*/
-    .rectangle2{
+    .rectangle2 {
         width: 85vw;
         height: 100%;
-        background-color: #4f504f;
+        background-color: transparent;
         z-index: 4;
-        left: 2600px;
+        left: 2620px;
         position: absolute;
         top: 0;
     }
-    .rectangle2>h3{
+
+    .rectangle2 > h3 {
         color: #ffffff;
         font-size: 30px;
         font-family: Inter;
@@ -5577,14 +5523,15 @@ body>main:nth-child(9){
         padding: 0;
         text-align: center;
     }
+
     /*card 1*/
     .card111 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
         top: 80px;
-        left: 100px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5601,7 +5548,7 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card111 > h3 {
+    .card111 > h3, card222 > h3, card333 > h3, card444 > h3, card555 > h3, card666 > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -5647,11 +5594,11 @@ body>main:nth-child(9){
     /*card 2*/
     .card222 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
         top: 350px;
-        left: 100px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5668,20 +5615,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card222 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card222:hover {
         transform: scale(1.05);
@@ -5695,18 +5628,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block;
-        margin: 85px 35px;
-        padding: 10px 20px;
-        background-color: #3CBEFF;
-        color: white;
-        text-align: center;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-    }
-
     .github-button:hover {
         background-color: #2a9bd5;
     }
@@ -5717,8 +5638,8 @@ body>main:nth-child(9){
         width: 200px;
         height: 220px;
         position: absolute;
-        top: 80px;
-        left: 550px;
+        top: 640px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden;
@@ -5735,20 +5656,6 @@ body>main:nth-child(9){
         z-index: 1;
     }
 
-    .card333 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s;
-        z-index: 2;
-        position: relative;
-    }
-
     /* Hover effects */
     .card333:hover {
         transform: scale(1.05);
@@ -5762,18 +5669,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
@@ -5781,11 +5676,11 @@ body>main:nth-child(9){
     /*card 4*/
     .card444 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 350px;
-        left: 550px;
+        top: 930px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5802,19 +5697,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card444 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
 
     /* Hover effects */
     .card444:hover {
@@ -5829,17 +5711,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
 
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
@@ -5852,8 +5723,8 @@ body>main:nth-child(9){
         width: 200px;
         height: 220px;
         position: absolute;
-        top: 80px;
-        left: 1000px;
+        top: 1220px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5870,20 +5741,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card555 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card555:hover {
         transform: scale(1.05);
@@ -5897,17 +5754,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
 
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
@@ -5919,8 +5765,8 @@ body>main:nth-child(9){
         width: 200px;
         height: 220px;
         position: absolute;
-        top: 350px;
-        left: 1000px;
+        top: 1510px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -5937,20 +5783,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card666:hover {
         transform: scale(1.05);
@@ -5964,33 +5796,23 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
 
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
 
     /*====================================================================================================================*/
-    .rectangle3{
+    .rectangle3 {
         width: 85vw;
         height: 100%;
-        background-color: #4f504f;
+        background-color: transparent;
         z-index: 4;
-        left: 3920px;
+        left: 3935px;
         position: absolute;
         top: 0;
     }
-    .rectangle3>h3{
+
+    .rectangle3 > h3 {
         color: #ffffff;
         font-size: 30px;
         font-family: Inter;
@@ -5999,14 +5821,15 @@ body>main:nth-child(9){
         padding: 0;
         text-align: center;
     }
+
     /*card 1*/
     .card1111 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
         top: 80px;
-        left: 100px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -6023,7 +5846,7 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card1111 > h3 {
+    .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -6069,11 +5892,11 @@ body>main:nth-child(9){
     /*card 2*/
     .card2222 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
         top: 350px;
-        left: 100px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -6090,20 +5913,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card2222 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card2222:hover {
         transform: scale(1.05);
@@ -6117,18 +5926,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block;
-        margin: 85px 35px;
-        padding: 10px 20px;
-        background-color: #3CBEFF;
-        color: white;
-        text-align: center;
-        border-radius: 5px;
-        text-decoration: none;
-        transition: background-color 0.3s;
-    }
-
     .github-button:hover {
         background-color: #2a9bd5;
     }
@@ -6136,11 +5933,11 @@ body>main:nth-child(9){
     /*card 3*/
     .card3333 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 80px;
-        left: 550px;
+        top: 640px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden;
@@ -6157,20 +5954,6 @@ body>main:nth-child(9){
         z-index: 1;
     }
 
-    .card3333 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s;
-        z-index: 2;
-        position: relative;
-    }
-
     /* Hover effects */
     .card3333:hover {
         transform: scale(1.05);
@@ -6184,18 +5967,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
@@ -6203,11 +5974,11 @@ body>main:nth-child(9){
     /*card 4*/
     .card4444 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 350px;
-        left: 550px;
+        top: 930px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -6224,20 +5995,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card4444 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card4444:hover {
         transform: scale(1.05);
@@ -6251,31 +6008,18 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
 
-
     /*card 5*/
     .card5555 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 80px;
-        left: 1000px;
+        top: 1220px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -6292,20 +6036,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card5555 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card5555:hover {
         transform: scale(1.05);
@@ -6319,18 +6049,6 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
@@ -6338,11 +6056,11 @@ body>main:nth-child(9){
     /*card 6*/
     .card6666 {
         background-color: white;
-        width: 200px;
-        height: 220px;
+        width: 190px;
+        height: 180px;
         position: absolute;
-        top: 350px;
-        left: 1000px;
+        top: 1510px;
+        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -6359,20 +6077,6 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    .card6666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
     /* Hover effects */
     .card6666:hover {
         transform: scale(1.05);
@@ -6386,27 +6090,13 @@ body>main:nth-child(9){
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
     }
 
     /*======================================================================================================================*/
-
-
     /*gallery section*/
-    body>main:nth-child(7){
+    body > main:nth-child(7) {
         background: black;
         display: flex;
         width: 100%;
@@ -6416,8 +6106,9 @@ body>main:nth-child(9){
         position: relative;
         overflow: hidden;
     }
+
     /*background image*/
-    .background{
+    .background {
         justify-content: space-around;
         position: absolute;
         align-self: center;
@@ -6430,30 +6121,32 @@ body>main:nth-child(9){
     }
 
     /*Gallery title*/
-    .gallery{
+    .gallery {
         color: #1b1a1a;
-        left: 45%;
+        left: 35%;
         position: absolute;
-        top: -20px;
-        font-size: 50px;
+        top: 10px;
+        font-size: 30px;
         font-family: Inter;
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
         z-index: 1;
     }
-    .arrow{
+
+    .arrow {
         width: 70px;
         height: 70px;
         position: absolute;
         z-index: 1;
-        top: 350px;
-        left: 1380px;
-        object-fit: cover;
-        transform: rotate(180deg);
+        top: 710px;
+        left: 130px;
+        color: white;
+        transform: rotate(360deg);
     }
+
     .img1, .img2, .img3, .img4, .img5 {
         width: 220px;
-        height: 80vh;
+        height: 15vh;
         position: absolute;
         z-index: 1;
         top: 100px;
@@ -6462,66 +6155,80 @@ body>main:nth-child(9){
     }
 
     .img1 {
-        left: 40px;
+        left: 48px;
     }
 
     .img2 {
-        left: 300px;
+        left: 48px;
+        top: 220px;
     }
 
     .img3 {
-        left: 560px;
-        object-position: 80% 0;
+        left: 48px;
+        top: 340px;
     }
 
     .img4 {
-        left: 820px;
+        left: 48px;
+        top: 460px;
     }
 
     .img5 {
-        left: 1080px;
-        object-position: 45% 0;
+        left: 48px;
+        top: 580px;
     }
 
-    .img1:hover{
+    .img1:hover {
         transform: scale(1.15); /* Scales the image up by 10% */
-        height: 80vh;
-        width: 400px;
+        height: 30vh;
+        width: 250px;
         object-position: 50% 0;
         z-index: 2;
+        left: 35px;
     }
-    .img2:hover{
+
+    .img2:hover {
         transform: scale(1.15); /* Scales the image up by 10% */
-        height: 90vh;
-        width: 400px;
+        height: 30vh;
+        width: 250px;
+        left: 35px;
         object-position: 80% 0;
         z-index: 2;
     }
-    .img3:hover{
+
+    .img3:hover {
         transform: scale(1.15); /* Scales the image up by 10% */
-        height: 90vh;
-        width: 400px;
+        height: 30vh;
+        width: 250px;
+        left: 35px;
         object-position: 90% 0%;
         z-index: 2;
     }
-    .img4:hover{
+
+    .img4:hover {
         transform: scale(1.15); /* Scales the image up by 10% */
-        height: 90vh;
-        width: 400px;
+        height: 30vh;
+        width: 250px;
+        left: 35px;
         object-position: 70% 0;
         z-index: 2;
     }
-    .img5:hover{
+
+    .img5:hover {
         transform: scale(1.15); /* Scales the image up by 10% */
-        height: 90vh;
-        width: 400px;
+        height: 30vh;
+        width: 250px;
+        left: 35px;
+        top: 460px;
         object-position: 50% 0;
         z-index: 2;
     }
 
-    body>main:nth-child(8){
-        background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+    body > main:nth-child(9) {
+        background: linear-gradient(to bottom, black 0%, black 50%, white 50%, white 100%);
         display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items horizontally */
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -6529,289 +6236,289 @@ body>main:nth-child(9){
         position: relative;
         overflow: hidden;
     }
-    .contact1{
-        color: white;
-        position: absolute;
-        top: 30px;
-        left: 57px;
-        font-size: 40px;
-        font-family: Poppins;
-        font-weight: bold;
-    }
-    .o{
-        color: white;
-        position: absolute;
-        top: 23px;
-        left: 733px;
-        font-size: 47px;
-        font-family: Poppins;
-        font-weight: bold;
-    }
-    .r{
-        color: black;
-        position: absolute;
-        top: 23px;
-        left: 760px;
-        font-size: 47px;
-        font-family: Poppins;
-        font-weight: bold;
 
+    .contact1 {
+        color: white;
+        font-size: 24px; /* Adjust font size for mobile */
+        font-family: Poppins;
+        font-weight: bold;
+        margin: 10px 0; /* Margin for spacing */
+        left: 27px;
+        top: 20px;
     }
     .contact2{
-        color: black;
         position: absolute;
-        top: 23px;
-        right: 80px;
-        font-size: 47px;
+        top: 390px;
+        color: black;
+        z-index: 2;
+        left: 27px;
         font-family: Poppins;
         font-weight: bold;
-    }
-    .fName>label{
-        font-family: Inter;
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 170px;
-        right: 620px;
-        z-index: 1;
-        font-weight: bold;
-    }
-    .fName>input{
-        width: 220px;
-        right: 480px;
-        top: 100px;
-        position: absolute;
-        height: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 100px;
-        font-family: Inter;
-        font-size: 18px;
-        color: black;
-        background: white;
-    }
-    .lName>label{
-        font-family: Inter;
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 170px;
-        right: 220px;
-        z-index: 1;
-        font-weight: bold;
-    }
-    .lName>input{
-        width: 220px;
-        right: 80px;
-        top: 100px;
-        position: absolute;
-        height: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 100px;
-        font-family: Inter;
-        font-size: 18px;
-        color: black;
-        background: white;
-    }
-    .emails>label{
-        font-family: Inter;
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 280px;
-        right: 665px;
-        z-index: 1;
-        font-weight: bold;
-    }
-    .emails>input{
-        width: 220px;
-        right: 480px;
-        top: 210px;
-        position: absolute;
-        height: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 100px;
-        font-family: Inter;
-        font-size: 18px;
-        color: black;
-        background: white;
-    }
-    .phone>label{
-        font-family: Inter;
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 280px;
-        right: 185px;
-        z-index: 1;
-        font-weight: bold;
-    }
-    .phone>input{
-        width: 220px;
-        right: 80px;
-        top: 210px;
-        position: absolute;
-        height: 20px;
-        border-radius: 10px;
-        padding: 10px;
-        margin-top: 100px;
-        font-family: Inter;
-        font-size: 18px;
-        color: black;
-        background: white;
-    }
-    .subject>label{
-        font-family: Inter;
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 430px;
-        right: 650px;
-        z-index: 1;
-        font-weight: bold;
-    }
-    .webdesign{
-        position: absolute;
-        right: 615px;
-        top: 465px;
-        color: black;
-    }
-    .software{
-        position: absolute;
-        right: 455px;
-        top: 465px;
-        color: black;
-    }
-    .complaint{
-        position: absolute;
-        right: 295px;
-        top: 465px;
-        color: black;
-    }
-    .other{
-        position: absolute;
-        right: 135px;
-        top: 465px;
-        color: black;
-    }
-    .message>textarea{
-        width: 640px;
-        height: 50px;
-        right: 75px;
-        top: 580px;
-        position: absolute;
-        font-family: Inter;
-        font-size: 18px;
-        color: black;
-        background: white;
-    }
-    .messageButton{
-        position: absolute;
-        right: 75px;
-        top: 650px;
-        color: black;
-    }
-    .message>label{
-        font-family: Inter;
-        font-size: 20px;
-        color: black;
-        position: absolute;
-        top: 550px;
-        right: 650px;
-        z-index: 1;
-        font-weight: bold;
-    }
-    .call>img{
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        left: 50px;
-        top: 200px;
-        color: white;
-    }
-    .call>p{
-        font-family: Inter;
-        font-size: 26px;
-        color: white;
-        position: absolute;
-        left: 145px;
-        top: 180px;
-    }
-    .email>img{
-        width: 45px;
-        height: 45px;
-        position: absolute;
-        left: 55px;
-        top: 305px;
-        color: white;
-    }
-    .email>p{
-        font-family: Inter;
-        font-size: 26px;
-        color: white;
-        position: absolute;
-        left: 145px;
-        top: 285px;
-    }
-    .location>img{
-        width: 45px;
-        height: 45px;
-        position: absolute;
-        left: 55px;
-        top: 415px;
-        color: white;
-    }
-    .location>p{
-        font-family: Inter;
-        font-size: 26px;
-        color: white;
-        position: absolute;
-        left: 145px;
-        top: 400px;
-    }
-    .contacts>img:nth-child(1){
-        left: 130px;
-        bottom: 130px;
-        height: 40px;
-        width: 40px;
-        position: absolute;
-    }
-    .contacts>img:nth-child(2){
-        left: 240px;
-        bottom: 130px;
-        height: 40px;
-        width: 40px;
-        position: absolute;
-    }
-    .contacts>img:nth-child(3){
-        left: 350px;
-        bottom: 130px;
-        height: 40px;
-        width: 40px;
-        position: absolute;
-    }
-    .circles>div:nth-child(1){
-        position: absolute;
-        bottom: -150px;
-        left: 519px;
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        background: linear-gradient(to right, #B1B1B1 0%, #B1B1B1 75%, white 75%, white 100%);
-        opacity: 0.8;
-        z-index: 1;
-    }
-    .circles>div:nth-child(2){
-        position: absolute;
-        bottom: 50px;
-        left: 519px;
-        width: 150px;
-        height: 150px;
-        border-radius: 50%;
-        background: #5BBAEF;
-        opacity: 0.5;
+        font-size: 24px;
     }
 
+    .o, .r {
+        display: none;
+    }
+
+    .fName, .lName, .emails, .phone, .subject, .message {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center labels and inputs */
+        margin: 10px 0; /* Add some space between fields */
+    }
+
+    .fName > label{
+        top: 480px;
+        right: 235px;
+        font-family: Inter;
+        font-size: 14px; /* Smaller font for mobile */
+        color: black;
+        font-weight: bold;
+
+    }
+    .lName > label{
+        top: 480px;
+        right: 10px;
+        font-family: Inter;
+        font-size: 14px; /* Smaller font for mobile */
+        color: black;
+        font-weight: bold;
+    }
+    .emails > label{
+        top: 565px;
+        left: 10px;
+        font-family: Inter;
+        font-size: 14px; /* Smaller font for mobile */
+        color: black;
+        font-weight: bold;
+    }
+
+
+    .phone > label{
+        top: 565px;
+        right: 10px;
+        font-family: Inter;
+        font-size: 14px; /* Smaller font for mobile */
+        color: black;
+        font-weight: bold;
+
+    } .subject > label, .message > label {
+        font-family: Inter;
+        font-size: 18px; /* Smaller font for mobile */
+        color: black;
+        font-weight: bold;
+
+    }
+
+    .fName > input {
+        width: 36%; /* Adjust width */
+        height: 20px; /* Increased height for easier touch */
+        border-radius: 10px;
+        padding: 10px;
+        font-family: Inter;
+        font-size: 16px; /* Smaller font for inputs */
+        color: black;
+        background: white;
+        margin-top: 5px; /* Margin for spacing */
+        top: 500px;
+        left: 10px;
+    }
+
+    .lName > input {
+        width: 36%; /* Adjust width */
+        height: 20px; /* Increased height for easier touch */
+        border-radius: 10px;
+        padding: 10px;
+        font-family: Inter;
+        font-size: 16px; /* Smaller font for inputs */
+        color: black;
+        background: white;
+        margin-top: 5px; /* Margin for spacing */
+        top: 500px;
+        right: 10px;
+    }
+
+    .emails > input {
+        width: 36%; /* Adjust width */
+        height: 20px; /* Increased height for easier touch */
+        border-radius: 10px;
+        padding: 10px;
+        font-family: Inter;
+        font-size: 16px; /* Smaller font for inputs */
+        color: black;
+        background: white;
+        margin-top: 5px; /* Margin for spacing */
+        top: 580px;
+        left: 10px;
+    }
+
+    .phone > input {
+        width: 36%; /* Adjust width */
+        height: 20px; /* Increased height for easier touch */
+        border-radius: 10px;
+        padding: 10px;
+        font-family: Inter;
+        font-size: 16px; /* Smaller font for inputs */
+        color: black;
+        background: white;
+        margin-top: 5px; /* Margin for spacing */
+        top: 580px;
+        right: 10px;
+    }
+
+    .message > textarea {
+        width: 24%; /* Adjust width */
+        height: 18px; /* Increased height for easier touch */
+        border-radius: 10px;
+        padding-right: 10px;
+        font-family: Inter;
+        font-size: 16px; /* Smaller font for inputs */
+        color: black;
+        background: white;
+        margin-top: 5px; /* Margin for spacing */
+        top: 600px;
+        left: 10px;
+    }
+
+    .subject > div {
+        display: flex;
+        justify-content: space-around; /* Space between options */
+        width: 100%;
+        margin-top: 10px; /* Space between label and options */
+    }
+
+    .webdesign{
+        color: black;
+        font-size: 16px; /* Smaller font for options */
+        top: 650px;
+        right: 200px;
+    }
+    .software{
+        display: none;
+    }
+    .complaint{
+        color: black;
+        font-size: 16px; /* Smaller font for options */
+        top: 650px;
+        right: 80px;
+    }
+
+    .other {
+        color: black;
+        font-size: 16px; /* Smaller font for options */
+        top: 650px;
+        right: 10px;
+    }
+
+    .message > textarea {
+        width: 90%; /* Adjust width */
+        height: 80px; /* Increased height for easier typing */
+        margin-top: 10px; /* Margin for spacing */
+        position: absolute;
+        top: 670px;
+    }
+
+    .messageButton {
+        margin-bottom: 20px; /* Space before button */
+        color: black;
+        position: absolute;
+        top: 740px;
+        right: 10px;
+        border-radius: 20px;
+    }
+
+    .call>p{
+        display: flex;
+        align-items: center; /* Align icon and text */
+        color: white;
+        top: 90px;
+        font-size: 16px;
+        right: 20px;
+        left: 100px;
+    }
+    .email>p{
+        display: flex;
+        align-items: center; /* Align icon and text */
+        color: white;
+        font-size: 16px;
+        top: 170px;
+        left: 100px;
+
+    }
+    .location>p {
+        display: flex;
+        align-items: center; /* Align icon and text */
+        color: white;
+        font-size: 16px;
+        top: 250px;
+        left: 100px;
+    }
+
+    .call > img{
+        width: 35px;
+        height: 35px;
+        top: 100px;
+        left: 30px;
+
+    }
+    .email > img{
+        width: 35px;
+        height: 35px;
+        top: 180px;
+        left: 30px;
+    }
+    .location > img {
+        width: 35px;
+        height: 35px;
+        top: 260px;
+        left: 30px;
+    }
+
+    .contacts {
+        display: flex;
+        justify-content: center; /* Center contact icons */
+        margin-top: 20px; /* Space above contacts */
+        top: 50px;
+    }
+
+    .contacts > a:nth-child(1) {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px; /* Space between icon and text */
+        bottom: 410px;
+        position: absolute;
+        left: 140px;
+    }
+    .contacts > a:nth-child(2) {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px; /* Space between icon and text */
+        bottom: 410px;
+        position: absolute;
+        left: 40px;
+    }
+    .contacts > a:nth-child(3) {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px; /* Space between icon and text */
+        bottom: 410px;
+        position: absolute;
+        left: 240px;
+    }
+
+
+    .circles > div {
+        display: none;
+    }
+
+    .circles > div:nth-child(1) {
+        display: none;
+    }
+
+    .circles > div:nth-child(2) {
+        display: none;
+    }
 }
+
+
