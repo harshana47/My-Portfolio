@@ -13198,7 +13198,7 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         top: 405px;
-        left: 350px; /* updated */
+        left: 350px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
