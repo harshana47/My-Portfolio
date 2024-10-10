@@ -10926,15 +10926,15 @@ body>main:nth-child(9){
     }
 
     .card1:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card1:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
+        display: block;
         margin: 75px 8px; /* Center the button */
         position: absolute;
         left: 32.5px;
