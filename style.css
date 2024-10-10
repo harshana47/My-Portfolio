@@ -10942,14 +10942,14 @@ body>main:nth-child(9){
         padding: 10px 20px;
         background-color: #3CBEFF;
         color: white;
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
+        text-align: center;
+        border-radius: 5px;
         text-decoration: none;
         transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -10962,8 +10962,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
 
