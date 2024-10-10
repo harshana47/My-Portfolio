@@ -10935,13 +10935,13 @@ body>main:nth-child(9){
 
     .github-button {
         display: block;
-        margin: 75px 8px; /* Center the button */
+        margin: 75px 8px;
         position: absolute;
         left: 32.5px;
         bottom: -75px;
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
         text-align: center; /* Center the text */
         border-radius: 5px; /* Rounded corners */
         text-decoration: none; /* Remove underline */
