@@ -10944,8 +10944,8 @@ body>main:nth-child(9){
         color: white;
         text-align: center; /* Center the text */
         border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
