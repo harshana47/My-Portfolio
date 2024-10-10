@@ -10902,8 +10902,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card1 > h3, card2 > h3, card3 > h3, card4 > h3, card5 > h3, card6 > h3 {
