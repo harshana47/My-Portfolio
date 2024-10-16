@@ -855,7 +855,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 80px;
+    left: 120px;
     z-index: 1;
     font-family: "Arial Rounded MT Bold";
 }
@@ -887,7 +887,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 115px;
+    left: 145px;
     z-index: 1;
     font-family: "Arial Rounded MT Bold";
 }
@@ -919,7 +919,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 65px;
+    left: 115px;
     z-index: 1;
     font-family: "Arial Rounded MT Bold";
 }
@@ -951,7 +951,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 113px;
+    left: 150px;
     z-index: 1;
     font-family: "Arial Rounded MT Bold";
 }
@@ -983,7 +983,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 55px;
+    left: 130px;
     z-index: 1;
     font-family: "Arial Rounded MT Bold";
 }
@@ -1502,17 +1502,19 @@ body>main:nth-child(8) {
     width: 200px;
     height: 220px;
     position: absolute;
-    top: 80px;
+    top: 10px;
     left: 100px;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
+    /* Add relative positioning to position the overlay */
+    position: relative;
 }
 
-.card1 > img {
+.card1 >img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -1520,18 +1522,42 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card1 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
+.card1 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+.run  {
+    color: #ffffff;
+    font-size: 40px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
+    top: -80px;
+    left: 65px;
     opacity: 0; /* Start as invisible */
     transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
+    z-index: 4; /* Ensure the text is above the overlay */
     position: relative; /* Ensure it respects z-index */
+}
+
+.card1 > h6 {
+    color: #3CBEFF;
+    font-size: 25px;
+    font-family: Inter;
+    font-weight: normal;
+    padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
+    text-align: center;
 }
 
 /* Hover effects */
@@ -1539,8 +1565,21 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card1:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card1:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card1 > h6:hover {
+    opacity: 0;
+}
+
+.card1:hover > .run,
+.card2:hover > .run,
+.card3:hover > .run,
+.card4:hover > .run,
+.card5:hover > .run,
+.card6:hover > .run {
+    opacity: 1; /* Show the button on hover */
 }
 
 .card1:hover > img {
@@ -1549,16 +1588,18 @@ body>main:nth-child(8) {
 
 .github-button {
     display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
+    bottom: -65px;
+    left: 10px;
+    position: absolute;
     background-color: #3CBEFF; /* Button color */
     color: white; /* Text color */
     text-align: center; /* Center the text */
     border-radius: 5px; /* Rounded corners */
     text-decoration: none; /* Remove underline */
     transition: background-color 0.3s; /* Smooth hover effect */
-}
+    z-index: 10;
 
+}
 .github-button:hover {
     background-color: #2a9bd5; /* Darker shade on hover */
 }
@@ -1569,17 +1610,19 @@ body>main:nth-child(8) {
     width: 200px;
     height: 220px;
     position: absolute;
-    top: 350px;
+    top: 80px;
     left: 100px;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
+    /* Add relative positioning to position the overlay */
+    position: relative;
 }
 
-.card2 > img {
+.card2 >  img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -1587,18 +1630,30 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card2 > h3 {
+.card2 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+
+.card2 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -1606,9 +1661,14 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card2:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card2:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
 }
+
+.card2 > h6:hover {
+    opacity: 0;
+}
+
 
 .card2:hover > img {
     filter: brightness(0.4); /* Optional: dim the image on hover */
@@ -1636,17 +1696,19 @@ body>main:nth-child(8) {
     width: 200px;
     height: 220px;
     position: absolute;
-    top: 80px;
+    top: -430px;
     left: 550px;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
+    /* Add relative positioning to position the overlay */
+    position: relative;
 }
 
 .card3 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -1654,18 +1716,29 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card3 > h3 {
+.card3 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+.card3 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -1673,47 +1746,37 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card3:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card3:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card3 > h6:hover {
+    opacity: 0;
 }
 
 .card3:hover > img {
     filter: brightness(0.4); /* Optional: dim the image on hover */
 }
 
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
 
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 4*/
 .card4 {
     background-color: white;
     width: 200px;
     height: 220px;
     position: absolute;
-    top: 350px;
+    top: -360px;
     left: 550px;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
+    /* Add relative positioning to position the overlay */
+    position: relative;
 }
 
 .card4 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -1721,18 +1784,29 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card4 > h3 {
+.card4 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+.card4 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -1740,28 +1814,16 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card4:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card4:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card4 > h6:hover {
+    opacity: 0;
 }
 
 .card4:hover > img {
     filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
 }
 
 
@@ -1771,17 +1833,19 @@ body>main:nth-child(8) {
     width: 200px;
     height: 220px;
     position: absolute;
-    top: 80px;
+    top: -870px;
     left: 1000px;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
+    /* Add relative positioning to position the overlay */
+    position: relative;
 }
 
 .card5 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -1789,18 +1853,29 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card5 > h3 {
+.card5 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+.card5 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -1808,28 +1883,16 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card5:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card5:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card5 > h6:hover {
+    opacity: 0;
 }
 
 .card5:hover > img {
     filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
 }
 
 /*card 6*/
@@ -1838,17 +1901,19 @@ body>main:nth-child(8) {
     width: 200px;
     height: 220px;
     position: absolute;
-    top: 350px;
+    top: -800px;
     left: 1000px;
     z-index: 2;
     border-radius: 20px;
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
+    /* Add relative positioning to position the overlay */
+    position: relative;
 }
 
 .card6 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -1856,18 +1921,29 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card6 > h3 {
+.card6 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
+.card6 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -1875,28 +1951,16 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card6:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card6:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card6 > h6:hover {
+    opacity: 0;
 }
 
 .card6:hover > img {
     filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s;
-}
-
-.github-button:hover {
-    background-color: #2a9bd5;
 }
 .sliderButton{
     position: absolute;
@@ -2331,849 +2395,6 @@ body>main:nth-child(8) {
     background-color: #2a9bd5; /* Darker shade on hover */
 }
 
-/*====================================================================================================================*/
-.rectangle2{
-    width: 85vw;
-    height: 100%;
-    background-color: transparent;
-    z-index: 4;
-    left: 2600px;
-    position: absolute;
-    top: 0;
-}
-.rectangle2>h3{
-    color: #ffffff;
-    font-size: 30px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 10px;
-    padding: 0;
-    text-align: center;
-}
-/*card 1*/
-.card111 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card111 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card111 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card111:hover {
-    transform: scale(1.05);
-}
-
-.card111:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card111:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 2*/
-.card222 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 350px;
-    left: 100px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card222 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card222 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card222:hover {
-    transform: scale(1.05);
-}
-
-.card222:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card222:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block;
-    margin: 85px 35px;
-    padding: 10px 20px;
-    background-color: #3CBEFF;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.github-button:hover {
-    background-color: #2a9bd5;
-}
-
-/*card 3*/
-.card333 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 80px;
-    left: 550px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.card333 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    z-index: 1;
-}
-
-.card333 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2;
-    position: relative;
-}
-
-/* Hover effects */
-.card333:hover {
-    transform: scale(1.05);
-}
-
-.card333:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card333:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 4*/
-.card444 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 350px;
-    left: 550px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card444 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card444 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card444:hover {
-    transform: scale(1.05);
-}
-
-.card444:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card444:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-
-/*card 5*/
-.card555 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 80px;
-    left: 1000px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card555 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card555 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card555:hover {
-    transform: scale(1.05);
-}
-
-.card555:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card555:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 6*/
-.card666 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 350px;
-    left: 1000px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card666 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card666 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card666:hover {
-    transform: scale(1.05);
-}
-
-.card666:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card666:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*====================================================================================================================*/
-.rectangle3{
-    width: 85vw;
-    height: 100%;
-    background-color: transparent;
-    z-index: 4;
-    left: 3920px;
-    position: absolute;
-    top: 0;
-}
-.rectangle3>h3{
-    color: #ffffff;
-    font-size: 30px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 10px;
-    padding: 0;
-    text-align: center;
-}
-/*card 1*/
-.card1111 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 80px;
-    left: 100px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card1111 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card1111 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card1111:hover {
-    transform: scale(1.05);
-}
-
-.card1111:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card1111:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 2*/
-.card2222 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 350px;
-    left: 100px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card2222 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card2222 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card2222:hover {
-    transform: scale(1.05);
-}
-
-.card2222:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card2222:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block;
-    margin: 85px 35px;
-    padding: 10px 20px;
-    background-color: #3CBEFF;
-    color: white;
-    text-align: center;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.github-button:hover {
-    background-color: #2a9bd5;
-}
-
-/*card 3*/
-.card3333 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 80px;
-    left: 550px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden;
-    transition: transform 0.3s;
-}
-
-.card3333 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0;
-    z-index: 1;
-}
-
-.card3333 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2;
-    position: relative;
-}
-
-/* Hover effects */
-.card3333:hover {
-    transform: scale(1.05);
-}
-
-.card3333:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card3333:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 4*/
-.card4444 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 350px;
-    left: 550px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card4444 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card4444 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card4444:hover {
-    transform: scale(1.05);
-}
-
-.card4444:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card4444:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-
-/*card 5*/
-.card5555 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 80px;
-    left: 1000px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card5555 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card5555 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card5555:hover {
-    transform: scale(1.05);
-}
-
-.card5555:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card5555:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
-
-/*card 6*/
-.card6666 {
-    background-color: white;
-    width: 200px;
-    height: 220px;
-    position: absolute;
-    top: 350px;
-    left: 1000px;
-    z-index: 2;
-    border-radius: 20px;
-    overflow: hidden; /* Ensure the text stays within the card */
-    transition: transform 0.3s; /* Smooth scaling */
-}
-
-.card6666 > img {
-    width: 100%;
-    height: 120px;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
-}
-
-.card6666 > h3 {
-    color: #3CBEFF;
-    font-size: 20px;
-    font-family: Inter;
-    font-weight: normal;
-    margin-top: 50px;
-    padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
-
-/* Hover effects */
-.card6666:hover {
-    transform: scale(1.05);
-}
-
-.card6666:hover > h3 {
-    opacity: 1; /* Show the text on hover */
-}
-
-.card6666:hover > img {
-    filter: brightness(0.4); /* Optional: dim the image on hover */
-}
-
-.github-button {
-    display: block; /* Makes the button take the full width */
-    margin: 85px 35px; /* Center the button */
-    padding: 10px 20px; /* Add padding */
-    background-color: #3CBEFF; /* Button color */
-    color: white; /* Text color */
-    text-align: center; /* Center the text */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    transition: background-color 0.3s; /* Smooth hover effect */
-}
-
-.github-button:hover {
-    background-color: #2a9bd5; /* Darker shade on hover */
-}
 
 /*@keyframes animation-slide {*/
 /*    0%, 20% {*/
@@ -3650,8 +2871,8 @@ body>main:nth-child(9){
         color: white;
         position: absolute;
         left: 30px;
-        top: 80px;
-        font-size: 20px;
+        top: 60px;
+        font-size: 22px;
         font-family: Inter;
         font-weight: lighter;
         margin-top: 20px;
@@ -3662,8 +2883,8 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         left: 30px;
-        top: 105px;
-        font-size: 20px;
+        top: 85px;
+        font-size: 22px;
         font-family: Inter;
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
@@ -3684,10 +2905,10 @@ body>main:nth-child(9){
     /*my image*/
     body > main:nth-child(1) > section > div:nth-child(2) > img {
         width: 60vw;
-        height: 25vh;
+        height: 27vh;
         margin: auto;
         left: 60px;
-        top: 210px;
+        top: 200px;
         position: absolute;
         border-radius: 50%;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
@@ -3700,15 +2921,40 @@ body>main:nth-child(9){
         width: 200px;
         border-radius: 25px;
         padding: 20px;
-        top: 20px;
+        top: -45px;
         left: 35px;
         bottom: 0;
-        position: absolute;
+        position: fixed;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
-        transition: none;
+        transition: top 3s ease; /* Smooth transition for showing/hiding */
     }
-    .drag-handle{
-        display: none;
+
+    .drag-handle {
+        width: 40px; /* Width of the handle */
+        height: 80px; /* Adjust to fit the navbar */
+        background: transparent; /* Opaque to transparent */
+        position: absolute;
+        left: 100px; /* Position to the left of the navbar */
+        top: 16%; /* Centered vertically */
+        cursor: ew-resize; /* Change cursor to indicate dragging */
+        z-index: 1; /* Drag handle behind the navbar */
+        border-radius: 20px;
+    }
+
+    .drag-handle>img{
+        width: 30px;
+        height: 30px;
+        right: 5px;
+        top: 40px;
+        position: absolute;
+        transform: rotate(90deg);
+    }
+
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+        top: 20px;
+        object-position: 80% 0;
+        transition-duration: 2s;
+        left: 35px;
     }
 
     /* Navigation bar images */
@@ -5004,7 +4250,7 @@ body>main:nth-child(9){
 
     .rectangle > h3 {
         color: #ffffff;
-        font-size: 30px;
+        font-size: 25px;
         font-family: Inter;
         font-weight: normal;
         margin-top: 10px;
@@ -5013,20 +4259,49 @@ body>main:nth-child(9){
     }
 
     /*card 1*/
-    .card1 {
+    .card1, .card2, .card3, .card4, .card5, .card6 {
         background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
+        width: 190px; /* Keep original width */
+        height: 200px; /* Keep original height */
+        position: absolute; /* Maintain absolute positioning */
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
         transition: transform 0.3s; /* Smooth scaling */
     }
 
-    .card1 > h3, card2 > h3, card3 > h3, card4 > h3, card5 > h3, card6 > h3 {
+    .card1 {
+        top: 80px;
+        left: 45px;
+    }
+
+    .card2 {
+        top: 350px;
+        left: 45px;
+    }
+
+    .card3 {
+        top: 640px;
+        left: 45px;
+    }
+
+    .card4 {
+        top: 930px;
+        left: 45px;
+    }
+
+    .card5 {
+        top: 1220px;
+        left: 45px;
+    }
+
+    .card6 {
+        top: 1510px;
+        left: 45px; /* Keep original left position */
+    }
+
+    /* Title styles */
+    .card1 > h3, .card2 > h3, .card3 > h3, .card4 > h3, .card5 > h3, .card6 > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -5041,15 +4316,15 @@ body>main:nth-child(9){
     }
 
     /* Hover effects */
-    .card1:hover {
+    .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover {
         transform: scale(1.05);
     }
 
-    .card1:hover > h3 {
+    .card1:hover > h3, .card2:hover > h3, .card3:hover > h3, .card4:hover > h3, .card5:hover > h3, .card6:hover > h3 {
         opacity: 1; /* Show the text on hover */
     }
 
-    .card1:hover > img {
+    .card1:hover > img, .card2:hover > img, .card3:hover > img, .card4:hover > img, .card5:hover > img, .card6:hover > img {
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
@@ -5072,193 +4347,34 @@ body>main:nth-child(9){
         background-color: #2a9bd5; /* Darker shade on hover */
     }
 
-    /*card 2*/
-    .card2 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card2:hover {
-        transform: scale(1.05);
-    }
-
-    .card2:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card2:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 3*/
-    .card3 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card3:hover {
-        transform: scale(1.05);
-    }
-
-    .card3:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card3:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card4 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    /* Hover effects */
-    .card4:hover {
-        transform: scale(1.05);
-    }
-
-    .card4:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card4:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card5 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card5:hover {
-        transform: scale(1.05);
-    }
-
-    .card5:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card5:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card6 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 45px;
-        left: 1510px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    /* Hover effects */
-    .card6:hover {
-        transform: scale(1.05);
-    }
-
-    .card6:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card6:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
+    /* Button positioning */
     .sliderButton {
         position: absolute;
-        right: 10px;
-        top: 400px
+        right: 20px;
+        top: 400px;
     }
 
     .previousButton {
         position: absolute;
-        left: 5px;
-        top: 400px
+        left: 20px;
+        top: 400px;
     }
+
 
     /*====================================================================================================================*/
     .rectangle1 {
-        width: 85vw;
+        width: 85vw; /* Responsive width */
         height: 100%;
         background-color: transparent;
         z-index: 4;
-        left: 1310px;
+        left: 1310px; /* Keep original left position */
         position: absolute;
         top: 0;
     }
 
     .rectangle1 > h3 {
         color: #ffffff;
-        font-size: 30px;
+        font-size: 30px; /* Keep original font size */
         font-family: Inter;
         font-weight: normal;
         margin-top: 10px;
@@ -5266,255 +4382,50 @@ body>main:nth-child(9){
         text-align: center;
     }
 
-    /*card 1*/
+    /* Card styles */
+    .card11, .card22, .card33, .card44, .card55, .card66 {
+        background-color: white;
+        width: 190px; /* Keep original width */
+        height: 180px; /* Keep original height */
+        position: absolute; /* Maintain absolute positioning */
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+    }
+
     .card11 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
         top: 80px;
         left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
     }
 
-    .card11 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card11 > h3, card22 > h3, card33 > h3, card44 > h3, card55 > h3, card66 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card11:hover {
-        transform: scale(1.05);
-    }
-
-    .card11:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card11:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
     .card22 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
         top: 350px;
         left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
     }
 
-    .card22 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card22:hover {
-        transform: scale(1.05);
-    }
-
-    .card22:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card22:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
     .card33 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
         top: 640px;
         left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
     }
 
-    .card33 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card33:hover {
-        transform: scale(1.05);
-    }
-
-    .card33:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card33:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
     .card44 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
         top: 930px;
         left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
     }
 
-    .card44 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card44:hover {
-        transform: scale(1.05);
-    }
-
-    .card44:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card44:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
     .card55 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
         top: 1220px;
         left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
     }
 
-    .card55 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card55:hover {
-        transform: scale(1.05);
-    }
-
-    .card55:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card55:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
     .card66 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
         top: 1510px;
         left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
     }
 
-    .card66 > img {
+    /* Image styles */
+    .card11 > img, .card22 > img, .card33 > img, .card44 > img, .card55 > img, .card66 > img {
         width: 100%;
         height: 120px;
         position: absolute;
@@ -5524,71 +4435,10 @@ body>main:nth-child(9){
         z-index: 1; /* Ensure the image is below the text */
     }
 
-    /* Hover effects */
-    .card66:hover {
-        transform: scale(1.05);
-    }
-
-    .card66:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card66:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle2 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 2620px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle2 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-    }
-
-    /*card 1*/
-    .card111 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card111 > h3, card222 > h3, card333 > h3, card444 > h3, card555 > h3, card666 > h3 {
+    /* Title styles */
+    .card11 > h3, .card22 > h3, .card33 > h3, .card44 > h3, .card55 > h3, .card66 > h3 {
         color: #3CBEFF;
-        font-size: 20px;
+        font-size: 20px; /* Keep original font size */
         font-family: Inter;
         font-weight: normal;
         margin-top: 50px;
@@ -5601,18 +4451,19 @@ body>main:nth-child(9){
     }
 
     /* Hover effects */
-    .card111:hover {
+    .card11:hover, .card22:hover, .card33:hover, .card44:hover, .card55:hover, .card66:hover {
         transform: scale(1.05);
     }
 
-    .card111:hover > h3 {
+    .card11:hover > h3, .card22:hover > h3, .card33:hover > h3, .card44:hover > h3, .card55:hover > h3, .card66:hover > h3 {
         opacity: 1; /* Show the text on hover */
     }
 
-    .card111:hover > img {
+    .card11:hover > img, .card22:hover > img, .card33:hover > img, .card44:hover > img, .card55:hover > img, .card66:hover > img {
         filter: brightness(0.4); /* Optional: dim the image on hover */
     }
 
+    /* Button styles */
     .github-button {
         display: block; /* Makes the button take the full width */
         margin: 85px 35px; /* Center the button */
@@ -5629,508 +4480,6 @@ body>main:nth-child(9){
         background-color: #2a9bd5; /* Darker shade on hover */
     }
 
-    /*card 2*/
-    .card222 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card222:hover {
-        transform: scale(1.05);
-    }
-
-    .card222:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card222:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card333 {
-        background-color: white;
-        width: 200px;
-        height: 220px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card333:hover {
-        transform: scale(1.05);
-    }
-
-    .card333:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card333:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card444 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-
-    /* Hover effects */
-    .card444:hover {
-        transform: scale(1.05);
-    }
-
-    .card444:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card444:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card555 {
-        background-color: white;
-        width: 200px;
-        height: 220px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card555:hover {
-        transform: scale(1.05);
-    }
-
-    .card555:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card555:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card666 {
-        background-color: white;
-        width: 200px;
-        height: 220px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card666:hover {
-        transform: scale(1.05);
-    }
-
-    .card666:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card666:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle3 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 3935px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle3 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-    }
-
-    /*card 1*/
-    .card1111 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card1111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card1111:hover {
-        transform: scale(1.05);
-    }
-
-    .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card2222 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card2222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card2222:hover {
-        transform: scale(1.05);
-    }
-
-    .card2222:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card2222:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card3333 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card3333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card3333:hover {
-        transform: scale(1.05);
-    }
-
-    .card3333:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card3333:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card4444 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card4444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card4444:hover {
-        transform: scale(1.05);
-    }
-
-    .card4444:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card4444:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 5*/
-    .card5555 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card5555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card5555:hover {
-        transform: scale(1.05);
-    }
-
-    .card5555:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card5555:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card6666 {
-        background-color: white;
-        width: 190px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card6666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card6666:hover {
-        transform: scale(1.05);
-    }
-
-    .card6666:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card6666:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
 
     /*======================================================================================================================*/
     /*gallery section*/
@@ -6886,7 +5235,7 @@ body>main:nth-child(9){
     }
 
     /* Description overlay */
-    .description1 {
+    .description1>h1 {
         position: absolute;
         bottom: 0; /* Position at the bottom */
         left: 0; /* Align to the left */
@@ -7947,7 +6296,7 @@ body>main:nth-child(9){
         border: 0 solid #3CBEFF;
         top: 70px;
         display: flex;
-        left: 40px;
+        left: 20px;
         position: relative;
         background-color: transparent;
         overflow-x: hidden;
@@ -7976,7 +6325,7 @@ body>main:nth-child(9){
         margin-top: 10px;
         padding: 0;
         text-align: center;
-        left: 120px;
+        left: 30px;
         position: absolute;
     }
 
@@ -7984,10 +6333,10 @@ body>main:nth-child(9){
     .card1 {
         background-color: white;
         width: 200px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 80px;
-        left: 45px;
+        left: 65px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -8044,10 +6393,10 @@ body>main:nth-child(9){
     .card2 {
         background-color: white;
         width: 200px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 350px;
-        left: 45px;
+        left: 65px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -8076,10 +6425,10 @@ body>main:nth-child(9){
     .card3 {
         background-color: white;
         width: 200px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 640px;
-        left: 45px;
+        left: 65px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -8108,10 +6457,10 @@ body>main:nth-child(9){
     .card4 {
         background-color: white;
         width: 200px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 930px;
-        left: 45px;
+        left: 65px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -8140,10 +6489,10 @@ body>main:nth-child(9){
     .card5 {
         background-color: white;
         width: 200px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 1220px;
-        left: 45px;
+        left: 65px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -8173,10 +6522,10 @@ body>main:nth-child(9){
     .card6 {
         background-color: white;
         width: 200px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 1510px;
-        left: 45px;
+        left: 65px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden; /* Ensure the text stays within the card */
@@ -8219,7 +6568,7 @@ body>main:nth-child(9){
         height: 100%;
         background-color: transparent;
         z-index: 4;
-        left: 1310px;
+        left: 1330px;
         position: absolute;
         top: 0;
     }
@@ -8233,7 +6582,7 @@ body>main:nth-child(9){
         padding: 0;
         text-align: center;
         position: absolute;
-        left: 120px;
+        left: 110px;
     }
 
     /*card 1*/
@@ -8509,601 +6858,6 @@ body>main:nth-child(9){
 
     .github-button:hover {
         background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle2 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 2620px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle2 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        left: 120px;
-    }
-
-    /*card 1*/
-    .card111 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card111 > h3, card222 > h3, card333 > h3, card444 > h3, card555 > h3, card666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card111:hover {
-        transform: scale(1.05);
-    }
-
-    .card111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card222 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card222:hover {
-        transform: scale(1.05);
-    }
-
-    .card222:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card222:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card333 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card333:hover {
-        transform: scale(1.05);
-    }
-
-    .card333:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card333:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card444 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-
-    /* Hover effects */
-    .card444:hover {
-        transform: scale(1.05);
-    }
-
-    .card444:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card444:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card555 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card555:hover {
-        transform: scale(1.05);
-    }
-
-    .card555:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card555:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card666 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card666:hover {
-        transform: scale(1.05);
-    }
-
-    .card666:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card666:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle3 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 3935px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle3 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        left: 120px;
-    }
-
-    /*card 1*/
-    .card1111 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card1111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card1111:hover {
-        transform: scale(1.05);
-    }
-
-    .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card2222 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card2222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card2222:hover {
-        transform: scale(1.05);
-    }
-
-    .card2222:hover > h3 {
-        opacity: 1;
-    }
-
-    .card2222:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card3333 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card3333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card3333:hover {
-        transform: scale(1.05);
-    }
-
-    .card3333:hover > h3 {
-        opacity: 1;
-    }
-
-    .card3333:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 4*/
-    .card4444 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card4444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card4444:hover {
-        transform: scale(1.05);
-    }
-
-    .card4444:hover > h3 {
-        opacity: 1;
-    }
-
-    .card4444:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 5*/
-    .card5555 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card5555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card5555:hover {
-        transform: scale(1.05);
-    }
-
-    .card5555:hover > h3 {
-        opacity: 1;
-    }
-
-    .card5555:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 6*/
-    .card6666 {
-        background-color: white;
-        width: 200px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card6666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card6666:hover {
-        transform: scale(1.05);
-    }
-
-    .card6666:hover > h3 {
-        opacity: 1;
-    }
-
-    .card6666:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
     }
 
     /*======================================================================================================================*/
@@ -10952,20 +8706,27 @@ body>main:nth-child(9){
     }
 
     /*card 1*/
-    .card1 {
+    .card {
         background-color: white;
         width: 250px;
         height: 180px;
         position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
         border-radius: 20px;
         overflow: hidden;
         transition: transform 0.3s;
     }
 
-    .card1 > h3, card2 > h3, card3 > h3, card4 > h3, card5 > h3, card6 > h3 {
+    .card > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
+    }
+
+    .card > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -10979,25 +8740,21 @@ body>main:nth-child(9){
         position: relative;
     }
 
-    /* Hover effects */
-    .card1:hover {
+    .card:hover {
         transform: scale(1.05);
     }
 
-    .card1:hover > h3 {
+    .card:hover > h3 {
         opacity: 1;
     }
 
-    .card1:hover > img {
+    .card:hover > img {
         filter: brightness(0.4);
     }
 
     .github-button {
         display: block;
-        margin: 75px 8px;
-        position: absolute;
-        left: 32.5px;
-        bottom: -75px;
+        margin: 85px 35px;
         padding: 10px 20px;
         background-color: #3CBEFF;
         color: white;
@@ -11011,178 +8768,14 @@ body>main:nth-child(9){
         background-color: #2a9bd5;
     }
 
-    .card2 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
+    /* Specific card instances with exact positions */
+    .card1 { top: 80px; left: 45px; }
+    .card2 { top: 350px; left: 45px; }
+    .card3 { top: 640px; left: 45px; }
+    .card4 { top: 930px; left: 45px; }
+    .card5 { top: 1220px; left: 45px; }
+    .card6 { top: 1510px; left: 45px; }
 
-
-    .card2:hover {
-        transform: scale(1.05);
-    }
-
-    .card2:hover > h3 {
-        opacity: 1;
-    }
-
-    .card2:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 3*/
-    .card3 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card3:hover {
-        transform: scale(1.05);
-    }
-
-    .card3:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card3:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card4 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    /* Hover effects */
-    .card4:hover {
-        transform: scale(1.05);
-    }
-
-    .card4:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card4:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card5 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card5:hover {
-        transform: scale(1.05);
-    }
-
-    .card5:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card5:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card6 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    /* Hover effects */
-    .card6:hover {
-        transform: scale(1.05);
-    }
-
-    .card6:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card6:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    .sliderButton {
-        position: absolute;
-        right: 10px;
-        top: 380px
-    }
-
-    .previousButton {
-        position: absolute;
-        left: 5px;
-        top: 380px
-    }
-
-    /*====================================================================================================================*/
     .rectangle1 {
         width: 85vw;
         height: 100%;
@@ -11205,874 +8798,24 @@ body>main:nth-child(9){
         left: 140px;
     }
 
-    /*card 1*/
-    .card11 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
+    /* Specific card instances for the second set */
+    .card11 { top: 80px; left: 45px; }
+    .card22 { top: 350px; left: 45px; }
+    .card33 { top: 640px; left: 45px; }
+    .card44 { top: 930px; left: 45px; }
+    .card55 { top: 1220px; left: 45px; }
+    .card66 { top: 1510px; left: 45px; }
+
+    .sliderButton {
         position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        right: 10px;
+        top: 380px;
     }
 
-    .card11 > img {
-        width: 100%;
-        height: 120px;
+    .previousButton {
         position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card11 > h3, card22 > h3, card33 > h3, card44 > h3, card55 > h3, card66 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card11:hover {
-        transform: scale(1.05);
-    }
-
-    .card11:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card11:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card22 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card22 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card22:hover {
-        transform: scale(1.05);
-    }
-
-    .card22:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card22:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card33 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card33 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card33:hover {
-        transform: scale(1.05);
-    }
-
-    .card33:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card33:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card44 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card44 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card44:hover {
-        transform: scale(1.05);
-    }
-
-    .card44:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card44:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card55 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card55 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card55:hover {
-        transform: scale(1.05);
-    }
-
-    .card55:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card55:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card66 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card66 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card66:hover {
-        transform: scale(1.05);
-    }
-
-    .card66:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card66:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle2 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 2620px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle2 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        left: 140px;
-    }
-
-    /*card 1*/
-    .card111 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card111 > h3, card222 > h3, card333 > h3, card444 > h3, card555 > h3, card666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card111:hover {
-        transform: scale(1.05);
-    }
-
-    .card111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card222 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card222:hover {
-        transform: scale(1.05);
-    }
-
-    .card222:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card222:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card333 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card333:hover {
-        transform: scale(1.05);
-    }
-
-    .card333:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card333:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card444 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-
-    /* Hover effects */
-    .card444:hover {
-        transform: scale(1.05);
-    }
-
-    .card444:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card444:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card555 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card555:hover {
-        transform: scale(1.05);
-    }
-
-    .card555:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card555:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card666 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card666:hover {
-        transform: scale(1.05);
-    }
-
-    .card666:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card666:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle3 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 3935px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle3 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        left: 140px;
-    }
-
-    /*card 1*/
-    .card1111 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card1111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card1111:hover {
-        transform: scale(1.05);
-    }
-
-    .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card2222 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card2222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card2222:hover {
-        transform: scale(1.05);
-    }
-
-    .card2222:hover > h3 {
-        opacity: 1;
-    }
-
-    .card2222:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card3333 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card3333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card3333:hover {
-        transform: scale(1.05);
-    }
-
-    .card3333:hover > h3 {
-        opacity: 1;
-    }
-
-    .card3333:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 4*/
-    .card4444 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card4444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card4444:hover {
-        transform: scale(1.05);
-    }
-
-    .card4444:hover > h3 {
-        opacity: 1;
-    }
-
-    .card4444:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 5*/
-    .card5555 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card5555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card5555:hover {
-        transform: scale(1.05);
-    }
-
-    .card5555:hover > h3 {
-        opacity: 1;
-    }
-
-    .card5555:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 6*/
-    .card6666 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card6666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card6666:hover {
-        transform: scale(1.05);
-    }
-
-    .card6666:hover > h3 {
-        opacity: 1;
-    }
-
-    .card6666:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
+        left: 5px;
+        top: 380px;
     }
 
     /*======================================================================================================================*/
@@ -14050,7 +10793,7 @@ body>main:nth-child(9){
     .card1 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 80px;
         left: 45px;
@@ -14060,7 +10803,12 @@ body>main:nth-child(9){
         transition: transform 0.3s;
     }
 
-    .card1 > h3, card2 > h3, card3 > h3, card4 > h3, card5 > h3, card6 > h3 {
+    .card1 > h3,
+    .card2 > h3,
+    .card3 > h3,
+    .card4 > h3,
+    .card5 > h3,
+    .card6 > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -14089,11 +10837,11 @@ body>main:nth-child(9){
 
     .github-button {
         display: block;
-        margin: 75px 8px;
+        margin: 20px 8px; /* Reduced gap */
         position: absolute;
         left: 32.5px;
-        bottom: -75px;
-        padding: 10px 20px;
+        bottom: -75px; /* Adjusted to minimize gap */
+        padding: 5px 10px; /* Smaller padding for a smaller button */
         background-color: #3CBEFF;
         color: white;
         text-align: center;
@@ -14106,178 +10854,50 @@ body>main:nth-child(9){
         background-color: #2a9bd5;
     }
 
-    .card2 {
+    /* Card styles for card2 to card6 */
+    .card2, .card3, .card4, .card5, .card6 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
-        top: 350px;
-        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden;
         transition: transform 0.3s;
     }
 
+    .card2 { top: 350px; left: 45px; }
+    .card3 { top: 640px; left: 45px; }
+    .card4 { top: 930px; left: 45px; }
+    .card5 { top: 1220px; left: 45px; }
+    .card6 { top: 1510px; left: 45px; }
 
-    .card2:hover {
-        transform: scale(1.05);
-    }
-
-    .card2:hover > h3 {
-        opacity: 1;
-    }
-
-    .card2:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 3*/
-    .card3 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card3:hover {
-        transform: scale(1.05);
-    }
-
-    .card3:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card3:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card4 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    /* Hover effects */
-    .card4:hover {
-        transform: scale(1.05);
-    }
-
-    .card4:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card4:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card5 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-
-    /* Hover effects */
-    .card5:hover {
-        transform: scale(1.05);
-    }
-
-    .card5:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card5:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card6 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    /* Hover effects */
+    /* Hover effects for other cards */
+    .card2:hover,
+    .card3:hover,
+    .card4:hover,
+    .card5:hover,
     .card6:hover {
         transform: scale(1.05);
     }
 
+    .card2:hover > h3,
+    .card3:hover > h3,
+    .card4:hover > h3,
+    .card5:hover > h3,
     .card6:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
+    .card2:hover > img,
+    .card3:hover > img,
+    .card4:hover > img,
+    .card5:hover > img,
     .card6:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    .sliderButton {
-        position: absolute;
-        right: 60px;
-        top: 320px
-    }
-
-    .previousButton {
-        position: absolute;
-        left: 60px;
-        top: 320px
-    }
-
-    /*====================================================================================================================*/
+    /* Rectangle Styles */
     .rectangle1 {
         width: 85vw;
         height: 100%;
@@ -14300,875 +10920,53 @@ body>main:nth-child(9){
         left: 145px;
     }
 
-    /*card 1*/
-    .card11 {
+    /* Card styles for rectangle1 */
+    .card11, .card22, .card33, .card44, .card55, .card66 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card11 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card11 > h3, card22 > h3, card33 > h3, card44 > h3, card55 > h3, card66 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card11:hover {
-        transform: scale(1.05);
-    }
-
-    .card11:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card11:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card22 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card22 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card22:hover {
-        transform: scale(1.05);
-    }
-
-    .card22:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card22:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card33 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
         z-index: 2;
         border-radius: 20px;
         overflow: hidden;
         transition: transform 0.3s;
     }
 
-    .card33 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
+    .card11 { top: 80px; left: 45px; }
+    .card22 { top: 350px; left: 45px; }
+    .card33 { top: 640px; left: 45px; }
+    .card44 { top: 930px; left: 45px; }
+    .card55 { top: 1220px; left: 45px; }
+    .card66 { top: 1510px; left: 45px; }
 
-    /* Hover effects */
-    .card33:hover {
-        transform: scale(1.05);
-    }
-
-    .card33:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card33:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card44 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card44 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card44:hover {
-        transform: scale(1.05);
-    }
-
-    .card44:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card44:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card55 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card55 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card55:hover {
-        transform: scale(1.05);
-    }
-
-    .card55:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card55:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card66 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card66 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
+    /* Hover effects for rectangle1 cards */
+    .card11:hover,
+    .card22:hover,
+    .card33:hover,
+    .card44:hover,
+    .card55:hover,
     .card66:hover {
         transform: scale(1.05);
     }
 
+    .card11:hover > h3,
+    .card22:hover > h3,
+    .card33:hover > h3,
+    .card44:hover > h3,
+    .card55:hover > h3,
     .card66:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
+    .card11:hover > img,
+    .card22:hover > img,
+    .card33:hover > img,
+    .card44:hover > img,
+    .card55:hover > img,
     .card66:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle2 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 2620px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle2 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        left: 130px;
-    }
-
-    /*card 1*/
-    .card111 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card111 > h3, card222 > h3, card333 > h3, card444 > h3, card555 > h3, card666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card111:hover {
-        transform: scale(1.05);
-    }
-
-    .card111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card222 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card222:hover {
-        transform: scale(1.05);
-    }
-
-    .card222:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card222:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card333 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card333:hover {
-        transform: scale(1.05);
-    }
-
-    .card333:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card333:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
-    .card444 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-
-    /* Hover effects */
-    .card444:hover {
-        transform: scale(1.05);
-    }
-
-    .card444:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card444:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
-    .card555 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card555:hover {
-        transform: scale(1.05);
-    }
-
-    .card555:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card555:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
-    .card666 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card666:hover {
-        transform: scale(1.05);
-    }
-
-    .card666:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card666:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*====================================================================================================================*/
-    .rectangle3 {
-        width: 85vw;
-        height: 100%;
-        background-color: transparent;
-        z-index: 4;
-        left: 3935px;
-        position: absolute;
-        top: 0;
-    }
-
-    .rectangle3 > h3 {
-        color: #ffffff;
-        font-size: 30px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 10px;
-        padding: 0;
-        text-align: center;
-        position: absolute;
-        left: 145px;
-    }
-
-    /*card 1*/
-    .card1111 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 80px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card1111 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
-        color: #3CBEFF;
-        font-size: 20px;
-        font-family: Inter;
-        font-weight: normal;
-        margin-top: 50px;
-        padding: 0;
-        text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
-    }
-
-    /* Hover effects */
-    .card1111:hover {
-        transform: scale(1.05);
-    }
-
-    .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
-    }
-
-    .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
-    }
-
-    .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 2*/
-    .card2222 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 350px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-    }
-
-    .card2222 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
-    }
-
-    /* Hover effects */
-    .card2222:hover {
-        transform: scale(1.05);
-    }
-
-    .card2222:hover > h3 {
-        opacity: 1;
-    }
-
-    .card2222:hover > img {
         filter: brightness(0.4);
     }
 
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 3*/
-    .card3333 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 640px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card3333 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card3333:hover {
-        transform: scale(1.05);
-    }
-
-    .card3333:hover > h3 {
-        opacity: 1;
-    }
-
-    .card3333:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 4*/
-    .card4444 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 930px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card4444 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card4444:hover {
-        transform: scale(1.05);
-    }
-
-    .card4444:hover > h3 {
-        opacity: 1;
-    }
-
-    .card4444:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 5*/
-    .card5555 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1220px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card5555 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card5555:hover {
-        transform: scale(1.05);
-    }
-
-    .card5555:hover > h3 {
-        opacity: 1;
-    }
-
-    .card5555:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
-
-    /*card 6*/
-    .card6666 {
-        background-color: white;
-        width: 250px;
-        height: 180px;
-        position: absolute;
-        top: 1510px;
-        left: 45px;
-        z-index: 2;
-        border-radius: 20px;
-        overflow: hidden;
-        transition: transform 0.3s;
-    }
-
-    .card6666 > img {
-        width: 100%;
-        height: 120px;
-        position: absolute;
-        top: 0;
-        object-fit: cover;
-        border-radius: 20px 20px 0 0;
-        z-index: 1;
-    }
-
-    /* Hover effects */
-    .card6666:hover {
-        transform: scale(1.05);
-    }
-
-    .card6666:hover > h3 {
-        opacity: 1;
-    }
-
-    .card6666:hover > img {
-        filter: brightness(0.4);
-    }
-
-    .github-button:hover {
-        background-color: #2a9bd5;
-    }
 
     /*====================================================================================================================*/
     .rectangle3 {
