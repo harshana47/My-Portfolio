@@ -4981,15 +4981,46 @@ body>main:nth-child(9){
         width: 250px;
         border-radius: 25px;
         padding: 20px;
-        top: 20px;
+        top: -55px;
         left: 35px;
         bottom: 0;
         position: absolute;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
-        transition: none;
+        transition: top 3s ease; /* Smooth transition for showing/hiding */
     }
-    .drag-handle{
-        display: none;
+
+    .drag-handle {
+        width: 40px; /* Width of the handle */
+        height: 80px; /* Adjust to fit the navbar */
+        background: transparent; /* Opaque to transparent */
+        position: absolute;
+        left: 120px; /* Position to the left of the navbar */
+        top: 17%; /* Centered vertically */
+        cursor: ew-resize; /* Change cursor to indicate dragging */
+        z-index: 1; /* Drag handle behind the navbar */
+        border-radius: 20px;
+    }
+
+    .drag-handle>img{
+        width: 30px;
+        height: 30px;
+        right: 5px;
+        top: 44px;
+        position: absolute;
+        transform: rotate(90deg);
+    }
+
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+        top: 20px;
+        object-position: 80% 0;
+        transition-duration: 2s;
+        left: 35px;
+    }
+
+    /* Optional: Styling for images within the nav */
+    body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:first-child > nav:first-child img {
+        height: 23px;
+        width: 23px;
     }
     /* Navigation bar images */
     body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:first-child > nav:first-child {
@@ -4998,15 +5029,9 @@ body>main:nth-child(9){
         justify-content: flex-start;
         margin: auto;
         gap: 5px;
-        top: 16px;
-        left: 16px;
+        top: 15px;
+        left: 15px;
         position: absolute;
-    }
-
-    /* Optional: Styling for images within the nav */
-    body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:first-child > nav:first-child img {
-        height: 23px;
-        width: 23px;
     }
 
     /*contact bar images*/
@@ -7360,11 +7385,40 @@ body>main:nth-child(9){
         width: 290px;
         border-radius: 25px;
         padding: 20px;
-        top: 20px;
-        left: 43px;
+        top: -60px;
+        left: 47px;
         bottom: 0;
-        position: absolute;
+        position: fixed;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
+        transition: top 3s ease; /* Smooth transition for showing/hiding */
+    }
+
+    .drag-handle {
+        width: 40px; /* Width of the handle */
+        height: 90px; /* Adjust to fit the navbar */
+        background: transparent; /* Opaque to transparent */
+        position: absolute;
+        left: 140px; /* Position to the left of the navbar */
+        top: 12%; /* Centered vertically */
+        cursor: ew-resize; /* Change cursor to indicate dragging */
+        z-index: 1; /* Drag handle behind the navbar */
+        border-radius: 20px;
+    }
+
+    .drag-handle>img{
+        width: 30px;
+        height: 30px;
+        right: 5px;
+        top: 55px;
+        position: absolute;
+        transform: rotate(90deg);
+    }
+
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+        top: 20px;
+        object-position: 80% 0;
+        transition-duration: 2s;
+        left: 47px;
     }
 
     /* Navigation bar images */
@@ -9273,7 +9327,7 @@ body>main:nth-child(9){
     body > main:nth-child(1) > section:nth-child(4) > h1 {
         color: white;
         position: absolute;
-        left: 160px;
+        left: 140px;
         top: 10px;
         font-size: 40px;
         font-family: Inter;
@@ -9285,7 +9339,7 @@ body>main:nth-child(9){
     body > main:nth-child(1) > section:nth-child(4) > h2 {
         color: #3CBEFF;
         position: absolute;
-        left: 160px;
+        left: 140px;
         top: 40px;
         font-size: 40px;
         font-family: Inter;
@@ -9307,28 +9361,42 @@ body>main:nth-child(9){
 
     /*my image*/
     body > main:nth-child(1) > section > div:nth-child(2) > img {
-        width: 34vw;
-        height: 40vh;
+        width: 36vw;
+        height: 42vh;
         margin: auto;
-        left: 290px;
+        left: 240px;
         top: 220px;
         position: absolute;
         border-radius: 50%;
         box-shadow: 6px 6px 3px rgb(26, 145, 214);
+        z-index: 3; /* Navbar on top */
+        transition: left 3s ease; /* Smooth transition for showing/hiding */
     }
 
-    /*navigation bar section*/
-    body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
-        background-image: linear-gradient(#E0E0E0 1%, #000000 53%);
-        height: 420px;
-        width: 10px;
-        border-radius: 25px;
-        padding: 20px;
-        top: 100px;
-        left: 40px;
-        bottom: 0;
+    .drag-handle {
+        width: 110px; /* Width of the handle */
+        height: 20%; /* Adjust to fit the navbar */
+        background: transparent; /* Opaque to transparent */
         position: absolute;
-        box-shadow: 6px 6px 3px rgb(26, 145, 214);
+        left: 12px; /* Position to the left of the navbar */
+        top: 40%; /* Centered vertically */
+        cursor: ew-resize; /* Change cursor to indicate dragging */
+        z-index: 1; /* Drag handle behind the navbar */
+        border-radius: 20px;
+    }
+
+    .drag-handle>img{
+        width: 50px;
+        height: 50px;
+        right: 2px;
+        top: 25px;
+        position: absolute;
+    }
+
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+        left: 15px;
+        object-position: 80% 0;
+        transition-duration: 2s;
     }
 
     /*navigation bar images*/
@@ -9370,8 +9438,8 @@ body>main:nth-child(9){
         width: 15px;
         border-radius: 25px;
         padding: 5px;
-        top: 100px;
-        right: 60px;
+        top: 110px;
+        right: 80px;
         bottom: 0;
         position: absolute;
         background: transparent;
@@ -9725,7 +9793,7 @@ body>main:nth-child(9){
     /*skills title*/
     body > main:nth-child(4) > section:nth-child(1) > h1 {
         color: #3CBEFF;
-        left: 37%;
+        left: 32%;
         position: absolute;
         top: -15px;
         font-size: 40px;
@@ -9742,7 +9810,7 @@ body>main:nth-child(9){
         border-radius: 50%;
         position: absolute;
         top: 120px;
-        left: 40px; /* updated */
+        left: 50px; /* updated */
         background: #c5c5c5;
         z-index: 1;
         box-shadow: 5px 5px 8px #3CBEFF;
@@ -9763,7 +9831,7 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         top: 190px;
-        left: 50px; /* updated */
+        left: 60px; /* updated */
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -9776,7 +9844,7 @@ body>main:nth-child(9){
         border-radius: 50%;
         position: absolute;
         top: 320px;
-        left: 40px; /* updated */
+        left: 50px; /* updated */
         background: #c5c5c5;
         z-index: 1;
         box-shadow: 5px 5px 8px #3CBEFF;
@@ -9797,7 +9865,7 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         top: 390px;
-        left: 60px; /* updated */
+        left: 70px; /* updated */
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -9810,7 +9878,7 @@ body>main:nth-child(9){
         border-radius: 50%;
         position: absolute;
         top: 510px;
-        left: 40px; /* updated */
+        left: 50px; /* updated */
         background: #c5c5c5;
         z-index: 1;
         box-shadow: 5px 5px 8px #3CBEFF;
@@ -9831,7 +9899,7 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         top: 573px;
-        left: 35px; /* updated */
+        left: 45px; /* updated */
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -9946,7 +10014,7 @@ body>main:nth-child(9){
         border-radius: 50%;
         position: absolute;
         top: 120px;
-        left: 340px;
+        left: 325px;
         background: #c5c5c5;
         z-index: 1;
         box-shadow: 5px 5px 8px #3CBEFF;
@@ -9967,7 +10035,7 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         top: 205px;
-        left: 345px;
+        left: 325px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -9980,7 +10048,7 @@ body>main:nth-child(9){
         border-radius: 50%;
         position: absolute;
         top: 320px;
-        left: 345px;
+        left: 325px;
         background: #c5c5c5;
         z-index: 1;
         box-shadow: 5px 5px 8px #3CBEFF;
@@ -10001,7 +10069,7 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         top: 405px;
-        left: 350px;
+        left: 330px;
         font-family: Inter;
         font-weight: lighter;
         z-index: 1;
@@ -10020,7 +10088,7 @@ body>main:nth-child(9){
 
     /*paragraph text*/
     body > main:nth-child(4) > section:nth-child(4) > div > p {
-        font-size: 16px;
+        font-size: 15px;
         color: white;
         margin-left: 10px;
         margin-top: 0;
@@ -10428,11 +10496,11 @@ body>main:nth-child(9){
     body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(1) > div {
         background: #3CBEFF;
         height: 190px;
-        width: 230px;
+        width: 220px;
         border-radius: 10px;
         position: relative;
         top: 130px;
-        left: 30px;
+        left: 40px;
         z-index: 1;
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
@@ -10474,11 +10542,11 @@ body>main:nth-child(9){
     body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(2) > div {
         background: white;
         height: 190px;
-        width: 230px;
+        width: 220px;
         border-radius: 10px;
         position: relative;
         top: -60px;
-        left: 295px;
+        left: 285px;
         z-index: 1;
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
@@ -10500,11 +10568,11 @@ body>main:nth-child(9){
     body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(3) > div {
         background: white;
         height: 190px;
-        width: 230px;
+        width: 220px;
         border-radius: 10px;
         position: relative;
         top: -250px;
-        left: 560px;
+        left: 530px;
         z-index: 1;
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
@@ -10526,11 +10594,11 @@ body>main:nth-child(9){
     body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(4) > div {
         background: white;
         height: 190px;
-        width: 230px;
+        width: 220px;
         border-radius: 10px;
         position: relative;
         bottom: 160px;
-        left: 30px;
+        left: 40px;
         z-index: 1;
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
@@ -10552,11 +10620,11 @@ body>main:nth-child(9){
     body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(5) > div {
         background: white;
         height: 190px;
-        width: 230px;
+        width: 220px;
         border-radius: 10px;
         position: relative;
         bottom: 350px;
-        left: 295px;
+        left: 285px;
         z-index: 1;
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
@@ -10579,11 +10647,11 @@ body>main:nth-child(9){
     body > main:nth-child(6) > section:nth-child(2) > div > section:nth-child(6) > div {
         background: white;
         height: 190px;
-        width: 230px;
+        width: 220px;
         border-radius: 10px;
         position: relative;
         bottom: 540px;
-        left: 560px;
+        left: 530px;
         z-index: 1;
         overflow: hidden;
         box-shadow: 2px 2px 8px #3CBEFF;
@@ -10646,7 +10714,8 @@ body>main:nth-child(9){
         position: absolute;
         z-index: 3;
         top: 320px;
-        left: 720px;
+        left: 705px;
+        font-size: 14px;
         object-fit: cover;
         transform: rotate(360deg);
         font-weight: inherit;
@@ -10779,13 +10848,14 @@ body>main:nth-child(9){
 
     .rectangle > h3 {
         color: #ffffff;
-        font-size: 30px;
+        font-size: 28px;
         font-family: Inter;
         font-weight: normal;
         margin-top: 10px;
         padding: 0;
         text-align: center;
-        left: 145px;
+        left: 45px;
+        top: 10px;
         position: absolute;
     }
 
@@ -10810,7 +10880,7 @@ body>main:nth-child(9){
     .card5 > h3,
     .card6 > h3 {
         color: #3CBEFF;
-        font-size: 20px;
+        font-size: 18px;
         font-family: Inter;
         font-weight: normal;
         margin-top: 50px;
@@ -10820,6 +10890,9 @@ body>main:nth-child(9){
         transition: opacity 0.3s;
         z-index: 2;
         position: relative;
+    }
+    .card1>h3{
+        left: 1000px;
     }
 
     /* Hover effects */
@@ -11445,7 +11518,7 @@ body>main:nth-child(9){
         color: white;
         position: absolute;
         top: 28px;
-        left: 383px;
+        left: 362px;
         font-size: 32px;
         font-family: Poppins;
         font-weight: bold;
@@ -11455,7 +11528,7 @@ body>main:nth-child(9){
         color: black;
         position: absolute;
         top: 20px;
-        left: 406px;
+        left: 383px;
         font-size: 37px;
         font-family: Poppins;
         font-weight: bold;
@@ -11478,14 +11551,14 @@ body>main:nth-child(9){
         color: black;
         position: absolute;
         top: 170px;
-        right: 290px;
+        right: 280px;
         z-index: 1;
         font-weight: bold;
     }
 
     .fName > input {
         width: 150px;
-        right: 220px;
+        right: 210px;
         top: 100px;
         position: absolute;
         height: 20px;
@@ -11530,14 +11603,14 @@ body>main:nth-child(9){
         color: black;
         position: absolute;
         top: 280px;
-        right: 330px;
+        right: 320px;
         z-index: 1;
         font-weight: bold;
     }
 
     .emails > input {
         width: 150px;
-        right: 220px;
+        right: 210px;
         top: 210px;
         position: absolute;
         height: 20px;
@@ -11589,34 +11662,34 @@ body>main:nth-child(9){
 
     .webdesign {
         position: absolute;
-        right: 280px;
+        right: 270px;
         top: 400px;
         color: black;
     }
 
     .software {
         position: absolute;
-        right: 82px;
+        right: 72px;
         top: 400px;
         color: black;
     }
 
     .complaint {
         position: absolute;
-        right: 295px;
+        right: 285px;
         top: 455px;
         color: black;
     }
 
     .other {
         position: absolute;
-        right: 105px;
+        right: 95px;
         top: 455px;
         color: black;
     }
 
     .message > textarea {
-        width: 380px;
+        width: 360px;
         height: 120px;
         right: 10px;
         top: 500px;
@@ -11656,7 +11729,7 @@ body>main:nth-child(9){
 
     .call > p {
         font-family: Inter;
-        font-size: 22px;
+        font-size: 20px;
         color: white;
         position: absolute;
         left: 120px;
@@ -11674,7 +11747,7 @@ body>main:nth-child(9){
 
     .email > p {
         font-family: Inter;
-        font-size: 22px;
+        font-size: 20px;
         color: white;
         position: absolute;
         left: 120px;
@@ -11692,7 +11765,7 @@ body>main:nth-child(9){
 
     .location > p {
         font-family: Inter;
-        font-size: 22px;
+        font-size: 20px;
         color: white;
         position: absolute;
         left: 120px;
@@ -11726,7 +11799,7 @@ body>main:nth-child(9){
     .circles > div:nth-child(1) {
         position: absolute;
         bottom: -110px;
-        left: 242px;
+        left: 220px;
         width: 220px;
         height: 220px;
         border-radius: 50%;
@@ -11805,7 +11878,7 @@ body>main:nth-child(9){
     /*my image*/
     body > main:nth-child(1) > section > div:nth-child(2) > img {
         width: 32vw;
-        height: 44vh;
+        height: 45vh;
         margin: auto;
         left: 350px;
         top: 220px;
@@ -11822,10 +11895,38 @@ body>main:nth-child(9){
         border-radius: 25px;
         padding: 20px;
         top: 80px;
-        left: 40px;
+        left: -65px;
         bottom: 0;
         position: absolute;
         box-shadow: 6px 6px 3px rgb(26, 145, 214);
+        z-index: 3; /* Navbar on top */
+        transition: left 3s ease; /* Smooth transition for showing/hiding */
+    }
+
+    .drag-handle {
+        width: 110px; /* Width of the handle */
+        height: 20%; /* Adjust to fit the navbar */
+        background: transparent; /* Opaque to transparent */
+        position: absolute;
+        left: 12px; /* Position to the left of the navbar */
+        top: 40%; /* Centered vertically */
+        cursor: ew-resize; /* Change cursor to indicate dragging */
+        z-index: 1; /* Drag handle behind the navbar */
+        border-radius: 20px;
+    }
+
+    .drag-handle>img{
+        width: 50px;
+        height: 50px;
+        right: 2px;
+        top: 25px;
+        position: absolute;
+    }
+
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+        left: 15px;
+        object-position: 80% 0;
+        transition-duration: 2s;
     }
 
     /*navigation bar images*/
@@ -13248,7 +13349,8 @@ body>main:nth-child(9){
         margin-top: 10px;
         padding: 0;
         text-align: center;
-        left: 195px;
+        left: 90px;
+        top: 10px;
         position: absolute;
     }
 
@@ -13256,7 +13358,7 @@ body>main:nth-child(9){
     .card1 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 80px;
         left: 100px;
@@ -13315,7 +13417,7 @@ body>main:nth-child(9){
     .card2 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 350px;
         left: 105px;
@@ -13346,7 +13448,7 @@ body>main:nth-child(9){
     .card3 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 640px;
         left: 105px;
@@ -13378,7 +13480,7 @@ body>main:nth-child(9){
     .card4 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 930px;
         left: 105px;
@@ -13410,7 +13512,7 @@ body>main:nth-child(9){
     .card5 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 1220px;
         left: 105px;
@@ -13443,7 +13545,7 @@ body>main:nth-child(9){
     .card6 {
         background-color: white;
         width: 250px;
-        height: 180px;
+        height: 200px;
         position: absolute;
         top: 1510px;
         left: 105px;
@@ -15153,6 +15255,2879 @@ body>main:nth-child(9){
         background: #5BBAEF;
         opacity: 0.5;
     }
+}
+@media all and (min-width: 1025px) and (max-width: 1440px) {
+    html,body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        font-family: Arial, sans-serif;
+    }
+
+
+    html{
+        scroll-behavior: smooth;
+    }
+    .container {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+
+    /*.page {*/
+    /*    height: 100vh;*/
+    /*    scroll-snap-align: start; !*snap alignment*!*/
+    /*    display: flex;*/
+    /*    color: white;*/
+    /*    position: relative;*/
+    /*}*/
+
+    /*1st page main*/
+    body>main:nth-child(1){
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    /*hey im*/
+    body>main:nth-child(1)>section:nth-child(4)>h1{
+        color: white;
+        position: absolute;
+        left: 230px;
+        top: 10px;
+        font-size: 60px;
+        font-family: Inter;
+        font-weight: lighter;
+        margin-top: 20px;
+    }
+    /*name*/
+    body>main:nth-child(1)>section:nth-child(4)>h2{
+        color: #3CBEFF;
+        position: absolute;
+        left: 230px;
+        top: 40px;
+        font-size: 60px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+    }
+    /*background image*/
+    body>main:nth-child(1)>section>div:first-child>img{
+        width: 48vw;
+        height: 100vh;
+        margin: auto;
+        right: 0;
+        overflow: hidden;
+        position: absolute;
+        filter: grayscale(80%);
+
+    }
+    /*my image*/
+    body>main:nth-child(1)>section>div:nth-child(2)>img{
+        width: 26vw;
+        height: 46vh;
+        margin: auto;
+        left: 250px;
+        top: 220px;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 6px 6px 3px rgb(26, 145, 214);
+    }
+    /*navigation bar section*/
+    body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
+        background-image: linear-gradient(#E0E0E0 1%, #000000 53%);
+        height: 500px;
+        width: 20px;
+        border-radius: 25px;
+        padding: 20px;
+        top: 100px;
+        left: -70px; /* Hidden position */
+        bottom: 0;
+        position: fixed;
+        box-shadow: 6px 6px 3px rgb(26, 145, 214);
+        z-index: 3; /* Navbar on top */
+        transition: left 3s ease; /* Smooth transition for showing/hiding */
+    }
+
+    .drag-handle {
+        width: 110px; /* Width of the handle */
+        height: 20%; /* Adjust to fit the navbar */
+        background: transparent; /* Opaque to transparent */
+        position: absolute;
+        left: 12px; /* Position to the left of the navbar */
+        top: 40%; /* Centered vertically */
+        cursor: ew-resize; /* Change cursor to indicate dragging */
+        z-index: 1; /* Drag handle behind the navbar */
+        border-radius: 20px;
+    }
+
+    .drag-handle>img{
+        width: 50px;
+        height: 50px;
+        right: 2px;
+        top: 25px;
+        position: absolute;
+    }
+
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+        left: 15px;
+        object-position: 80% 0;
+        transition-duration: 2s;
+    }
+    body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:first-child > nav:first-child img {
+        height: 45px;
+        width: 45px;
+    }
+    /* Na
+
+
+    /*body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover{*/
+    /*    left: 40px;*/
+    /*    object-position: 80% 0;*/
+    /*    transition-duration: 2s;*/
+    /*}*/
+
+    /*navigation bar images*/
+    body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:first-child>nav:first-child {
+        display: inline;
+        justify-content: space-around;
+        align-self: center;
+        top: 0;
+        bottom: 0;
+        left: 7px;
+        right: 0;
+        position: absolute;
+    }
+    body>main:nth-child(1)>section:nth-child(3)>section>div>nav>a>img:hover{
+        box-shadow: #3CBEFF 0 0 1.9rem ;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        bottom: 2px;
+    }
+
+    /*contact bar images*/
+    body>main:nth-child(1)>section:nth-child(3)>section>div>nav{
+        justify-content: space-around;
+        position: absolute;
+        align-self: center;
+        top: 0;
+        bottom: 0;
+        left: 7px;
+        right: 0;
+        display: block;
+    }
+    /*contact bar*/
+    body>main:nth-child(1)>section:nth-child(3)>section>div {
+        height: 470px;
+        width: 15px;
+        border-radius: 25px;
+        padding: 20px;
+        top: 120px;
+        right: 60px;
+        bottom: 0;
+        position: absolute;
+        background: transparent;
+        gap: 100px;
+    }
+    body > main:nth-child(1) > section:nth-child(3) > section > div > nav img {
+        width: 50px;
+        height: 50px;
+    }
+    /*2nd page main*/
+    body>main:nth-child(2){
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+
+    /*topic*/
+    body>main:nth-child(2)>section:first-child>h1{
+        color: #3CBEFF;
+        left: 45%;
+        position: absolute;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 2;
+    }
+    /*about section background image*/
+    body>main:nth-child(2)>section:nth-child(2)>img {
+        height: 100vh;
+        width: 51vw;
+        margin: auto;
+        left: 0;
+        overflow: hidden;
+        position: absolute;
+        filter: grayscale(150%);
+        z-index: 1;
+    }
+    /*border line blue*/
+    body>main:nth-child(2)>section:nth-child(3)>div:first-child{
+        border: 2px solid #3CBEFF;
+        left: 23%;
+        top: 135px;
+        width: 850px;
+        height: 570px;
+        position: absolute;
+        z-index: 1;
+    }
+    /*paragraph*/
+    body>main:nth-child(2)>section:nth-child(3)>div:first-child>p{
+        font-size: 18px;
+        color: #E0E0E0;
+        font-family: sans-serif;
+        text-align: center;
+        margin-right: 8px;
+        margin-left: 8px;
+    }
+    /*cv button*/
+    body>main:nth-child(2)>section:nth-child(3)>button{
+        width: 125px;
+        height: 40px;
+        background: white;
+        border-radius: 50px 20px;
+        position: absolute;
+        bottom: 60px;
+        left: 27%;
+        font-family: Katibeh;
+        font-size: 23px;
+        text-align: center;
+        box-shadow: 3px 3px 5px #3CBEFF;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    /*my image*/
+    body>main:nth-child(2)>section:nth-child(4)>img{
+        width: 200px;
+        height: 300px;
+        z-index: 4;
+        position: absolute;
+        right: 20px;
+        top: 240px;
+        filter: grayscale(80%);
+        object-fit: cover;
+        object-position: 100% 0;
+    }
+    /*contact bar in about page*/
+    body>main:nth-child(2)>section:nth-child(5)>div:first-child{
+        height: 470px;
+        width: 15px;
+        border-radius: 25px;
+        padding: 20px;
+        top: 170px;
+        left: 60px;
+        bottom: 0;
+        position: absolute;
+        background: #3CBEFF;
+        z-index: 3;
+        background: none;
+    }
+    /*contact bar images*/
+    body>main:nth-child(2)>section:nth-child(5)>div:first-child>nav{
+        justify-content: space-around;
+        position: absolute;
+        align-self: center;
+        top: 0;
+        bottom: 0;
+        left: 7px;
+        right: 0;
+        display: block;
+    }
+
+    body>main:nth-child(2)>section:nth-child(5)>div:first-child>nav img{
+        width: 55px;
+        height: 55px;
+    }
+
+    /*education section*/
+    body>main:nth-child(3){
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+
+    }
+    /*topic*/
+    body>main:nth-child(3)>section:nth-child(1)>h1{
+        color: #3CBEFF;
+        left: 44%;
+        position: absolute;
+        top: -25px;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 1;
+    }
+
+    /*card 1 background*/
+    body>main:nth-child(3)>section:nth-child(2)>div{
+        width: 370px;
+        height: 240px;
+        background: black;
+        box-shadow: 0 3px 8px #3CBEFF;
+        position: absolute;
+        top: 120px;
+        left: 555px;
+        border-radius: 10%;
+    }
+
+    /*card 1 image*/
+    body>main:nth-child(3)>section:nth-child(2)>div>img{
+        width: 370px;
+        height: 170px;
+        border-radius: 10%;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        object-position: 80% 30%;
+    }
+
+    /*card 1 name*/
+    body>main:nth-child(3)>section:nth-child(2)>div>div>h1{
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        top: 170px;
+        left: 57px;
+        font-family: Inter;
+        font-weight: lighter;
+    }
+
+    /*card 2 background*/
+    body>main:nth-child(3)>section:nth-child(3)>div{
+        width: 370px;
+        height: 240px;
+        background: black;
+        box-shadow: 0 3px 8px #3CBEFF;
+        position: absolute;
+        top: 420px;
+        left: 70px;
+        border-radius: 10%;
+    }
+
+    /*card 2 image*/
+    body>main:nth-child(3)>section:nth-child(3)>div>img{
+        width: 370px;
+        height: 170px;
+        border-radius: 10%;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        object-position: 100% 40%;
+    }
+
+    /*card 2 name*/
+    body>main:nth-child(3)>section:nth-child(3)>div>div>h1{
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        top: 155px;
+        left: 85px;
+        font-family: Inter;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    /*card 3 background*/
+    body>main:nth-child(3)>section:nth-child(4)>div{
+        width: 370px;
+        height: 240px;
+        background: black;
+        box-shadow: 0 3px 8px #3CBEFF;
+        position: absolute;
+        top: 420px;
+        right: 70px;
+        border-radius: 10%;
+    }
+
+    /*card 3 image*/
+    body>main:nth-child(3)>section:nth-child(4)>div>img{
+        width: 370px;
+        height: 170px;
+        border-radius: 10%;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        object-position: 100% 45%;
+    }
+
+    /*card 3 name*/
+    body>main:nth-child(3)>section:nth-child(4)>div>div>h1{
+        font-size: 24px;
+        color: white;
+        position: absolute;
+        top: 170px;
+        left: 135px;
+        font-family: Inter;
+        font-weight: lighter;
+        text-align: center;
+    }
+    /*design box 1.1*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 60px;
+        width: 120px;
+        top: -25px;
+        left: -20px;
+        position: absolute;
+    }
+    /*design box 1.2*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 50px;
+        width: 100px;
+        top: 15px;
+        left: 60px;
+        position: absolute;
+    }
+
+    /*design box 2.1*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 60px;
+        width: 120px;
+        top: 140px;
+        right: 200px;
+        position: absolute;
+    }
+    /*design box 2.2*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 50px;
+        width: 100px;
+        top: 180px;
+        right: 140px;
+        position: absolute;
+    }
+
+    /*design box 3.1*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 40px;
+        width: 70px;
+        top: 360px;
+        left: 440px;
+        position: absolute;
+    }
+    /*design box 3.2*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 30px;
+        width: 50px;
+        top: 390px;
+        left: 490px;
+        position: absolute;
+    }
+
+    /*design box 4.1*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 50px;
+        width: 100px;
+        bottom: 40px;
+        right: 540px;
+        position: absolute;
+    }
+    /*design box 4.2*/
+    body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 40px;
+        width: 80px;
+        bottom: 20px;
+        right: 490px;
+        position: absolute;
+    }
+    /*skills page*/
+    body>main:nth-child(4) {
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        z-index: 2;
+    }
+    /*background image*/
+    body>main:nth-child(4)>section:nth-child(3)>img{
+        justify-content: space-around;
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        display: block;
+        filter: grayscale(40%);
+    }
+    /*skills title*/
+    body>main:nth-child(4)>section:nth-child(1)>h1{
+        color: #3CBEFF;
+        left: 39%;
+        position: absolute;
+        top: -25px;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 1;
+    }
+
+    /*html circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 120px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*html logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    /*html h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h1{
+        font-size: 25px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 210px;
+        left: 140px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*css circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 320px;
+        left: 120px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*css logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 15px;
+    }
+    /*css h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h2{
+        font-size: 26px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 410px;
+        left: 150px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*js circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 520px;
+        left: 120px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*js logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    /*js h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h3{
+        font-size: 25px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 603px;
+        left: 125px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*java circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 400px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*java logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    /*java h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h4{
+        font-size: 30px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 185px;
+        left: 425px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*figma circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 320px;
+        left: 400px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*figma logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    /*figma h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h5{
+        font-size: 26px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 384px;
+        left: 420px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*MySql circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 520px;
+        left: 400px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*MySql logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11)>img{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 16px;
+        top: 14px;
+    }
+    /*MySql h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h6{
+        font-size: 25px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 570px;
+        left: 419px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*GitHub circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 120px;
+        left: 680px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*GitHub logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    /*GitHub h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h7{
+        font-size: 27px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 225px;
+        left: 695px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*Notion circle*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15){
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        top: 320px;
+        left: 680px;
+        background: #c5c5c5;
+        z-index: 1;
+        box-shadow: 5px 5px 8px #3CBEFF;
+    }
+    /*Notion logo*/
+    body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15)>img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    /*Notion h tag*/
+    body>main:nth-child(4)>section:nth-child(2)>h8{
+        font-size: 27px;
+        color: #3CBEFF;
+        position: absolute;
+        top: 425px;
+        left: 695px;
+        font-family: Inter;
+        font-weight: lighter;
+        z-index: 1;
+    }
+
+    /*paragraph margin*/
+    body>main:nth-child(4)>section:nth-child(4)>div{
+        width: 40%;
+        height: 580px;
+        position: absolute;
+        right: 30px;
+        top: 120px;
+        border: 1px solid #3CBEFF;
+        z-index: 2;
+    }
+    /*paragraph text*/
+    body>main:nth-child(4)>section:nth-child(4)>div>p{
+        font-size: 20.5px;
+        color: white;
+        margin-left: 10px;
+        margin-top: 10px;
+        font-family: Inter;
+        text-align: left;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+    }
+    /*projects section*/
+    body>main:nth-child(5){
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    /*project title*/
+    body>main:nth-child(5)>section:nth-child(1)>h1{
+        color: #3CBEFF;
+        left: 47%;
+        position: absolute;
+        top: -25px;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 1;
+    }
+
+    /*box*/
+    body>main:nth-child(5)>section:nth-child(2)>div {
+        height: 550px;
+        width: 600px;
+        position: absolute;
+        border: 0 solid #3CBEFF;
+        top: 100px;
+        left: 450px;
+        overflow: auto;
+        background: transparent;
+        z-index: 1;
+    }
+    /*card 1 background*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div{
+        width: 450px;
+        height: 300px;
+        background: black;
+        position: absolute;
+        top: 130px;
+        left: 80px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 2px 2px 8px #3CBEFF;
+        animation: bounce 1.4s infinite;
+    }
+    /*card 1 image*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>img{
+        position: absolute;
+        height: 230px;
+        width: 450px;
+        border-radius: 10%;
+    }
+    /*card 1 title*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>a{
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        position: absolute;
+        top: 250px;
+        left: 120px;
+        z-index: 1;
+        font-family: "Arial Rounded MT Bold";
+    }
+
+    /*card 2 background*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div{
+        width: 450px;
+        height: 300px;
+        background: black;
+        position: absolute;
+        top: 630px;
+        left: 80px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 2 image*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>img{
+        position: absolute;
+        height: 230px;
+        width: 450px;
+        border-radius: 10%;
+    }
+    /*card 2 title*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>a{
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        position: absolute;
+        top: 250px;
+        left: 145px;
+        z-index: 1;
+        font-family: "Arial Rounded MT Bold";
+    }
+
+    /*card 3 background*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div{
+        width: 450px;
+        height: 300px;
+        background: black;
+        position: absolute;
+        top: 1130px;
+        left: 80px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 3 image*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>img{
+        position: absolute;
+        height: 230px;
+        width: 450px;
+        border-radius: 10%;
+    }
+    /*card 3 title*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>a{
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        position: absolute;
+        top: 250px;
+        left: 115px;
+        z-index: 1;
+        font-family: "Arial Rounded MT Bold";
+    }
+
+    /*card 4 background*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div{
+        width: 450px;
+        height: 300px;
+        background: black;
+        position: absolute;
+        top: 1630px;
+        left: 80px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 4 image*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>img{
+        position: absolute;
+        height: 230px;
+        width: 450px;
+        border-radius: 10%;
+    }
+    /*card 4 title*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>a{
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        position: absolute;
+        top: 250px;
+        left: 150px;
+        z-index: 1;
+        font-family: "Arial Rounded MT Bold";
+    }
+
+    /*card 5 background*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div{
+        width: 450px;
+        height: 300px;
+        background: black;
+        position: absolute;
+        top: 2130px;
+        left: 80px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 5 image*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>img{
+        position: absolute;
+        height: 230px;
+        width: 450px;
+        border-radius: 10%;
+    }
+    /*card 5 title*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>a{
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        position: absolute;
+        top: 250px;
+        left: 130px;
+        z-index: 1;
+        font-family: "Arial Rounded MT Bold";
+    }
+
+    /*card 6 background*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div{
+        width: 450px;
+        height: 300px;
+        background: black;
+        position: absolute;
+        top: 2630px;
+        left: 80px;
+        margin-bottom: 100px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10%;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 6 image*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>img{
+        position: absolute;
+        height: 230px;
+        width: 450px;
+        border-radius: 10%;
+    }
+    /*card 6 title*/
+    body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>a{
+        color: white;
+        text-decoration: none;
+        font-size: 27px;
+        position: absolute;
+        top: 250px;
+        left: 130px;
+        z-index: 1;
+        font-family: "Arial Rounded MT Bold";
+    }
+
+    /* scrollbar*/
+    body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar {
+        width: 8px;
+        border-radius: 10%;
+        display: none;
+    }
+    /* Thumb */
+    body>main:nth-child(5)>section:nth-child(2)>div::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+
+    /* Bounce Animation */
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-25px);
+        }
+    }
+
+
+    /*design box 1.1*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 60px;
+        width: 120px;
+        top: -25px;
+        left: -20px;
+        position: absolute;
+        z-index: 1;
+    }
+    /*design box 1.2*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(1)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 50px;
+        width: 100px;
+        top: 15px;
+        left: 60px;
+        position: absolute;
+    }
+
+    /*design box 3.1*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 40px;
+        width: 70px;
+        top: 300px;
+        left: 250px;
+        position: absolute;
+    }
+    /*design box 3.2*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(3)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 30px;
+        width: 50px;
+        top: 330px;
+        left: 310px;
+        position: absolute;
+    }
+
+    /*design box 4.1*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(4)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 50px;
+        width: 100px;
+        bottom: 40px;
+        right: 140px;
+        position: absolute;
+    }
+    /*design box 4.2*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(4)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 40px;
+        width: 80px;
+        bottom: 20px;
+        right: 90px;
+        position: absolute;
+    }
+
+    /*design box 5.1*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 50px;
+        width: 100px;
+        bottom: 80px;
+        left: 30px;
+        position: absolute;
+    }
+    /*design box 5.2*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(5)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 40px;
+        width: 80px;
+        bottom: 60px;
+        left: 90px;
+        position: absolute;
+    }
+
+    /*design box 6.1*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(6)>div:nth-child(1){
+        border: 3.5px solid #3CBEFF;
+        height: 40px;
+        width: 70px;
+        top: 420px;
+        right: 20px;
+        position: absolute;
+    }
+    /*design box 6.2*/
+    body>main:nth-child(5)>section:nth-child(3)>section:nth-child(6)>div:nth-child(2){
+        border: 2px solid #3CBEFF;
+        height: 30px;
+        width: 50px;
+        top: 450px;
+        right: -20px;
+        position: absolute;
+    }
+    /*Achievement section*/
+    body>main:nth-child(6){
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    /*Achievement title*/
+    body>main:nth-child(6)>section:nth-child(1)>h1{
+        color: #3CBEFF;
+        left: 43%;
+        position: absolute;
+        top: -30px;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 1;
+    }
+    /* Card Container */
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div {
+        background: #3CBEFF;
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+        left: 100px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+
+    /* Image inside the card */
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div>img {
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        display: block;
+    }
+
+    /* Description overlay */
+    .description {
+        position: absolute;
+        bottom: 0;
+        left: -10px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+        padding: 10px; /
+    }
+
+    /* Show description on hover */
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div:hover .description {
+        opacity: 1;
+    }
+    /* Card 2 Container */
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div {
+        background: white;
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        top: -130px;
+        left: 580px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+
+    /* Image inside the card 2*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div>img {
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        display: block;
+    }
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div:hover .description {
+        opacity: 1;
+    }
+    /*card 3 container*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div{
+        background: white;
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        top: -360px;
+        left: 1050px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 3 image*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div>img{
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        display: block;
+    }
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(3)>div:hover .description{
+        opacity: 1;
+    }
+    /*card 4 container*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div{
+        background: white;
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 250px;
+        left: 100px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px #3CBEFF;
+    }
+    /*card 4 image*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div>img{
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        display: block;
+    }
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div:hover .description{
+        opacity: 1;
+    }
+
+    /*card 5 container*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div{
+        background: white;
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 480px;
+        left: 580px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px #3CBEFF;
+
+    }
+    /*card 5 image*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div>img{
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        display: block;
+    }
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div:hover .description{
+        opacity: 1;
+    }
+
+    /*card 6 container*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div{
+        background: white;
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 710px;
+        left: 1050px;
+        z-index: 1;
+        overflow: hidden;
+        box-shadow: 2px 2px 8px #3CBEFF;
+
+    }
+    /*card 6 image*/
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div>img{
+        height: 230px;
+        width: 350px;
+        border-radius: 10px;
+        display: block;
+    }
+    body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(6)>div:hover .description{
+        opacity: 1;
+    }
+    /*gallery section*/
+    body>main:nth-child(7){
+        background: black;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    /*background image*/
+    .background{
+        justify-content: space-around;
+        position: absolute;
+        align-self: center;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        display: block;
+        filter: grayscale(80%);
+    }
+
+    /*Gallery title*/
+    .gallery{
+        color: #1b1a1a;
+        left: 45%;
+        position: absolute;
+        top: -20px;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 1;
+    }
+    .arrow{
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        z-index: 1;
+        top: 350px;
+        left: 1360px;
+        font-size: 23px;
+        object-fit: cover;
+        transform: rotate(360deg);
+        color: white;
+        font-weight: bold;
+    }
+    .img1, .img2, .img3, .img4, .img5 {
+        width: 220px;
+        height: 80vh;
+        position: absolute;
+        z-index: 1;
+        top: 100px;
+        object-fit: cover;
+        transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+    }
+
+    .img1 {
+        left: 80px;
+    }
+
+    .img2 {
+        left: 340px;
+    }
+
+    .img3 {
+        left: 600px;
+        object-position: 80% 0;
+    }
+
+    .img4 {
+        left: 860px;
+    }
+
+    .img5 {
+        left: 1120px;
+        object-position: 45% 0;
+    }
+
+    .img1:hover{
+        transform: scale(1.15); /* Scales the image up by 10% */
+        height: 90vh;
+        width: 400px;
+        object-position: 50% 0;
+        z-index: 2;
+    }
+    .img2:hover{
+        transform: scale(1.15); /* Scales the image up by 10% */
+        height: 90vh;
+        width: 400px;
+        object-position: 80% 0;
+        z-index: 2;
+    }
+    .img3:hover{
+        transform: scale(1.15); /* Scales the image up by 10% */
+        height: 90vh;
+        width: 400px;
+        object-position: 90% 0%;
+        z-index: 2;
+    }
+    .img4:hover{
+        transform: scale(1.15); /* Scales the image up by 10% */
+        height: 90vh;
+        width: 400px;
+        object-position: 70% 0;
+        z-index: 2;
+    }
+    .img5:hover{
+        transform: scale(1.15); /* Scales the image up by 10% */
+        height: 90vh;
+        width: 400px;
+        left: 900px;
+        object-position: 50% 0;
+        z-index: 2;
+    }
+
+    body>main:nth-child(8) {
+        background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .assignment>h1{
+        color: #3CBEFF;
+        left: 40%;
+        position: absolute;
+        top: -50px;
+        font-size: 50px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+        z-index: 1;
+    }
+    .box{
+        width: 85vw;
+        height: 85vh;
+        border: 0 solid #3CBEFF;
+        box-shadow: #3CBEFF 2px 2px 10px 4px;
+        top: 70px;
+        display: flex;
+        left: 110px;
+        position: relative;
+        background-color: transparent;
+        overflow: hidden;
+    }
+    .temp{
+        animation: animation-slide 7s infinite alternate-reverse;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+
+    }
+    .rectangle{
+        width: 85vw;
+        height: 98%;
+        background-color: transparent;
+    }
+    .rectangle>h3{
+        color: #ffffff;
+        font-size: 30px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    /*card 1*/
+    .card1 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 10px;
+        left: 100px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+        /* Add relative positioning to position the overlay */
+        position: relative;
+    }
+
+    .card1 >img {
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card1 > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for overlay */
+        z-index: 2; /* Ensure overlay is above the image */
+    }
+
+    .run  {
+        color: #ffffff;
+        font-size: 40px;
+        font-family: Inter;
+        font-weight: normal;
+        top: -80px;
+        left: 65px;
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for opacity */
+        z-index: 4; /* Ensure the text is above the overlay */
+        position: relative; /* Ensure it respects z-index */
+    }
+
+    .card1 > h6 {
+        color: #3CBEFF;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: normal;
+        padding: 0;
+        z-index: 3;
+        top: -30px;
+        position: relative;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    /* Hover effects */
+    .card1:hover {
+        transform: scale(1.05);
+    }
+
+    .card1:hover > .overlay {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .card1 > h6:hover {
+        opacity: 0;
+    }
+
+    .card1:hover > .run,
+    .card2:hover > .run,
+    .card3:hover > .run,
+    .card4:hover > .run,
+    .card5:hover > .run,
+    .card6:hover > .run {
+        opacity: 1; /* Show the button on hover */
+    }
+
+    .card1:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        bottom: -65px;
+        left: 35px;
+        position: absolute;
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+        z-index: 10;
+
+    }
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+    /*card 2*/
+    .card2 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+        /* Add relative positioning to position the overlay */
+        position: relative;
+    }
+
+    .card2 >  img {
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card2 > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for overlay */
+        z-index: 2; /* Ensure overlay is above the image */
+    }
+
+
+    .card2 > h6 {
+        color: #3CBEFF;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: normal;
+        padding: 0;
+        z-index: 3;
+        top: -30px;
+        position: relative;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    /* Hover effects */
+    .card2:hover {
+        transform: scale(1.05);
+    }
+
+    .card2:hover > .overlay {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .card2 > h6:hover {
+        opacity: 0;
+    }
+
+
+    .card2:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        margin: 85px 35px; /* Center the button */
+        padding: 10px 20px; /* Add padding */
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+    /*card 3*/
+    .card3 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: -430px;
+        left: 475px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+        /* Add relative positioning to position the overlay */
+        position: relative;
+    }
+
+    .card3 > img {
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card3 > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for overlay */
+        z-index: 2; /* Ensure overlay is above the image */
+    }
+
+    .card3 > h6 {
+        color: #3CBEFF;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: normal;
+        padding: 0;
+        z-index: 3;
+        top: -30px;
+        position: relative;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    /* Hover effects */
+    .card3:hover {
+        transform: scale(1.05);
+    }
+
+    .card3:hover > .overlay {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .card3 > h6:hover {
+        opacity: 0;
+    }
+
+    .card3:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+
+    .card4 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: -360px;
+        left: 475px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+        /* Add relative positioning to position the overlay */
+        position: relative;
+    }
+
+    .card4 > img {
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card4 > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for overlay */
+        z-index: 2; /* Ensure overlay is above the image */
+    }
+
+    .card4 > h6 {
+        color: #3CBEFF;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: normal;
+        padding: 0;
+        z-index: 3;
+        top: -30px;
+        position: relative;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    /* Hover effects */
+    .card4:hover {
+        transform: scale(1.05);
+    }
+
+    .card4:hover > .overlay {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .card4 > h6:hover {
+        opacity: 0;
+    }
+
+    .card4:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+
+    /*card 5*/
+    .card5 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: -870px;
+        left: 850px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+        /* Add relative positioning to position the overlay */
+        position: relative;
+    }
+
+    .card5 > img {
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card5 > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for overlay */
+        z-index: 2; /* Ensure overlay is above the image */
+    }
+
+    .card5 > h6 {
+        color: #3CBEFF;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: normal;
+        padding: 0;
+        z-index: 3;
+        top: -30px;
+        position: relative;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    /* Hover effects */
+    .card5:hover {
+        transform: scale(1.05);
+    }
+
+    .card5:hover > .overlay {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .card5 > h6:hover {
+        opacity: 0;
+    }
+
+    .card5:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    /*card 6*/
+    .card6 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: -800px;
+        left: 850px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+        /* Add relative positioning to position the overlay */
+        position: relative;
+    }
+
+    .card6 > img {
+        width: 100%;
+        height: 140px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card6 > .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for overlay */
+        z-index: 2; /* Ensure overlay is above the image */
+    }
+
+    .card6 > h6 {
+        color: #3CBEFF;
+        font-size: 25px;
+        font-family: Inter;
+        font-weight: normal;
+        padding: 0;
+        z-index: 3;
+        top: -30px;
+        position: relative;
+        transition: opacity 0.3s;
+        text-align: center;
+    }
+
+    /* Hover effects */
+    .card6:hover {
+        transform: scale(1.05);
+    }
+
+    .card6:hover > .overlay {
+        opacity: 1; /* Show the overlay on hover */
+    }
+
+    .card6 > h6:hover {
+        opacity: 0;
+    }
+
+    .card6:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+    .sliderButton{
+        position: absolute;
+        right: 150px;
+        top: 420px
+    }
+    .previousButton{
+        position: absolute;
+        left: 150px;
+        top: 420px
+    }
+
+    /*====================================================================================================================*/
+    .rectangle1{
+        width: 85vw;
+        height: 100%;
+        background-color: transparent;
+        z-index: 4;
+        left: 1310px;
+        position: absolute;
+        top: 0;
+    }
+    .rectangle1>h3{
+        color: #ffffff;
+        font-size: 30px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    /*card 1*/
+    .card11 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 80px;
+        left: 100px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+    }
+
+    .card11 > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card11 > h3 {
+        color: #3CBEFF;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for opacity */
+        z-index: 2; /* Ensure the text is above the image */
+        position: relative; /* Ensure it respects z-index */
+    }
+
+    /* Hover effects */
+    .card11:hover {
+        transform: scale(1.05);
+    }
+
+    .card11:hover > h3 {
+        opacity: 1; /* Show the text on hover */
+    }
+
+    .card11:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        margin: 85px 35px; /* Center the button */
+        padding: 10px 20px; /* Add padding */
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+    /*card 2*/
+    .card22 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 380px;
+        left: 100px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+    }
+
+    .card22 > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card22 > h3 {
+        color: #3CBEFF;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for opacity */
+        z-index: 2; /* Ensure the text is above the image */
+        position: relative; /* Ensure it respects z-index */
+    }
+
+    /* Hover effects */
+    .card22:hover {
+        transform: scale(1.05);
+    }
+
+    .card22:hover > h3 {
+        opacity: 1; /* Show the text on hover */
+    }
+
+    .card22:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5;
+    }
+
+    /*card 3*/
+    .card33 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 80px;
+        left: 475px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+    .card33 > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
+    }
+
+    .card33 > h3 {
+        color: #3CBEFF;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
+    }
+
+    /* Hover effects */
+    .card33:hover {
+        transform: scale(1.05);
+    }
+
+    .card33:hover > h3 {
+        opacity: 1; /* Show the text on hover */
+    }
+
+    .card33:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        margin: 85px 35px; /* Center the button */
+        padding: 10px 20px; /* Add padding */
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+    /*card 4*/
+    .card44 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 380px;
+        left: 475px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+    }
+
+    .card44 > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card44 > h3 {
+        color: #3CBEFF;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for opacity */
+        z-index: 2; /* Ensure the text is above the image */
+        position: relative; /* Ensure it respects z-index */
+    }
+
+    /* Hover effects */
+    .card44:hover {
+        transform: scale(1.05);
+    }
+
+    .card44:hover > h3 {
+        opacity: 1; /* Show the text on hover */
+    }
+
+    .card44:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        margin: 85px 35px; /* Center the button */
+        padding: 10px 20px; /* Add padding */
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+
+    /*card 5*/
+    .card55 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 80px;
+        left: 850px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+    }
+
+    .card55 > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card55 > h3 {
+        color: #3CBEFF;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for opacity */
+        z-index: 2; /* Ensure the text is above the image */
+        position: relative; /* Ensure it respects z-index */
+    }
+
+    /* Hover effects */
+    .card55:hover {
+        transform: scale(1.05);
+    }
+
+    .card55:hover > h3 {
+        opacity: 1; /* Show the text on hover */
+    }
+
+    .card55:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        margin: 85px 35px; /* Center the button */
+        padding: 10px 20px; /* Add padding */
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+    /*card 6*/
+    .card66 {
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        position: absolute;
+        top: 380px;
+        left: 850px;
+        z-index: 2;
+        border-radius: 20px;
+        overflow: hidden; /* Ensure the text stays within the card */
+        transition: transform 0.3s; /* Smooth scaling */
+    }
+
+    .card66 > img {
+        width: 100%;
+        height: 120px;
+        position: absolute;
+        top: 0;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0; /* Round only the top corners */
+        z-index: 1; /* Ensure the image is below the text */
+    }
+
+    .card66 > h3 {
+        color: #3CBEFF;
+        font-size: 20px;
+        font-family: Inter;
+        font-weight: normal;
+        margin-top: 50px;
+        padding: 0;
+        text-align: center;
+        opacity: 0; /* Start as invisible */
+        transition: opacity 0.3s; /* Smooth transition for opacity */
+        z-index: 2; /* Ensure the text is above the image */
+        position: relative; /* Ensure it respects z-index */
+    }
+
+    /* Hover effects */
+    .card66:hover {
+        transform: scale(1.05);
+    }
+
+    .card66:hover > h3 {
+        opacity: 1; /* Show the text on hover */
+    }
+
+    .card66:hover > img {
+        filter: brightness(0.4); /* Optional: dim the image on hover */
+    }
+
+    .github-button {
+        display: block; /* Makes the button take the full width */
+        margin: 85px 35px; /* Center the button */
+        padding: 10px 20px; /* Add padding */
+        background-color: #3CBEFF; /* Button color */
+        color: white; /* Text color */
+        text-align: center; /* Center the text */
+        border-radius: 5px; /* Rounded corners */
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s; /* Smooth hover effect */
+    }
+
+    .github-button:hover {
+        background-color: #2a9bd5; /* Darker shade on hover */
+    }
+
+
+    /*@keyframes animation-slide {*/
+    /*    0%, 20% {*/
+    /*        transform: translateX(0);*/
+    /*    }*/
+    /*    25%, 50% {*/
+    /*        transform: translateX(-100%);*/
+    /*    }*/
+    /*    55%, 70% {*/
+    /*        transform: translateX(-200%);*/
+    /*    }*/
+    /*    75%, 100% {*/
+    /*        transform: translateX(-300%);*/
+    /*    }*/
+    /*}*/
+    /*.assignment>div:nth-child(3){*/
+    /*    background-color: white;*/
+    /*    width: 200px;*/
+    /*    height: 250px;*/
+    /*    position: absolute;*/
+    /*    top: 100px;*/
+    /*    right: 50px;*/
+    /*    z-index: 2;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+    /*.assignment>div:nth-child(3)>img{*/
+    /*    width: 100%;*/
+    /*    height: 120px;*/
+    /*    object-fit: cover;*/
+    /*    text-align: center;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+    /*.view{*/
+    /*    width: 150px;*/
+    /*    height: 40px;*/
+    /*    background-color: #3CBEFF;*/
+    /*    border-radius: 20px;*/
+    /*    left: 12%;*/
+    /*    position: absolute;*/
+    /*    top: 135px;*/
+    /*}*/
+    /*.view>a{*/
+    /*    position: absolute;*/
+    /*    top: 10px;*/
+    /*    left: 57px;*/
+    /*    color: white;*/
+    /*}*/
+    /*.try{*/
+    /*    width: 150px;*/
+    /*    height: 40px;*/
+    /*    background-color: #3CBEFF;*/
+    /*    border-radius: 20px;*/
+    /*    left: 12%;*/
+    /*    position: absolute;*/
+    /*    top: 195px;*/
+    /*}*/
+    /*.try>a{*/
+    /*    position: absolute;*/
+    /*    top: 10px;*/
+    /*    left: 100px;*/
+    /*    color: white;*/
+    /*}*/
+    /*!*=======================================================*!*/
+    /*.assignment>div:nth-child(6){*/
+    /*    background-color: white;*/
+    /*    width: 200px;*/
+    /*    height: 250px;*/
+    /*    position: absolute;*/
+    /*    top: 400px;*/
+    /*    right: 50px;*/
+    /*    z-index: 2;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+    /*.assignment>div:nth-child(6)>img{*/
+    /*    width: 100%;*/
+    /*    height: 120px;*/
+    /*    object-fit: cover;*/
+    /*    text-align: center;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+    /*.view{*/
+    /*    width: 150px;*/
+    /*    height: 40px;*/
+    /*    background-color: #3CBEFF;*/
+    /*    border-radius: 20px;*/
+    /*    left: 12%;*/
+    /*    position: absolute;*/
+    /*    top: 135px;*/
+    /*}*/
+    /*.view>a{*/
+    /*    position: absolute;*/
+    /*    top: 10px;*/
+    /*    left: 57px;*/
+    /*    color: white;*/
+    /*}*/
+    /*.try{*/
+    /*    width: 150px;*/
+    /*    height: 40px;*/
+    /*    background-color: #3CBEFF;*/
+    /*    border-radius: 20px;*/
+    /*    left: 12%;*/
+    /*    position: absolute;*/
+    /*    top: 195px;*/
+    /*}*/
+    /*.try>a{*/
+    /*    position: absolute;*/
+    /*    top: 10px;*/
+    /*    left: 57px;*/
+    /*    color: white;*/
+    /*}*/
+    /*!*=======================================================*!*/
+    /*.assignment>div:nth-child(9){*/
+    /*    background-color: white;*/
+    /*    width: 200px;*/
+    /*    height: 250px;*/
+    /*    position: absolute;*/
+    /*    top: 400px;*/
+    /*    right: 300px;*/
+    /*    z-index: 2;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+    /*.assignment>div:nth-child(9)>img{*/
+    /*    width: 100%;*/
+    /*    height: 120px;*/
+    /*    object-fit: cover;*/
+    /*    text-align: center;*/
+    /*    border-radius: 20px;*/
+    /*}*/
+    /*.view{*/
+    /*    width: 150px;*/
+    /*    height: 40px;*/
+    /*    background-color: #3CBEFF;*/
+    /*    border-radius: 20px;*/
+    /*    left: 12%;*/
+    /*    position: absolute;*/
+    /*    top: 135px;*/
+    /*}*/
+    /*.view>a{*/
+    /*    position: absolute;*/
+    /*    top: 10px;*/
+    /*    left: 57px;*/
+    /*    color: white;*/
+    /*}*/
+    /*.try{*/
+    /*    width: 150px;*/
+    /*    height: 40px;*/
+    /*    background-color: #3CBEFF;*/
+    /*    border-radius: 20px;*/
+    /*    left: 12%;*/
+    /*    position: absolute;*/
+    /*    top: 195px;*/
+    /*}*/
+    /*.try>a{*/
+    /*    position: absolute;*/
+    /*    top: 10px;*/
+    /*    left: 57px;*/
+    /*    color: white;*/
+    /*}*/
+    body>main:nth-child(9){
+        background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        overflow: hidden;
+    }
+    .contact1{
+        color: white;
+        position: absolute;
+        top: 30px;
+        left: 57px;
+        font-size: 40px;
+        font-family: Poppins;
+        font-weight: bold;
+    }
+    .o{
+        color: white;
+        position: absolute;
+        top: 23px;
+        left: 687px;
+        font-size: 47px;
+        font-family: Poppins;
+        font-weight: bold;
+    }
+    .r{
+        color: black;
+        position: absolute;
+        top: 23px;
+        left: 720px;
+        font-size: 47px;
+        font-family: Poppins;
+        font-weight: bold;
+
+    }
+    .contact2{
+        color: black;
+        position: absolute;
+        top: 23px;
+        right: 80px;
+        font-size: 47px;
+        font-family: Poppins;
+        font-weight: bold;
+    }
+    .fName>label{
+        font-family: Inter;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 170px;
+        right: 600px;
+        z-index: 1;
+        font-weight: bold;
+    }
+    .fName>input{
+        width: 240px;
+        right: 440px;
+        top: 100px;
+        position: absolute;
+        height: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 100px;
+        font-family: Inter;
+        font-size: 18px;
+        color: black;
+        background: white;
+    }
+    .lName>label{
+        font-family: Inter;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 170px;
+        right: 200px;
+        z-index: 1;
+        font-weight: bold;
+    }
+    .lName>input{
+        width: 240px;
+        right: 40px;
+        top: 100px;
+        position: absolute;
+        height: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 100px;
+        font-family: Inter;
+        font-size: 18px;
+        color: black;
+        background: white;
+    }
+    .emails>label{
+        font-family: Inter;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 280px;
+        right: 645px;
+        z-index: 1;
+        font-weight: bold;
+    }
+    .emails>input{
+        width: 240px;
+        right: 440px;
+        top: 210px;
+        position: absolute;
+        height: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 100px;
+        font-family: Inter;
+        font-size: 18px;
+        color: black;
+        background: white;
+    }
+    .phone>label{
+        font-family: Inter;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 280px;
+        right: 165px;
+        z-index: 1;
+        font-weight: bold;
+    }
+    .phone>input{
+        width: 240px;
+        right: 40px;
+        top: 210px;
+        position: absolute;
+        height: 20px;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 100px;
+        font-family: Inter;
+        font-size: 18px;
+        color: black;
+        background: white;
+    }
+    .subject>label{
+        font-family: Inter;
+        font-size: 30px;
+        color: black;
+        position: absolute;
+        top: 420px;
+        right: 600px;
+        z-index: 1;
+        font-weight: bold;
+    }
+    .webdesign{
+        position: absolute;
+        right: 575px;
+        top: 465px;
+        color: black;
+        font-size: 20px;
+    }
+    .software{
+        position: absolute;
+        right: 415px;
+        top: 465px;
+        color: black;
+        font-size: 20px;
+    }
+    .complaint{
+        position: absolute;
+        right: 255px;
+        top: 465px;
+        color: black;
+        font-size: 20px;
+    }
+    .other{
+        position: absolute;
+        right: 95px;
+        top: 465px;
+        color: black;
+        font-size: 20px;
+    }
+    .message>textarea{
+        width: 655px;
+        height: 150px;
+        right: 40px;
+        top: 580px;
+        position: absolute;
+        font-family: Inter;
+        font-size: 18px;
+        color: black;
+        background: white;
+    }
+    .messageButton{
+        position: absolute;
+        right: 40px;
+        top: 740px;
+        color: black;
+    }
+    .message>label{
+        font-family: Inter;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        top: 550px;
+        right: 650px;
+        z-index: 1;
+        font-weight: bold;
+    }
+    .call>img{
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        left: 60px;
+        top: 200px;
+        color: white;
+    }
+    .call>p{
+        font-family: Inter;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        left: 145px;
+        top: 180px;
+    }
+    .email>img{
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        left: 60px;
+        top: 335px;
+        color: white;
+    }
+    .email>p{
+        font-family: Inter;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        left: 145px;
+        top: 310px;
+    }
+    .location>img{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        left: 55px;
+        top: 465px;
+        color: white;
+    }
+    .location>p{
+        font-family: Inter;
+        font-size: 30px;
+        color: white;
+        position: absolute;
+        left: 145px;
+        top: 450px;
+    }
+    .contacts>a:nth-child(1){
+        left: 130px;
+        bottom: 100px;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+    }
+    .contacts>a:nth-child(2){
+        left: 240px;
+        bottom: 100px;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+    }
+    .contacts>a:nth-child(3){
+        left: 350px;
+        bottom: 100px;
+        height: 60px;
+        width: 60px;
+        position: absolute;
+    }
+    .circles>div:nth-child(1){
+        position: absolute;
+        bottom: -150px;
+        left: 480px;
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        background: linear-gradient(to right, #B1B1B1 0%, #B1B1B1 75%, white 75%, white 100%);
+        opacity: 0.8;
+        z-index: 1;
+    }
+    .circles>div:nth-child(2){
+        position: absolute;
+        bottom: 50px;
+        left: 440px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background: #5BBAEF;
+        opacity: 0.5;
+    }
+
 }
 
 
