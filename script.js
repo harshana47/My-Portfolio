@@ -64,3 +64,19 @@ navLinks.forEach(link => {
         link.classList.add('active');
     });
 });
+
+function sendEmail(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const form = event.target;
+    const formData = new FormData(form);
+
+    emailjs.sendForm('Gmail', 'template_8hboc0f', form)
+        .then((result) => {
+            alert('Message sent successfully!');
+            form.reset(); // Reset form after submission
+        }, (error) => {
+            alert('Failed to send message. Please try again.');
+            console.error(error);
+        });
+}

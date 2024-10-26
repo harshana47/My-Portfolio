@@ -665,7 +665,7 @@
     <h1 data-aos="fade-left" data-aos-duration="800"  class="contact2">Leave a Message</h1>
     <section>
         <br>
-        <form>
+        <form onsubmit="sendEmail(event)" >
             <section class="fName">
                 <label data-aos="fade-up" data-aos-duration="700" for="fname">First Name:</label><br>
                 <input data-aos="fade-up" data-aos-duration="700" type="text" id="fname" name="fname"><br>
@@ -675,42 +675,42 @@
                 <input data-aos="fade-up" data-aos-duration="700" type="text" id="lname" name="lname"><br>
             </section>
             <section class="emails">
-                <label  for="email">Email:</label><br>
-                <input  type="text" id="email" name="email"><br>
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email"><br>
             </section>
             <section class="phone">
-                <label  for="phone">Phone Number:</label><br>
-                <input  type="text" id="phone" name="phone"><br>
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone"><br>
             </section>
-            <section class="subject">
+            <section class="subject" id="subject">
                 <label data-aos="zoom-in" for="subject">Subject:</label><br>
                 <section class="webdesign">
-                    <input  type="radio" id="Web design" name="checkbox" checked>
-                    <label  for="Web design">Web Design</label><br>
+                    <input type="radio" id="webdesign" name="subject" value="Web design" checked>
+                    <label for="webdesign">Web Design</label><br>
                 </section>
                 <section class="software">
-                    <input  type="radio" id="software" name="checkbox">
-                    <label  for="Web design">Software</label><br>
+                    <input type="radio" id="software" name="subject" value="Software">
+                    <label for="software">Software</label><br>
                 </section>
                 <section class="complaint">
-                    <input  type="radio" id="complaint" name="checkbox">
-                    <label  for="Web design">Complaint</label><br>
+                    <input type="radio" id="complaint" name="subject" value="Complaint">
+                    <label for="complaint">Complaint</label><br>
                 </section>
                 <section class="other">
-                    <input  type="radio" id="other" name="checkbox">
-                    <label  for="Web design">Other</label><br>
+                    <input type="radio" id="other" name="subject" value="Other">
+                    <label for="other">Other</label><br>
                 </section>
             </section>
             <section class="message">
-                <label  for="subject">Subject:</label><br>
-                <textarea  id="subject" name="subject" placeholder="Write something.." ></textarea><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" placeholder="Write something.."></textarea><br>
             </section>
 
             <section class="messageButton">
                 <input type="submit" value="Send Message">
             </section>
-
         </form>
+
         <br><br>
     </section>
     <section>
@@ -760,5 +760,12 @@
 
 
 <script src="lib/fontawesome-free-6.6.0-web/js/all.min.js"></script>
+
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("Yservice_1f29yig"); // Replace with your EmailJS user ID
+    })();
+</script>
 </body>
 </html>
