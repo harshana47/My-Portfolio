@@ -1983,6 +1983,27 @@ body>main:nth-child(8) {
     position: absolute;
     top: 0;
 }
+
+.card11:hover > .run,
+.card22:hover > .run,
+.card33:hover > .run,
+.card44:hover > .run,
+.card55:hover > .run,
+.card66:hover > .run {
+    opacity: 1; /* Show the button on hover */
+}
+
+.card11 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
 .rectangle1>h3{
     color: #ffffff;
     font-size: 30px;
@@ -2008,7 +2029,7 @@ body>main:nth-child(8) {
 
 .card11 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -2016,27 +2037,29 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card11 > h3 {
+.card11 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
-    text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
-}
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
+    text-align: center;}
 
 /* Hover effects */
 .card11:hover {
     transform: scale(1.05);
 }
 
-.card11:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card11:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card11 > h6:hover {
+    opacity: 0;
 }
 
 .card11:hover > img {
@@ -2072,10 +2095,21 @@ body>main:nth-child(8) {
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
 }
+.card22 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
 
 .card22 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -2083,18 +2117,17 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card22 > h3 {
+.card22 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -2102,8 +2135,12 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card22:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card22:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card22 > h6:hover {
+    opacity: 0;
 }
 
 .card22:hover > img {
@@ -2139,10 +2176,21 @@ body>main:nth-child(8) {
     overflow: hidden;
     transition: transform 0.3s;
 }
+.card33 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
 
 .card33 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -2150,18 +2198,17 @@ body>main:nth-child(8) {
     z-index: 1;
 }
 
-.card33 > h3 {
+.card33 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-    z-index: 2;
+    z-index: 3;
+    top: -30px;
     position: relative;
+    transition: opacity 0.3s;
+    text-align: center;
 }
 
 /* Hover effects */
@@ -2169,8 +2216,12 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card33:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card33:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card33 > h6:hover {
+    opacity: 0;
 }
 
 .card33:hover > img {
@@ -2206,10 +2257,21 @@ body>main:nth-child(8) {
     overflow: hidden; /* Ensure the text stays within the card */
     transition: transform 0.3s; /* Smooth scaling */
 }
+.card44 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
 
 .card44 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -2217,18 +2279,17 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card44 > h3 {
+.card44 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -2236,8 +2297,12 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card44:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card44:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card44 > h6:hover {
+    opacity: 0;
 }
 
 .card44:hover > img {
@@ -2277,26 +2342,36 @@ body>main:nth-child(8) {
 
 .card55 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
     border-radius: 20px 20px 0 0; /* Round only the top corners */
     z-index: 1; /* Ensure the image is below the text */
 }
+.card55 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
 
-.card55 > h3 {
+.card55 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -2304,8 +2379,12 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card55:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card55:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card55 > h6:hover {
+    opacity: 0;
 }
 
 .card55:hover > img {
@@ -2342,9 +2421,21 @@ body>main:nth-child(8) {
     transition: transform 0.3s; /* Smooth scaling */
 }
 
+.card66 > .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    opacity: 0; /* Start as invisible */
+    transition: opacity 0.3s; /* Smooth transition for overlay */
+    z-index: 2; /* Ensure overlay is above the image */
+}
+
 .card66 > img {
     width: 100%;
-    height: 120px;
+    height: 140px;
     position: absolute;
     top: 0;
     object-fit: cover;
@@ -2352,18 +2443,17 @@ body>main:nth-child(8) {
     z-index: 1; /* Ensure the image is below the text */
 }
 
-.card66 > h3 {
+.card66 > h6 {
     color: #3CBEFF;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Inter;
     font-weight: normal;
-    margin-top: 50px;
     padding: 0;
+    z-index: 3;
+    top: -30px;
+    position: relative;
+    transition: opacity 0.3s;
     text-align: center;
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for opacity */
-    z-index: 2; /* Ensure the text is above the image */
-    position: relative; /* Ensure it respects z-index */
 }
 
 /* Hover effects */
@@ -2371,8 +2461,12 @@ body>main:nth-child(8) {
     transform: scale(1.05);
 }
 
-.card66:hover > h3 {
-    opacity: 1; /* Show the text on hover */
+.card66:hover > .overlay {
+    opacity: 1; /* Show the overlay on hover */
+}
+
+.card66 > h6:hover {
+    opacity: 0;
 }
 
 .card66:hover > img {
