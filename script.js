@@ -70,7 +70,7 @@ function sendEmail(event) {
 
     const form = event.target;
 
-    emailjs.sendForm('Gmail', 'template_8hboc0f', form)
+    emailjs.sendForm('service_1f29yig', 'template_8hboc0f', form)
         .then((result) => {
             alert('Message sent successfully!');
             form.reset(); // Reset form after submission
