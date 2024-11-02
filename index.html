@@ -665,18 +665,18 @@
     <h1 data-aos="fade-left" data-aos-duration="800"  class="contact2">Leave a Message</h1>
     <section>
         <br>
-        <form onsubmit="sendEmail(event)" >
+        <form onsubmit="sendEmail(event)">
             <section class="fName">
                 <label data-aos="fade-up" data-aos-duration="700" for="fname">First Name:</label><br>
-                <input data-aos="fade-up" data-aos-duration="700" type="text" id="fname" name="fname"><br>
+                <input data-aos="fade-up" data-aos-duration="700" type="text" id="fname" name="fname" required><br>
             </section>
             <section class="lName">
                 <label data-aos="fade-up" data-aos-duration="700" for="lname">Last Name:</label><br>
-                <input data-aos="fade-up" data-aos-duration="700" type="text" id="lname" name="lname"><br>
+                <input data-aos="fade-up" data-aos-duration="700" type="text" id="lname" name="lname" required><br>
             </section>
             <section class="emails">
                 <label for="email">Email:</label><br>
-                <input type="text" id="email" name="email"><br>
+                <input type="email" id="email" name="email" required><br>
             </section>
             <section class="phone">
                 <label for="phone">Phone Number:</label><br>
@@ -703,13 +703,14 @@
             </section>
             <section class="message">
                 <label for="message">Message:</label><br>
-                <textarea id="message" name="message" placeholder="Write something.."></textarea><br>
+                <textarea id="message" name="message" placeholder="Write something.." required></textarea><br>
             </section>
 
             <section class="messageButton">
                 <input type="submit" value="Send Message">
             </section>
         </form>
+
 
         <br><br>
     </section>

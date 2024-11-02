@@ -65,26 +65,34 @@ navLinks.forEach(link => {
     });
 });
 
+document.querySelector('form').addEventListener('submit', sendEmail);
+
 function sendEmail(event) {
-    event.preventDefault(); // Prevent default form submission
+    event.preventDefault(); // Prevent the form from reloading the page
+
+    // Get the selected subject
+    var subject = document.querySelector('input[name="subject"]:checked');
+
+    // Check if a subject is selected
+    if (!subject) {
+        alert("Please select a subject.");
+        return; // Exit the function if no subject is selected
+    }
 
     var params = {
-        fname: document.getElementById("fname").value,
-        lname: document.getElementById("lname").value,
-        email: document.getElementById("email").value,
-        subject: document.querySelector('input[name="subject"]:checked').value,
-        message: document.getElementById("message").value,
+        f_name: document.getElementById("fname").value,
+        l_name: document.getElementById("lname").value,
+        email_id: document.getElementById("email").value,
+        phone_num: document.getElementById("phone").value,
+        subject_is: subject.value, // Correctly get the subject value
+        message_is: document.getElementById("message").value,
     };
 
-    emailjs.sendForm('service_1f29yig', 'template_jxkmquc', params)
-        .then(function (res) {
-            alert("Success! " + res.status);
-        }, function (error) {
-            console.error("Error details:", error); // Log error details
-            alert("Failed to send message. Please try again.");
-        });
+    emailjs.send('service_1f29yig', 'template_jxkmquc', params).then(function (res) {
+        alert("Success! " + res.status);
+    }, function (error) {
+        alert("Failed to send: " + error);
+    });
 }
-
-
 
 
