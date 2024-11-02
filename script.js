@@ -66,18 +66,25 @@ navLinks.forEach(link => {
 });
 
 function sendEmail(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); // Prevent default form submission
 
-    const form = event.target;
+    var params = {
+        fname: document.getElementById("fname").value,
+        lname: document.getElementById("lname").value,
+        email: document.getElementById("email").value,
+        subject: document.querySelector('input[name="subject"]:checked').value,
+        message: document.getElementById("message").value,
+    };
 
-    emailjs.sendForm('service_1f29yig', 'template_8hboc0f', form)
-        .then((result) => {
-            alert('Message sent successfully!');
-            form.reset(); // Reset form after submission
-        })
-        .catch((error) => {
-            alert('Failed to send message. Please try again.');
-            console.error('Error:', error);
+    emailjs.sendForm('service_1f29yig', 'template_jxkmquc', params)
+        .then(function (res) {
+            alert("Success! " + res.status);
+        }, function (error) {
+            console.error("Error details:", error); // Log error details
+            alert("Failed to send message. Please try again.");
         });
 }
+
+
+
 

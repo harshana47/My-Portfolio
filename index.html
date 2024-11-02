@@ -761,10 +761,14 @@
 
 <script src="lib/fontawesome-free-6.6.0-web/js/all.min.js"></script>
 
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
     (function(){
-        emailjs.init("Yservice_1f29yig"); // Replace with your EmailJS user ID
+        emailjs.init({
+            publicKey: "wMl2KzCi7ZUYi7FS4",
+        });
     })();
 </script>
 </body>
