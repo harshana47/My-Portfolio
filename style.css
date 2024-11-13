@@ -145,7 +145,7 @@ body>main:nth-child(1)>section:nth-child(3)>section>div>nav>a>img:hover{
     bottom: 2px;
 }
 
-    /*contact bar images*/
+/*contact bar images*/
 body>main:nth-child(1)>section:nth-child(3)>section>div>nav{
     justify-content: space-around;
     position: absolute;
