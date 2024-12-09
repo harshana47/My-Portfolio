@@ -25,7 +25,7 @@
         <div>
             <img src="assets/images/background.png" alt="background png">
         </div>
-        <div data-aos="zoom-in-down" data-aos-duration="1000">
+        <div class="image-container" data-aos="zoom-in-down" data-aos-duration="1000">
             <img src="assets/images/my.jpg" alt="my png">
         </div>
     </section>
@@ -567,8 +567,8 @@
             </div>
             </div>
         </div>
-        <button class="sliderButton" id="slideButton">Slider</button>
-        <button class="previousButton" id="previousButton">Slider</button>
+        <img class="sliderButton" id="slideButton" src="assets/images/blue_arrow.png" >
+        <img class="previousButton" id="previousButton" src="assets/images/blue_arrow.png">
     </section>
 
 
@@ -757,9 +757,7 @@
 <script>
     AOS.init({
         disable: function() {
-            var maxWidth = 320; // Set maximum width to disable AOS
-            // Check if the current viewport width is 320px or less,
-            // and if the element is within the specified section
+            var maxWidth = 320;
             return window.innerWidth <= maxWidth && document.querySelector('#page6');
         }
     });

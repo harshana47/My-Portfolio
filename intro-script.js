@@ -31,7 +31,6 @@ window.addEventListener("load", () => {
         );
 });
 
-// Darken background on scroll (jQuery effect)
 $(document).ready(function() {
     $.fn.darkenScroll = function() {
         var elem = $( this );

@@ -1,161 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Chelsea+Market&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans-serif;
-    scroll-behavior: smooth; /* Smooth scroll for the whole document */
+    font-family: "Chelsea Market", system-ui;
+    scroll-behavior: smooth;
 }
 
 .container {
     height: 100%;
     overflow-y: auto;
     scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
 }
 
 /*1st page main*/
-body>main:nth-child(1){
+body > main:nth-child(1) {
     background: black;
     display: flex;
     width: 100%;
     height: 100vh;
-    margin: 0;
-    padding: 0;
 }
+
 /*hey im*/
-body>main:nth-child(1)>section:nth-child(4)>h1{
-    color: white;
+body > main:nth-child(1) > section:nth-child(4) > h1,
+body > main:nth-child(1) > section:nth-child(4) > h2 {
     position: absolute;
     left: 240px;
-    top: 10px;
     font-size: 50px;
-    font-family: Inter;
-    font-weight: lighter;
     margin-top: 20px;
 }
-/*name*/
-body>main:nth-child(1)>section:nth-child(4)>h2{
+
+body > main:nth-child(1) > section:nth-child(4) > h1 {
+    color: white;
+    top: 10px;
+    font-weight: lighter;
+}
+
+body > main:nth-child(1) > section:nth-child(4) > h2 {
     color: #3CBEFF;
-    position: absolute;
-    left: 240px;
-    top: 40px;
-    font-size: 50px;
+    top: 55px;
     font-family: Inter;
     font-weight: normal;
     text-shadow: 3px 3px 5px #3CBEFF;
 }
-/*background image*/
-body>main:nth-child(1)>section>div:first-child>img{
+
+/* Background Image */
+body > main:nth-child(1) > section > div:first-child > img {
     width: 48vw;
     height: 100vh;
-    margin: auto;
-    right: 0;
-    overflow: hidden;
     position: absolute;
+    right: 0;
     filter: grayscale(80%);
-
 }
-/*my image*/
-body>main:nth-child(1)>section>div:nth-child(2)>img{
-    width: 22vw;
-    height: 46vh;
-    margin: auto;
+
+/* My Image Container (for the glowing border) */
+body > main:nth-child(1) > section > div:nth-child(2) {
+    position: absolute;
     left: 250px;
     top: 220px;
-    position: absolute;
+    width: 22vw;
+    height: 46vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
+
+body > main:nth-child(1) > section > div:nth-child(2) > img {
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     box-shadow: 6px 6px 3px rgb(26, 145, 214);
 }
-/*navigation bar section*/
+
+/* Animated Glowing Border (pseudo-element) */
+body > main:nth-child(1) > section > div:nth-child(2):before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top: 8px solid #3498db;
+    animation: glowingBorder 2s linear infinite;
+}
+
+@keyframes glowingBorder {
+    0% {
+        transform: rotate(0deg);
+        border-top-width: 8px;
+        border-top-color: rgb(77, 166, 227); /* Bright glow */
+        box-shadow: 0 0 15px rgb(77, 166, 227); /* Strong glow */
+    }
+    50% {
+        transform: rotate(180deg);
+        border-top-width: 4px; /* Tail becomes thinner */
+        border-top-color: rgb(77, 166, 227); /* Faded glow */
+        box-shadow: 0 0 10px rgb(77, 166, 227); /* Faded glow */
+    }
+    100% {
+        transform: rotate(360deg);
+        border-top-width: 8px; /* Head thicker again */
+        border-top-color: rgb(77, 166, 227); /* Bright glow */
+        box-shadow: 0 0 15px rgb(77, 166, 227); /* Strong glow */
+    }
+}
+
+/* Navigation bar section */
 body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
     background-image: linear-gradient(#E0E0E0 1%, #000000 53%);
     height: 470px;
     width: 15px;
     border-radius: 25px;
     padding: 20px;
-    top: 100px;
-    left: -70px; /* Hidden position */
-    bottom: 0;
     position: fixed;
+    top: 100px;
+    left: -70px;
     box-shadow: 6px 6px 3px rgb(26, 145, 214);
-    z-index: 3; /* Navbar on top */
-    transition: left 3s ease; /* Smooth transition for showing/hiding */
+    z-index: 3;
+    transition: left 3s ease;
 }
 
 .drag-handle {
-    width: 110px; /* Width of the handle */
-    height: 20%; /* Adjust to fit the navbar */
-    background: transparent; /* Opaque to transparent */
+    width: 110px;
+    height: 20%;
+    background: transparent;
     position: absolute;
-    left: 12px; /* Position to the left of the navbar */
-    top: 40%; /* Centered vertically */
-    cursor: ew-resize; /* Change cursor to indicate dragging */
-    z-index: 1; /* Drag handle behind the navbar */
+    left: 12px;
+    top: 40%;
+    cursor: ew-resize;
+    z-index: 1;
     border-radius: 20px;
 }
 
-.drag-handle>img{
+.drag-handle > img {
     width: 50px;
     height: 50px;
+    position: absolute;
     right: 2px;
     top: 25px;
-    position: absolute;
 }
 
-body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover {
+body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:hover {
     left: 15px;
-    object-position: 80% 0;
-    transition-duration: 2s;
 }
 
-
-/*body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover{*/
-/*    left: 40px;*/
-/*    object-position: 80% 0;*/
-/*    transition-duration: 2s;*/
-/*}*/
-
-/*navigation bar images*/
-body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:first-child>nav:first-child {
+body > main:nth-child(1) > section:nth-child(2) > section:first-child > div:first-child > nav:first-child {
+    position: absolute;
+    top: 0;
+    left: 7px;
     display: inline;
-    justify-content: space-around;
-    align-self: center;
-    top: 0;
-    bottom: 0;
-    left: 7px;
-    right: 0;
-    position: absolute;
-}
-body>main:nth-child(1)>section:nth-child(3)>section>div>nav>a>img:hover{
-    box-shadow: #3CBEFF 0 0 1.9rem ;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    bottom: 2px;
 }
 
-/*contact bar images*/
-body>main:nth-child(1)>section:nth-child(3)>section>div>nav{
-    justify-content: space-around;
-    position: absolute;
-    align-self: center;
-    top: 0;
-    bottom: 0;
-    left: 7px;
-    right: 0;
+/* Contact bar images */
+body > main:nth-child(1) > section:nth-child(3) > section > div > nav {
     display: block;
+    position: absolute;
+    top: 0;
+    left: 7px;
 }
-/*contact bar*/
-body>main:nth-child(1)>section:nth-child(3)>section>div {
+
+body > main:nth-child(1) > section:nth-child(3) > section > div {
     height: 470px;
     width: 15px;
     border-radius: 25px;
     padding: 20px;
-    top: 100px;
-    right: 60px;
-    bottom: 0;
     position: absolute;
-    background: transparent;
+    right: 60px;
+    top: 100px;
 }
 
 /* Parallax container */
@@ -173,7 +190,7 @@ body>main:nth-child(1)>section:nth-child(3)>section>div {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/images/my.jpg');
+    background-image: url('assets/images/pexels-pixabay-219692 (1).jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -185,7 +202,7 @@ body>main:nth-child(1)>section:nth-child(3)>section>div {
     z-index: 1;
     color: white;
     text-align: center;
-    padding: 250px;
+    padding: 100px;
 }
 
 .parallax-content h1 {
@@ -195,8 +212,9 @@ body>main:nth-child(1)>section:nth-child(3)>section>div {
 .parallax-content p {
     font-size: 1.5rem;
 }
-/*2nd page main*/
-body>main:nth-child(2){
+
+/* 2nd page main */
+body > main:nth-child(2) {
     background: black;
     display: flex;
     width: 100%;
@@ -206,55 +224,56 @@ body>main:nth-child(2){
     position: relative;
 }
 
-/*topic*/
-body>main:nth-child(2)>section:first-child>h1{
+/* Topic */
+body > main:nth-child(2) > section:first-child > h1 {
     color: #3CBEFF;
-    left: 45%;
     position: absolute;
     font-size: 50px;
     font-family: Inter;
     font-weight: normal;
     text-shadow: 3px 3px 5px #3CBEFF;
     z-index: 2;
+    left: 45%;
 }
-/*about section background image*/
-body>main:nth-child(2)>section:nth-child(2)>img {
+
+/* About section background image */
+body > main:nth-child(2) > section:nth-child(2) > img {
     height: 100vh;
     width: 51vw;
     margin: auto;
-    left: 0;
-    overflow: hidden;
     position: absolute;
     filter: grayscale(100%);
     z-index: 1;
+    left: 0;
 }
-/*border line blue*/
-body>main:nth-child(2)>section:nth-child(3)>div:first-child{
+
+/* Border line blue */
+body > main:nth-child(2) > section:nth-child(3) > div:first-child {
     border: 2px solid #3CBEFF;
+    position: absolute;
+    width: 750px;
+    height: 500px;
     left: 27%;
     top: 135px;
-    width: 750px;
-    height: 450px;
-    position: absolute;
     z-index: 1;
 }
-/*paragraph*/
-body>main:nth-child(2)>section:nth-child(3)>div:first-child>p{
+
+/* Paragraph */
+body > main:nth-child(2) > section:nth-child(3) > div:first-child > p {
     font-size: 14px;
     color: #E0E0E0;
-    font-family: sans-serif;
     text-align: center;
-    margin-right: 8px;
-    margin-left: 8px;
+    margin: 0 8px;
 }
-/*cv button*/
-body>main:nth-child(2)>section:nth-child(3)>button{
+
+/* CV button */
+body > main:nth-child(2) > section:nth-child(3) > button {
     width: 125px;
     height: 40px;
     background: white;
     border-radius: 50px 20px;
     position: absolute;
-    bottom: 95px;
+    bottom: 45px;
     left: 68.3%;
     font-family: Katibeh;
     font-size: 23px;
@@ -264,46 +283,46 @@ body>main:nth-child(2)>section:nth-child(3)>button{
     align-items: flex-start;
     justify-content: center;
 }
-/*my image*/
-body>main:nth-child(2)>section:nth-child(4)>img{
+
+/* My image */
+body > main:nth-child(2) > section:nth-child(4) > img {
     width: 200px;
     height: 300px;
-    z-index: 4;
     position: absolute;
     right: 70px;
     top: 220px;
     filter: grayscale(80%);
     object-fit: cover;
     object-position: 100% 0;
+    z-index: 4;
 }
-/*contact bar in about page*/
-body>main:nth-child(2)>section:nth-child(5)>div:first-child{
+
+/* Contact bar in about page */
+body > main:nth-child(2) > section:nth-child(5) > div:first-child {
     height: 470px;
     width: 15px;
     border-radius: 25px;
     padding: 20px;
+    position: absolute;
     top: 100px;
     left: 60px;
-    bottom: 0;
-    position: absolute;
-    background: #3CBEFF;
+    background: transparent;
     z-index: 3;
-    background: none;
 }
-/*contact bar images*/
-body>main:nth-child(2)>section:nth-child(5)>div:first-child>nav{
-    justify-content: space-around;
+
+/* Contact bar images */
+body > main:nth-child(2) > section:nth-child(5) > div:first-child > nav {
     position: absolute;
-    align-self: center;
     top: 0;
     bottom: 0;
     left: 7px;
     right: 0;
     display: block;
+    justify-content: space-around;
 }
 
-/*education section*/
-body>main:nth-child(3){
+/* Education section */
+body > main:nth-child(3) {
     background: black;
     display: flex;
     width: 100%;
@@ -311,14 +330,14 @@ body>main:nth-child(3){
     margin: 0;
     padding: 0;
     position: relative;
-
 }
-/*topic*/
-body>main:nth-child(3)>section:nth-child(1)>h1{
+
+/* Topic */
+body > main:nth-child(3) > section:nth-child(1) > h1 {
     color: #3CBEFF;
-    left: 44%;
     position: absolute;
     top: -25px;
+    left: 44%;
     font-size: 50px;
     font-family: Inter;
     font-weight: normal;
@@ -326,184 +345,103 @@ body>main:nth-child(3)>section:nth-child(1)>h1{
     z-index: 1;
 }
 
-/*card 1 background*/
-body>main:nth-child(3)>section:nth-child(2)>div{
+/* Card background styles (common) */
+body > main:nth-child(3) > section:nth-child(2) > div,
+body > main:nth-child(3) > section:nth-child(3) > div,
+body > main:nth-child(3) > section:nth-child(4) > div {
     width: 370px;
     height: 240px;
     background: black;
     box-shadow: 0 3px 8px #3CBEFF;
     position: absolute;
+    border-radius: 10%;
+}
+
+/* Card image styles (common) */
+body > main:nth-child(3) > section:nth-child(2) > div > img,
+body > main:nth-child(3) > section:nth-child(3) > div > img,
+body > main:nth-child(3) > section:nth-child(4) > div > img {
+    width: 370px;
+    height: 170px;
+    border-radius: 10%;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* Card name styles (common) */
+body > main:nth-child(3) > section:nth-child(2) > div > div > h1,
+body > main:nth-child(3) > section:nth-child(3) > div > div > h1,
+body > main:nth-child(3) > section:nth-child(4) > div > div > h1 {
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 190px;
+    margin-left: 40px;
+}
+body > main:nth-child(3) > section:nth-child(3) > div > div > h1{
+    margin-left: 70px;
+    margin-top: 175px;
+}
+body > main:nth-child(3) > section:nth-child(4) > div > div > h1{
+    margin-left: 125px;
+    margin-top: 190px;
+}
+
+/* Specific positions for cards */
+body > main:nth-child(3) > section:nth-child(2) > div {
     top: 120px;
     left: 585px;
-    border-radius: 10%;
 }
 
-/*card 1 image*/
-body>main:nth-child(3)>section:nth-child(2)>div>img{
-    width: 370px;
-    height: 170px;
-    border-radius: 10%;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    object-position: 80% 30%;
-}
-
-/*card 1 name*/
-body>main:nth-child(3)>section:nth-child(2)>div>div>h1{
-    font-size: 24px;
-    color: white;
-    position: absolute;
-    top: 170px;
-    left: 57px;
-    font-family: Inter;
-    font-weight: lighter;
-}
-
-/*card 2 background*/
-body>main:nth-child(3)>section:nth-child(3)>div{
-    width: 370px;
-    height: 240px;
-    background: black;
-    box-shadow: 0 3px 8px #3CBEFF;
-    position: absolute;
+body > main:nth-child(3) > section:nth-child(3) > div {
     top: 420px;
     left: 70px;
-    border-radius: 10%;
 }
 
-/*card 2 image*/
-body>main:nth-child(3)>section:nth-child(3)>div>img{
-    width: 370px;
-    height: 170px;
-    border-radius: 10%;
-    position: absolute;
-    top: 0;
-    object-fit: cover;
-    object-position: 100% 40%;
-}
-
-/*card 2 name*/
-body>main:nth-child(3)>section:nth-child(3)>div>div>h1{
-    font-size: 24px;
-    color: white;
-    position: absolute;
-    top: 155px;
-    left: 85px;
-    font-family: Inter;
-    font-weight: lighter;
-    text-align: center;
-}
-
-/*card 3 background*/
-body>main:nth-child(3)>section:nth-child(4)>div{
-    width: 370px;
-    height: 240px;
-    background: black;
-    box-shadow: 0 3px 8px #3CBEFF;
-    position: absolute;
+body > main:nth-child(3) > section:nth-child(4) > div {
     top: 420px;
     right: 70px;
-    border-radius: 10%;
 }
 
-/*card 3 image*/
-body>main:nth-child(3)>section:nth-child(4)>div>img{
-    width: 370px;
-    height: 170px;
-    border-radius: 10%;
+/* Design box styles (common) */
+body > main:nth-child(3) > section:nth-child(5) > section > div {
     position: absolute;
-    top: 0;
-    object-fit: cover;
-    object-position: 100% 45%;
+    border: 2px solid #3CBEFF;
 }
 
-/*card 3 name*/
-body>main:nth-child(3)>section:nth-child(4)>div>div>h1{
-    font-size: 24px;
-    color: white;
-    position: absolute;
-    top: 170px;
-    left: 135px;
-    font-family: Inter;
-    font-weight: lighter;
-    text-align: center;
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(1) > div:nth-child(1),
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(2) > div:nth-child(1),
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(3) > div:nth-child(1),
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) {
+    border-width: 3.5px;
 }
-/*design box 1.1*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(1){
-    border: 3.5px solid #3CBEFF;
+
+body > main:nth-child(3) > section:nth-child(5) > section > div:nth-child(1) {
     height: 60px;
     width: 120px;
-    top: -25px;
-    left: -20px;
-    position: absolute;
-}
-/*design box 1.2*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(1)>div:nth-child(2){
-    border: 2px solid #3CBEFF;
-    height: 50px;
-    width: 100px;
-    top: 15px;
-    left: 60px;
-    position: absolute;
 }
 
-/*design box 2.1*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(1){
-    border: 3.5px solid #3CBEFF;
-    height: 60px;
-    width: 120px;
-    top: 140px;
-    right: 200px;
-    position: absolute;
-}
-/*design box 2.2*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(2)>div:nth-child(2){
-    border: 2px solid #3CBEFF;
+body > main:nth-child(3) > section:nth-child(5) > section > div:nth-child(2) {
     height: 50px;
     width: 100px;
-    top: 180px;
-    right: 140px;
-    position: absolute;
 }
 
-/*design box 3.1*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(1){
-    border: 3.5px solid #3CBEFF;
-    height: 40px;
-    width: 70px;
-    top: 360px;
-    left: 440px;
-    position: absolute;
-}
-/*design box 3.2*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(3)>div:nth-child(2){
-    border: 2px solid #3CBEFF;
-    height: 30px;
-    width: 50px;
-    top: 390px;
-    left: 490px;
-    position: absolute;
-}
+/* Specific positions for design boxes */
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(1) > div:nth-child(1) { top: -25px; left: -20px; }
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(1) > div:nth-child(2) { top: 15px; left: 60px; }
 
-/*design box 4.1*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(1){
-    border: 3.5px solid #3CBEFF;
-    height: 50px;
-    width: 100px;
-    bottom: 40px;
-    right: 540px;
-    position: absolute;
-}
-/*design box 4.2*/
-body>main:nth-child(3)>section:nth-child(5)>section:nth-child(4)>div:nth-child(2){
-    border: 2px solid #3CBEFF;
-    height: 40px;
-    width: 80px;
-    bottom: 20px;
-    right: 490px;
-    position: absolute;
-}
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(2) > div:nth-child(1) { top: 140px; right: 200px; }
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(2) > div:nth-child(2) { top: 180px; right: 140px; }
+
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(3) > div:nth-child(1) { top: 360px; left: 440px; }
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(3) > div:nth-child(2) { top: 390px; left: 490px; }
+
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(4) > div:nth-child(1) { bottom: 40px; right: 540px; }
+body > main:nth-child(3) > section:nth-child(5) > section:nth-child(4) > div:nth-child(2) { bottom: 20px; right: 490px; }
+
+
 /*skills page*/
 body>main:nth-child(4) {
     background: black;
@@ -515,6 +453,7 @@ body>main:nth-child(4) {
     position: relative;
     z-index: 2;
 }
+
 /*background image*/
 body>main:nth-child(4)>section:nth-child(3)>img{
     justify-content: space-around;
@@ -527,6 +466,7 @@ body>main:nth-child(4)>section:nth-child(3)>img{
     display: block;
     filter: grayscale(40%);
 }
+
 /*skills title*/
 body>main:nth-child(4)>section:nth-child(1)>h1{
     color: #3CBEFF;
@@ -552,6 +492,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*html logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1)>img{
     width: 80px;
@@ -560,6 +501,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(1)>img{
     left: 10px;
     top: 15px;
 }
+
 /*html h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h1{
     font-size: 25px;
@@ -567,7 +509,6 @@ body>main:nth-child(4)>section:nth-child(2)>h1{
     position: absolute;
     top: 210px;
     left: 120px;
-    font-family: Inter;
     font-weight: lighter;
     z-index: 1;
 }
@@ -584,6 +525,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*css logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3)>img{
     width: 80px;
@@ -592,6 +534,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(3)>img{
     left: 10px;
     top: 15px;
 }
+
 /*css h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h2{
     font-size: 26px;
@@ -599,7 +542,6 @@ body>main:nth-child(4)>section:nth-child(2)>h2{
     position: absolute;
     top: 410px;
     left: 130px;
-    font-family: Inter;
     font-weight: lighter;
     z-index: 1;
 }
@@ -616,6 +558,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*js logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5)>img{
     width: 80px;
@@ -624,14 +567,14 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(5)>img{
     left: 10px;
     top: 10px;
 }
+
 /*js h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h3{
     font-size: 25px;
     color: #3CBEFF;
     position: absolute;
     top: 603px;
-    left: 105px;
-    font-family: Inter;
+    left: 90px;
     font-weight: lighter;
     z-index: 1;
 }
@@ -648,6 +591,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*java logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7)>img{
     width: 80px;
@@ -656,14 +600,14 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(7)>img{
     left: 10px;
     top: 10px;
 }
+
 /*java h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h4{
     font-size: 30px;
     color: #3CBEFF;
     position: absolute;
     top: 185px;
-    left: 425px;
-    font-family: Inter;
+    left: 415px;
     font-weight: lighter;
     z-index: 1;
 }
@@ -680,6 +624,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*figma logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9)>img{
     width: 80px;
@@ -688,14 +633,14 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(9)>img{
     left: 10px;
     top: 10px;
 }
+
 /*figma h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h5{
     font-size: 26px;
     color: #3CBEFF;
     position: absolute;
     top: 384px;
-    left: 420px;
-    font-family: Inter;
+    left: 415px;
     font-weight: lighter;
     z-index: 1;
 }
@@ -712,6 +657,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*MySql logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11)>img{
     width: 70px;
@@ -720,6 +666,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(11)>img{
     left: 16px;
     top: 14px;
 }
+
 /*MySql h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h6{
     font-size: 25px;
@@ -727,7 +674,6 @@ body>main:nth-child(4)>section:nth-child(2)>h6{
     position: absolute;
     top: 570px;
     left: 419px;
-    font-family: Inter;
     font-weight: lighter;
     z-index: 1;
 }
@@ -744,6 +690,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*GitHub logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13)>img{
     width: 80px;
@@ -752,14 +699,14 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(13)>img{
     left: 10px;
     top: 10px;
 }
+
 /*GitHub h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h7{
     font-size: 27px;
     color: #3CBEFF;
     position: absolute;
     top: 225px;
-    left: 715px;
-    font-family: Inter;
+    left: 705px;
     font-weight: lighter;
     z-index: 1;
 }
@@ -776,6 +723,7 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15){
     z-index: 1;
     box-shadow: 5px 5px 8px #3CBEFF;
 }
+
 /*Notion logo*/
 body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15)>img{
     width: 80px;
@@ -784,14 +732,14 @@ body>main:nth-child(4)>section:nth-child(2)>div:nth-child(15)>img{
     left: 10px;
     top: 10px;
 }
+
 /*Notion h tag*/
 body>main:nth-child(4)>section:nth-child(2)>h8{
     font-size: 27px;
     color: #3CBEFF;
     position: absolute;
     top: 425px;
-    left: 715px;
-    font-family: Inter;
+    left: 705px;
     font-weight: lighter;
     z-index: 1;
 }
@@ -799,25 +747,26 @@ body>main:nth-child(4)>section:nth-child(2)>h8{
 /*paragraph margin*/
 body>main:nth-child(4)>section:nth-child(4)>div{
     width: 36%;
-    height: 520px;
+    height: 580px;
     position: absolute;
     right: 100px;
     top: 120px;
     border: 1px solid #3CBEFF;
     z-index: 2;
 }
+
 /*paragraph text*/
 body>main:nth-child(4)>section:nth-child(4)>div>p{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     margin-left: 10px;
     margin-top: 10px;
-    font-family: Inter;
     text-align: left;
     position: absolute;
     top: 20px;
     right: 10px;
 }
+
 /*projects section*/
 body>main:nth-child(5){
     background: black;
@@ -829,6 +778,7 @@ body>main:nth-child(5){
     position: relative;
     overflow: hidden;
 }
+
 /*project title*/
 body>main:nth-child(5)>section:nth-child(1)>h1{
     color: #3CBEFF;
@@ -854,6 +804,7 @@ body>main:nth-child(5)>section:nth-child(2)>div {
     background: transparent;
     z-index: 1;
 }
+
 /*card 1 background*/
 body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div{
     width: 450px;
@@ -868,6 +819,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div{
     box-shadow: 2px 2px 8px #3CBEFF;
     animation: bounce 1.4s infinite;
 }
+
 /*card 1 image*/
 body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>img{
     position: absolute;
@@ -875,6 +827,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>img{
     width: 450px;
     border-radius: 10%;
 }
+
 /*card 1 title*/
 body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>a{
     color: white;
@@ -882,9 +835,8 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(1)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 120px;
+    left: 110px;
     z-index: 1;
-    font-family: "Arial Rounded MT Bold";
 }
 
 /*card 2 background*/
@@ -900,6 +852,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div{
     border-radius: 10%;
     box-shadow: 2px 2px 8px #3CBEFF;
 }
+
 /*card 2 image*/
 body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>img{
     position: absolute;
@@ -907,6 +860,7 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>img{
     width: 450px;
     border-radius: 10%;
 }
+
 /*card 2 title*/
 body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>a{
     color: white;
@@ -914,9 +868,8 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(2)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 145px;
+    left: 135px;
     z-index: 1;
-    font-family: "Arial Rounded MT Bold";
 }
 
 /*card 3 background*/
@@ -946,9 +899,8 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(3)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 115px;
+    left: 90px;
     z-index: 1;
-    font-family: "Arial Rounded MT Bold";
 }
 
 /*card 4 background*/
@@ -978,9 +930,8 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(4)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 150px;
+    left: 160px;
     z-index: 1;
-    font-family: "Arial Rounded MT Bold";
 }
 
 /*card 5 background*/
@@ -1010,9 +961,8 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(5)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 130px;
+    left: 110px;
     z-index: 1;
-    font-family: "Arial Rounded MT Bold";
 }
 
 /*card 6 background*/
@@ -1043,9 +993,8 @@ body>main:nth-child(5)>section:nth-child(2)>div>section:nth-child(6)>div>a{
     font-size: 27px;
     position: absolute;
     top: 250px;
-    left: 130px;
+    left: 110px;
     z-index: 1;
-    font-family: "Arial Rounded MT Bold";
 }
 
 /* scrollbar*/
@@ -1197,7 +1146,7 @@ body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(1)>div {
     border-radius: 10px;
     position: relative;
     top: 100px;
-    left: 50px;
+    left: 80px;
     z-index: 1;
     overflow: hidden;
     box-shadow: 2px 2px 8px #3CBEFF;
@@ -1241,7 +1190,7 @@ body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(2)>div {
     border-radius: 10px;
     position: relative;
     top: -130px;
-    left: 580px;
+    left: 590px;
     z-index: 1;
     overflow: hidden;
     box-shadow: 2px 2px 8px #3CBEFF;
@@ -1288,7 +1237,7 @@ body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(4)>div{
     border-radius: 10px;
     position: relative;
     bottom: 250px;
-    left: 50px;
+    left: 80px;
     z-index: 1;
     overflow: hidden;
     box-shadow: 2px 2px 8px #3CBEFF;
@@ -1312,7 +1261,7 @@ body>main:nth-child(6)>section:nth-child(2)>div>section:nth-child(5)>div{
     border-radius: 10px;
     position: relative;
     bottom: 480px;
-    left: 580px;
+    left: 590px;
     z-index: 1;
     overflow: hidden;
     box-shadow: 2px 2px 8px #3CBEFF;
@@ -1992,12 +1941,17 @@ body>main:nth-child(8) {
 .sliderButton{
     position: absolute;
     right: 20px;
-    top: 400px
+    top: 400px;
+    rotate: 180deg;
+    width: 50px;
+    height: auto;
 }
 .previousButton{
     position: absolute;
     left: 20px;
-    top: 400px
+    top: 400px;
+    width: 50px;
+    height: auto;
 }
 
 /*====================================================================================================================*/
@@ -2722,7 +2676,6 @@ body>main:nth-child(9){
     font-weight: bold;
 }
 .fName>label{
-    font-family: Inter;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -2740,13 +2693,11 @@ body>main:nth-child(9){
     border-radius: 10px;
     padding: 10px;
     margin-top: 100px;
-    font-family: Inter;
     font-size: 18px;
     color: black;
     background: white;
 }
 .lName>label{
-    font-family: Inter;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -2764,13 +2715,11 @@ body>main:nth-child(9){
     border-radius: 10px;
     padding: 10px;
     margin-top: 100px;
-    font-family: Inter;
     font-size: 18px;
     color: black;
     background: white;
 }
 .emails>label{
-    font-family: Inter;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -2788,13 +2737,11 @@ body>main:nth-child(9){
     border-radius: 10px;
     padding: 10px;
     margin-top: 100px;
-    font-family: Inter;
     font-size: 18px;
     color: black;
     background: white;
 }
 .phone>label{
-    font-family: Inter;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -2812,13 +2759,11 @@ body>main:nth-child(9){
     border-radius: 10px;
     padding: 10px;
     margin-top: 100px;
-    font-family: Inter;
     font-size: 18px;
     color: black;
     background: white;
 }
 .subject>label{
-    font-family: Inter;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -2857,7 +2802,6 @@ body>main:nth-child(9){
     right: 75px;
     top: 580px;
     position: absolute;
-    font-family: Inter;
     font-size: 18px;
     color: black;
     background: white;
@@ -2869,7 +2813,6 @@ body>main:nth-child(9){
     color: black;
 }
 .message>label{
-    font-family: Inter;
     font-size: 20px;
     color: black;
     position: absolute;
@@ -2887,7 +2830,6 @@ body>main:nth-child(9){
     color: white;
 }
 .call>p{
-    font-family: Inter;
     font-size: 26px;
     color: white;
     position: absolute;
@@ -2903,7 +2845,6 @@ body>main:nth-child(9){
     color: white;
 }
 .email>p{
-    font-family: Inter;
     font-size: 26px;
     color: white;
     position: absolute;
@@ -2919,7 +2860,6 @@ body>main:nth-child(9){
     color: white;
 }
 .location>p{
-    font-family: Inter;
     font-size: 26px;
     color: white;
     position: absolute;
@@ -3011,7 +2951,7 @@ body>main:nth-child(9){
         text-shadow: 3px 3px 5px #3CBEFF;
     }
 
-    /*background image*/
+    /* Background Image */
     body > main:nth-child(1) > section > div:first-child > img {
         width: 100%;
         height: 56vh;
@@ -3020,20 +2960,68 @@ body>main:nth-child(9){
         overflow: hidden;
         position: absolute;
         filter: grayscale(80%);
-
     }
 
-    /*my image*/
-    body > main:nth-child(1) > section > div:nth-child(2) > img {
-        width: 60vw;
-        height: 27vh;
-        margin: auto;
-        left: 60px;
-        top: 200px;
+    /* My Image Container (for the glowing line) */
+    body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
-        border-radius: 50%;
-        box-shadow: 3px 3px 3px rgb(26, 145, 214);
+        left: 16vw; /* Responsive horizontal positioning */
+        top: 27vh; /* Responsive vertical positioning */
+        width: 60vw; /* Responsive width */
+        height: 60vw; /* Equal width and height for a perfect circle */
+        max-width: 310px; /* Optional: Add a max-width for better control on very large screens */
+        max-height: 310px; /* Optional: Add a max-height for better control on very large screens */
+        border-radius: 50%; /* Circular shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw; /* Space for the line to move around */
+        position: relative; /* For pseudo-element positioning */
     }
+
+    /* The Profile Image */
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;  /* Circular image */
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);  /* Optional shadow */
+    }
+
+    /* Glowing Animated Line (pseudo-element) */
+    body > main:nth-child(1) > section > div:nth-child(2):before {
+        content: '';
+        position: absolute;
+        top: -4px; /* Center the border around the container */
+        left: -2px; /* Center the border around the container */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Circular path */
+        border: 4px solid transparent; /* Invisible border for structure */
+        border-top: 4px solid #3498db; /* Start with a thin blue line */
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Initial strong glow */
+        animation: glowingLine 2s linear infinite; /* Animate the glowing line around */
+    }
+
+    /* Glowing Line Animation */
+    @keyframes glowingLine {
+        0% {
+            transform: rotate(0deg);
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow */
+        }
+        50% {
+            transform: rotate(180deg); /* Half rotation */
+            border-top-width: 6px; /* Thicker line */
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Stronger glow */
+        }
+        100% {
+            transform: rotate(360deg); /* Full rotation */
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow again */
+        }
+    }
+
+
 
     /*navigation bar section*/
     body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
@@ -4471,14 +4459,19 @@ body>main:nth-child(9){
     /* Button positioning */
     .sliderButton {
         position: absolute;
-        right: 20px;
-        top: 400px;
+        right: 25px;
+        top: 330px;
+        rotate: 180deg;
+        width: 40px;
+        height: auto;
     }
 
     .previousButton {
         position: absolute;
         left: 20px;
-        top: 400px;
+        top: 330px;
+        width: 40px;
+        height: auto;
     }
 
 
@@ -4835,71 +4828,71 @@ body>main:nth-child(9){
     }
 
     .lName > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 420px;
         right: 10px;
     }
 
     .emails > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 500px;
         left: 10px;
     }
 
     .phone > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 500px;
         right: 10px;
     }
 
     .message > textarea {
-        width: 24%; /* Adjust width */
-        height: 18px; /* Increased height for easier touch */
+        width: 24%;
+        height: 18px;
         border-radius: 10px;
         padding-right: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 540px;
         left: 10px;
     }
 
     .subject > div {
         display: flex;
-        justify-content: space-around; /* Space between options */
+        justify-content: space-around;
         width: 100%;
-        margin-top: 10px; /* Space between label and options */
+        margin-top: 10px;
     }
 
     .webdesign{
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 200px;
     }
@@ -4921,15 +4914,15 @@ body>main:nth-child(9){
     }
 
     .message > textarea {
-        width: 90%; /* Adjust width */
-        height: 60px; /* Increased height for easier typing */
-        margin-top: 10px; /* Margin for spacing */
+        width: 90%;
+        height: 60px;
+        margin-top: 10px;
         position: absolute;
         top: 580px;
     }
 
     .messageButton {
-        margin-bottom: 20px; /* Space before button */
+        margin-bottom: 20px;
         color: black;
         position: absolute;
         top: 630px;
@@ -4939,7 +4932,7 @@ body>main:nth-child(9){
 
     .call>p{
         display: flex;
-        align-items: center; /* Align icon and text */
+        align-items: center;
         color: white;
         top: 80px;
         font-size: 16px;
@@ -4948,7 +4941,7 @@ body>main:nth-child(9){
     }
     .email>p{
         display: flex;
-        align-items: center; /* Align icon and text */
+        align-items: center;
         color: white;
         font-size: 16px;
         top: 140px;
@@ -4957,7 +4950,7 @@ body>main:nth-child(9){
     }
     .location>p {
         display: flex;
-        align-items: center; /* Align icon and text */
+        align-items: center;
         color: white;
         font-size: 16px;
         top: 200px;
@@ -4986,15 +4979,15 @@ body>main:nth-child(9){
 
     .contacts {
         display: flex;
-        justify-content: center; /* Center contact icons */
-        margin-top: 20px; /* Space above contacts */
+        justify-content: center;
+        margin-top: 20px;
         top: 50px;
     }
 
     .contacts > a:nth-child(1) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 140px;
@@ -5002,7 +4995,7 @@ body>main:nth-child(9){
     .contacts > a:nth-child(2) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 40px;
@@ -5010,7 +5003,7 @@ body>main:nth-child(9){
     .contacts > a:nth-child(3) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 240px;
@@ -5052,8 +5045,8 @@ body>main:nth-child(9){
         color: white;
         position: absolute;
         left: 40px;
-        top: 80px;
-        font-size: 20px;
+        top: 60px;
+        font-size: 24px;
         font-family: Inter;
         font-weight: lighter;
         margin-top: 20px;
@@ -5064,14 +5057,14 @@ body>main:nth-child(9){
         color: #3CBEFF;
         position: absolute;
         left: 40px;
-        top: 105px;
-        font-size: 20px;
+        top: 85px;
+        font-size: 24px;
         font-family: Inter;
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
     }
 
-    /*background image*/
+    /* Background Image */
     body > main:nth-child(1) > section > div:first-child > img {
         width: 100%;
         height: 56vh;
@@ -5080,20 +5073,67 @@ body>main:nth-child(9){
         overflow: hidden;
         position: absolute;
         filter: grayscale(80%);
-
     }
 
-    /*my image*/
-    body > main:nth-child(1) > section > div:nth-child(2) > img {
-        width: 60vw;
-        height: 29vh;
-        margin: auto;
-        left: 70px;
-        top: 190px;
+    /* My Image Container (for the glowing line) */
+    body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
-        border-radius: 50%;
-        box-shadow: 3px 3px 3px rgb(26, 145, 214);
+        left: 70px; /* Responsive horizontal positioning */
+        top: 170px; /* Responsive vertical positioning */
+        width: 56vw; /* Responsive width */
+        height: 32vh; /* Equal width and height for a perfect circle */
+        max-width: 310px; /* Optional: Add a max-width for better control on very large screens */
+        max-height: 310px; /* Optional: Add a max-height for better control on very large screens */
+        border-radius: 50%; /* Circular shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw; /* Space for the line to move around */
+        position: relative; /* For pseudo-element positioning */
     }
+
+    /* The Profile Image */
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;  /* Circular image */
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);  /* Optional shadow */
+    }
+
+    /* Glowing Animated Line (pseudo-element) */
+    body > main:nth-child(1) > section > div:nth-child(2):before {
+        content: '';
+        position: absolute;
+        top: -3px; /* Center the border around the container */
+        left: -2px; /* Center the border around the container */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Circular path */
+        border: 4px solid transparent; /* Invisible border for structure */
+        border-top: 4px solid #3498db; /* Start with a thin blue line */
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Initial strong glow */
+        animation: glowingLine 2s linear infinite; /* Animate the glowing line around */
+    }
+
+    /* Glowing Line Animation */
+    @keyframes glowingLine {
+        0% {
+            transform: rotate(0deg);
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow */
+        }
+        50% {
+            transform: rotate(180deg); /* Half rotation */
+            border-top-width: 6px; /* Thicker line */
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Stronger glow */
+        }
+        100% {
+            transform: rotate(360deg); /* Full rotation */
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow again */
+        }
+    }
+
 
     /*navigation bar section*/
     body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
@@ -6698,14 +6738,18 @@ body>main:nth-child(9){
 
     .sliderButton {
         position: absolute;
-        right: 10px;
-        top: 400px
+        right: 30px;
+        top: 350px;
+        width: 40px;
+        height: auto;
     }
 
     .previousButton {
         position: absolute;
-        left: 5px;
-        top: 400px
+        left: 25px;
+        top: 350px;
+        width: 40px;
+        height: auto;
     }
 
     /*====================================================================================================================*/
@@ -7456,7 +7500,7 @@ body>main:nth-child(9){
         color: white;
         position: absolute;
         left: 40px;
-        top: 85px;
+        top: 55px;
         font-size: 25px;
         font-family: Inter;
         font-weight: lighter;
@@ -7487,16 +7531,85 @@ body>main:nth-child(9){
 
     }
 
-    /*my image*/
-    body > main:nth-child(1) > section > div:nth-child(2) > img {
-        width: 60vw;
-        height: 34vh;
-        margin: auto;
-        left: 85px;
-        top: 180px;
+    body > main:nth-child(1) > section:nth-child(4) > h2 {
+        color: #3CBEFF;
         position: absolute;
-        border-radius: 50%;
-        box-shadow: 3px 3px 3px rgb(26, 145, 214);
+        left: 40px;
+        top: 85px;
+        font-size: 24px;
+        font-family: Inter;
+        font-weight: normal;
+        text-shadow: 3px 3px 5px #3CBEFF;
+    }
+
+    /* Background Image */
+    body > main:nth-child(1) > section > div:first-child > img {
+        width: 100%;
+        height: 56vh;
+        margin: auto;
+        bottom: 0;
+        overflow: hidden;
+        position: absolute;
+        filter: grayscale(80%);
+    }
+
+    /* My Image Container (for the glowing line) */
+    body > main:nth-child(1) > section > div:nth-child(2) {
+        position: absolute;
+        left: 70px; /* Responsive horizontal positioning */
+        top: 170px; /* Responsive vertical positioning */
+        width: 56vw; /* Responsive width */
+        height: 36vh; /* Equal width and height for a perfect circle */
+        max-width: 310px; /* Optional: Add a max-width for better control on very large screens */
+        max-height: 310px; /* Optional: Add a max-height for better control on very large screens */
+        border-radius: 50%; /* Circular shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw; /* Space for the line to move around */
+        position: relative; /* For pseudo-element positioning */
+    }
+
+    /* The Profile Image */
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;  /* Circular image */
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);  /* Optional shadow */
+    }
+
+    /* Glowing Animated Line (pseudo-element) */
+    body > main:nth-child(1) > section > div:nth-child(2):before {
+        content: '';
+        position: absolute;
+        top: -3px; /* Center the border around the container */
+        left: -2px; /* Center the border around the container */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Circular path */
+        border: 4px solid transparent; /* Invisible border for structure */
+        border-top: 4px solid #3498db; /* Start with a thin blue line */
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Initial strong glow */
+        animation: glowingLine 2s linear infinite; /* Animate the glowing line around */
+    }
+
+    /* Glowing Line Animation */
+    @keyframes glowingLine {
+        0% {
+            transform: rotate(0deg);
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow */
+        }
+        50% {
+            transform: rotate(180deg); /* Half rotation */
+            border-top-width: 6px; /* Thicker line */
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Stronger glow */
+        }
+        100% {
+            transform: rotate(360deg); /* Full rotation */
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow again */
+        }
     }
 
     /*navigation bar section*/
@@ -9480,18 +9593,63 @@ body>main:nth-child(9){
 
     }
 
-    /*my image*/
-    body > main:nth-child(1) > section > div:nth-child(2) > img {
-        width: 36vw;
-        height: 42vh;
-        margin: auto;
-        left: 240px;
-        top: 220px;
+    /* My Image Container (for the glowing line) */
+    body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
-        border-radius: 50%;
-        box-shadow: 6px 6px 3px rgb(26, 145, 214);
-        z-index: 3; /* Navbar on top */
-        transition: left 3s ease; /* Smooth transition for showing/hiding */
+        left: 140px; /* Responsive horizontal positioning */
+        top: 190px; /* Responsive vertical positioning */
+        width: 38vw; /* Responsive width */
+        height: 44vh; /* Equal width and height for a perfect circle */
+        max-width: 310px; /* Optional: Add a max-width for better control on very large screens */
+        max-height: 310px; /* Optional: Add a max-height for better control on very large screens */
+        border-radius: 50%; /* Circular shape */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw; /* Space for the line to move around */
+        position: relative; /* For pseudo-element positioning */
+    }
+
+    /* The Profile Image */
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;  /* Circular image */
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);  /* Optional shadow */
+    }
+
+    /* Glowing Animated Line (pseudo-element) */
+    body > main:nth-child(1) > section > div:nth-child(2):before {
+        content: '';
+        position: absolute;
+        top: -3px; /* Center the border around the container */
+        left: -2px; /* Center the border around the container */
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Circular path */
+        border: 4px solid transparent; /* Invisible border for structure */
+        border-top: 4px solid #3498db; /* Start with a thin blue line */
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Initial strong glow */
+        animation: glowingLine 2s linear infinite; /* Animate the glowing line around */
+    }
+
+    /* Glowing Line Animation */
+    @keyframes glowingLine {
+        0% {
+            transform: rotate(0deg);
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow */
+        }
+        50% {
+            transform: rotate(180deg); /* Half rotation */
+            border-top-width: 6px; /* Thicker line */
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Stronger glow */
+        }
+        100% {
+            transform: rotate(360deg); /* Full rotation */
+            border-top-width: 4px; /* Thinner line */
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow again */
+        }
     }
 
     .drag-handle {
@@ -11996,16 +12154,63 @@ body>main:nth-child(9){
 
     }
 
-    /*my image*/
-    body > main:nth-child(1) > section > div:nth-child(2) > img {
-        width: 32vw;
-        height: 45vh;
-        margin: auto;
-        left: 350px;
-        top: 220px;
+    /* My Image Container */
+    body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
+        left: 140px;
+        top: 190px;
+        width: 40vw;
+        height: 47vh;
+        max-width: 310px;
+        max-height: 310px;
         border-radius: 50%;
-        box-shadow: 6px 6px 3px rgb(26, 145, 214);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw;
+        position: relative;
+    }
+
+    /* The Profile Image */
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);
+    }
+
+    /* Glowing Animated Line (pseudo-element) */
+    body > main:nth-child(1) > section > div:nth-child(2):before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -2px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid transparent;
+        border-top: 4px solid #3498db;
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1);
+        animation: glowingLine 2s linear infinite;
+    }
+
+    /* Glowing Line Animation */
+    @keyframes glowingLine {
+        0% {
+            transform: rotate(0deg);
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1);
+        }
+        50% {
+            transform: rotate(180deg);
+            border-top-width: 6px;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1);
+        }
+        100% {
+            transform: rotate(360deg);
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /
+        }
     }
 
     /*navigation bar section*/
@@ -15435,6 +15640,7 @@ body>main:nth-child(9){
         font-weight: normal;
         text-shadow: 3px 3px 5px #3CBEFF;
     }
+
     /*background image*/
     body>main:nth-child(1)>section>div:first-child>img{
         width: 48vw;
@@ -15444,18 +15650,65 @@ body>main:nth-child(9){
         overflow: hidden;
         position: absolute;
         filter: grayscale(80%);
-
     }
-    /*my image*/
-    body>main:nth-child(1)>section>div:nth-child(2)>img{
-        width: 26vw;
-        height: 46vh;
-        margin: auto;
-        left: 250px;
-        top: 220px;
+
+    /* My Image Container */
+    body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
+        left: 180px;
+        top: 230px;
+        width: 28vw;
+        height: 52vh;
+        max-width: 610px;
+        max-height: 610px;
         border-radius: 50%;
-        box-shadow: 6px 6px 3px rgb(26, 145, 214);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1vw;
+        position: relative;
+    }
+
+    /* The Profile Image */
+    body > main:nth-child(1) > section > div:nth-child(2) > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);
+    }
+
+    /* Glowing Animated Line (pseudo-element) */
+    body > main:nth-child(1) > section > div:nth-child(2):before {
+        content: '';
+        position: absolute;
+        top: -3px;
+        left: -2px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border: 4px solid transparent;
+        border-top: 4px solid #3498db;
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1);
+        animation: glowingLine 2s linear infinite;
+    }
+
+    /* Glowing Line Animation */
+    @keyframes glowingLine {
+        0% {
+            transform: rotate(0deg);
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1);
+        }
+        50% {
+            transform: rotate(180deg);
+            border-top-width: 6px;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1);
+        }
+        100% {
+            transform: rotate(360deg);
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /
+        }
     }
     /*navigation bar section*/
     body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
