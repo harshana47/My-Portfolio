@@ -1345,10 +1345,8 @@ body>main:nth-child(7){
     z-index: 1;
     top: 350px;
     left: 1380px;
-    object-fit: cover;
-    transform: rotate(360deg);
-    color: white;
-    font-weight: bold;
+    background-size: cover;
+    background-image: url("assets/images/contact/icons8-facebook.gif");
 }
 .img1, .img2, .img3, .img4, .img5 {
     width: 220px;
@@ -1361,46 +1359,46 @@ body>main:nth-child(7){
 }
 
 .img1 {
-    left: 40px;
+    left: 60px;
 }
 
 .img2 {
-    left: 300px;
+    left: 320px;
 }
 
 .img3 {
-    left: 560px;
+    left: 580px;
     object-position: 80% 0;
 }
 
 .img4 {
-    left: 820px;
+    left: 840px;
 }
 
 .img5 {
-    left: 1080px;
+    left: 1100px;
     object-position: 45% 0;
 }
 
 .img1:hover{
-    transform: scale(1.15); /* Scales the image up by 10% */
+    transform: scale(1.15);
     height: 80vh;
     width: 400px;
     object-position: 50% 0;
     z-index: 2;
 }
 .img2:hover{
-    transform: scale(1.15); /* Scales the image up by 10% */
+    transform: scale(1.15);
     height: 90vh;
     width: 400px;
     object-position: 80% 0;
     z-index: 2;
 }
 .img3:hover{
-    transform: scale(1.15); /* Scales the image up by 10% */
+    transform: scale(1.15);
     height: 90vh;
     width: 400px;
-    object-position: 90% 0%;
+    object-position: 90% 0;
     z-index: 2;
 }
 .img4:hover{
