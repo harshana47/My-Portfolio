@@ -8,10 +8,10 @@
 }
 
 body {
-    background: black; /* Keep the background dark for that spooky vibe */
+    background: black;
     font-weight: 400;
     font-style: normal;
-    font-family: "Chelsea Market", system-ui; /* 'Chelsea Market' for a slightly casual yet bold look */
+    font-family: "Chelsea Market", system-ui;
     font-size: 34px;
 }
 
@@ -32,25 +32,25 @@ body {
     z-index: 2;
     display: flex;
     width: 100%;
-    height: 100vh; /* Full height of the viewport */
+    height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #FFFFFF; /* Lighter text for visibility on a colorful background */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add subtle shadow for better readability */
+    color: #FFFFFF;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .intro h1 {
     font-size: 48px;
     font-family: "Beth Ellen", cursive;
-    color: #FFD700; /* Gold color for the main heading */
+    color: #FFD700;
 }
 
 .intro p {
     font-size: 60px;
     font-family: "Chelsea Market", system-ui;
     font-weight: bolder;
-    color: #ff6347; /* Tomato red for the description */
+    color: #ff6347;
 }
 
 /* Content section with background */
@@ -64,7 +64,7 @@ body {
 }
 
 .gradient-blue {
-    height: 60vh;  /* Adjusted height to make it more balanced */
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +80,7 @@ body {
     background-image: url('assets/images/intro/file-wpVFU2mHWtPbFS3B5y5f1puF.webp');
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; /* Ensure background image covers the entire area */
+    background-size: cover;
     transition: opacity 0.5s ease;
 }
 
@@ -110,16 +110,16 @@ body {
 .test {
     position: relative;
     color: white;
-    display: flex;  /* Flexbox for vertical alignment */
-    flex-direction: column; /* Stack the text vertically */
-    justify-content: center; /* Vertically center the content */
-    align-items: center;  /* Center horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 800px;
     margin: 20px auto;
     text-align: center;
     line-height: 45px;
-    color: rgba(0, 215, 255, 0.9); /* Slightly translucent orange to match the spooky theme */
-    animation: floatText 3s ease-in-out infinite; /* Floating animation for the text */
+    color: rgba(0, 215, 255, 0.9);
+    animation: floatText 3s ease-in-out infinite;
 }
 
 /* Floating text animation */
@@ -128,26 +128,26 @@ body {
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-15px); /* Move the text up */
+        transform: translateY(-15px);
     }
     100% {
-        transform: translateY(0); /* Move the text back down */
+        transform: translateY(0);
     }
 }
 
 /* Button styling */
 .enter-link {
-    position: relative; /* Position relative for the pseudo-elements */
-    background-color: #ff0000; /* Red background for the button */
+    position: relative;
+    background-color: #ff0000;
     color: white;
     padding: 15px 40px;
     font-size: 24px;
     text-decoration: none;
     font-family: "Chelsea Market", system-ui;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Slight shadow effect */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
-    margin-top: 30px;  /* Add space above the button */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
 }
 
 /* Electric wave effect on hover */
@@ -158,10 +158,10 @@ body {
     left: -5px;
     right: -5px;
     bottom: -5px;
-    background: rgba(0, 255, 255, 0.3); /* Light cyan for the electric effect */
+    background: rgba(0, 255, 255, 0.3);
     border-radius: 15px;
-    animation: electricWave 1.5s infinite linear; /* Animation for the wave effect */
-    z-index: -1; /* Ensure the wave effect is behind the button */
+    animation: electricWave 1.5s infinite linear;
+    z-index: -1;
 }
 
 /* Electric wave animation */
@@ -182,6 +182,6 @@ body {
 
 /* Button hover effect */
 .enter-link:hover {
-    background-color: #ff5555; /* Lighter red when hovered */
-    transform: scale(1.1); /* Slight zoom effect */
+    background-color: #ff5555;
+    transform: scale(1.1);
 }

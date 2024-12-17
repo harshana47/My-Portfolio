@@ -6132,16 +6132,15 @@ body>main:nth-child(9){
         left: -10px;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        background: rgba(0, 0, 0, 0.7); /* half transparent background */
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         opacity: 0;
-        transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+        transition: opacity 0.3s ease;
         padding: 10px;
-    /
     }
 
     /* Show description on hover */
@@ -6354,8 +6353,8 @@ body>main:nth-child(9){
         left: 65px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card1 > h3, card2 > h3, card3 > h3, card4 > h3, card5 > h3, card6 > h3 {
@@ -6366,10 +6365,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -6378,33 +6377,33 @@ body>main:nth-child(9){
     }
 
     .card1:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card1:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 75px 8px; /* Center the button */
+        display: block;
+        margin: 75px 8px;
         position: absolute;
         left: 4px;
         bottom: -75px;
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
-    /*card 2*/
+    /* card 2 */
     .card2 {
         background-color: white;
         width: 200px;
@@ -6414,29 +6413,23 @@ body>main:nth-child(9){
         left: 65px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
-
-    /* Hover effects */
     .card2:hover {
         transform: scale(1.05);
     }
 
     .card2:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card2:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 3*/
+    /* card 3 */
     .card3 {
         background-color: white;
         width: 200px;
@@ -6446,29 +6439,23 @@ body>main:nth-child(9){
         left: 65px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
-
-    /* Hover effects */
     .card3:hover {
         transform: scale(1.05);
     }
 
     .card3:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card3:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 4*/
+    /* card 4 */
     .card4 {
         background-color: white;
         width: 200px;
@@ -6478,29 +6465,23 @@ body>main:nth-child(9){
         left: 65px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
-    /* Hover effects */
     .card4:hover {
         transform: scale(1.05);
     }
 
     .card4:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card4:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-
-    /*card 5*/
+    /* card 5 */
     .card5 {
         background-color: white;
         width: 200px;
@@ -6510,30 +6491,23 @@ body>main:nth-child(9){
         left: 65px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
-
-    /* Hover effects */
     .card5:hover {
         transform: scale(1.05);
     }
 
     .card5:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card5:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
-
-    .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
-    }
-
-    /*card 6*/
+    /* card 6 */
     .card6 {
         background-color: white;
         width: 200px;
@@ -6543,21 +6517,20 @@ body>main:nth-child(9){
         left: 65px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
-    /* Hover effects */
     .card6:hover {
         transform: scale(1.05);
     }
 
     .card6:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card6:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
@@ -6614,8 +6587,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card11 > img {
@@ -6624,11 +6597,11 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
-    .card11 > h3, card22 > h3, card33 > h3, card44 > h3, card55 > h3, card66 > h3 {
+    .card11 > h3, .card22 > h3, .card33 > h3, .card44 > h3, .card55 > h3, .card66 > h3 {
         color: #3CBEFF;
         font-size: 20px;
         font-family: Inter;
@@ -6636,42 +6609,41 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
-    /* Hover effects */
     .card11:hover {
         transform: scale(1.05);
     }
 
     .card11:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card11:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
-    /*card 2*/
+    /* card 2 */
     .card22 {
         background-color: white;
         width: 200px;
@@ -6681,8 +6653,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card22 > img {
@@ -6691,22 +6663,22 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
-    /* Hover effects */
     .card22:hover {
         transform: scale(1.05);
     }
 
     .card22:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card22:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
+
 
 
     .github-button:hover {
@@ -6743,16 +6715,16 @@ body>main:nth-child(9){
     }
 
     .card33:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card33:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 4*/
@@ -6765,8 +6737,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card44 > img {
@@ -6775,27 +6747,25 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
-    /* Hover effects */
     .card44:hover {
         transform: scale(1.05);
     }
 
     .card44:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card44:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
-
 
     /*card 5*/
     .card55 {
@@ -6807,8 +6777,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card55 > img {
@@ -6817,25 +6787,24 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
-    /* Hover effects */
     .card55:hover {
         transform: scale(1.05);
     }
 
     .card55:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card55:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 6*/
@@ -6848,8 +6817,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card66 > img {
@@ -6858,26 +6827,26 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
-    /* Hover effects */
     .card66:hover {
         transform: scale(1.05);
     }
 
     .card66:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card66:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
+
 
     /*======================================================================================================================*/
     /*gallery section*/
@@ -7013,8 +6982,8 @@ body>main:nth-child(9){
     body > main:nth-child(9) {
         background: linear-gradient(to bottom, black 0%, black 50%, white 50%, white 100%);
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -7025,10 +6994,10 @@ body>main:nth-child(9){
 
     .contact1 {
         color: white;
-        font-size: 24px; /* Adjust font size for mobile */
+        font-size: 24px;
         font-family: Poppins;
         font-weight: bold;
-        margin: 10px 0; /* Margin for spacing */
+        margin: 10px 0;
         left: 27px;
         top: 20px;
     }
@@ -7050,15 +7019,15 @@ body>main:nth-child(9){
     .fName, .lName, .emails, .phone, .subject, .message {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center labels and inputs */
-        margin: 10px 0; /* Add some space between fields */
+        align-items: center;
+        margin: 10px 0;
     }
 
     .fName > label{
         top: 400px;
         right: 285px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
 
@@ -7067,7 +7036,7 @@ body>main:nth-child(9){
         top: 400px;
         right: 10px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
     }
@@ -7075,7 +7044,7 @@ body>main:nth-child(9){
         top: 480px;
         left: 15px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
     }
@@ -7085,128 +7054,130 @@ body>main:nth-child(9){
         top: 480px;
         right: 10px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
 
     } .subject > label, .message > label {
           font-family: Inter;
-          font-size: 18px; /* Smaller font for mobile */
+          font-size: 18px;
           color: black;
           font-weight: bold;
 
       }
 
     .fName > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 420px;
         left: 10px;
     }
 
     .lName > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 420px;
         right: 10px;
     }
 
     .emails > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 500px;
         left: 10px;
     }
 
     .phone > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 500px;
         right: 10px;
     }
 
     .message > textarea {
-        width: 24%; /* Adjust width */
-        height: 18px; /* Increased height for easier touch */
+        width: 24%;
+        height: 18px;
         border-radius: 10px;
         padding-right: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 540px;
         left: 10px;
     }
 
     .subject > div {
         display: flex;
-        justify-content: space-around; /* Space between options */
+        justify-content: space-around;
         width: 100%;
-        margin-top: 10px; /* Space between label and options */
+        margin-top: 10px;
     }
 
-    .webdesign{
+    .webdesign {
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 200px;
     }
-    .software{
+
+    .software {
         display: none;
     }
-    .complaint{
+
+    .complaint {
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 80px;
     }
 
     .other {
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 10px;
     }
 
     .message > textarea {
-        width: 90%; /* Adjust width */
-        height: 60px; /* Increased height for easier typing */
-        margin-top: 10px; /* Margin for spacing */
+        width: 90%;
+        height: 60px;
+        margin-top: 10px;
         position: absolute;
         top: 580px;
     }
 
     .messageButton {
-        margin-bottom: 20px; /* Space before button */
+        margin-bottom: 20px;
         color: black;
         position: absolute;
         top: 630px;
@@ -7214,27 +7185,28 @@ body>main:nth-child(9){
         border-radius: 20px;
     }
 
-    .call>p{
+    .call > p {
         display: flex;
-        align-items: center; /* Align icon and text */
+        align-items: center;
         color: white;
         top: 80px;
         font-size: 16px;
         right: 20px;
         left: 100px;
     }
-    .email>p{
+
+    .email > p {
         display: flex;
-        align-items: center; /* Align icon and text */
+        align-items: center;
         color: white;
         font-size: 16px;
         top: 140px;
         left: 100px;
-
     }
-    .location>p {
+
+    .location > p {
         display: flex;
-        align-items: center; /* Align icon and text */
+        align-items: center;
         color: white;
         font-size: 16px;
         top: 200px;
@@ -7263,15 +7235,15 @@ body>main:nth-child(9){
 
     .contacts {
         display: flex;
-        justify-content: center; /* Center contact icons */
-        margin-top: 20px; /* Space above contacts */
+        justify-content: center;
+        margin-top: 20px;
         top: 50px;
     }
 
     .contacts > a:nth-child(1) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 170px;
@@ -7279,7 +7251,7 @@ body>main:nth-child(9){
     .contacts > a:nth-child(2) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 70px;
@@ -7287,7 +7259,7 @@ body>main:nth-child(9){
     .contacts > a:nth-child(3) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 270px;
@@ -7385,63 +7357,59 @@ body>main:nth-child(9){
     /* My Image Container (for the glowing line) */
     body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
-        left: 70px; /* Responsive horizontal positioning */
-        top: 170px; /* Responsive vertical positioning */
-        width: 56vw; /* Responsive width */
-        height: 36vh; /* Equal width and height for a perfect circle */
-        max-width: 310px; /* Optional: Add a max-width for better control on very large screens */
-        max-height: 310px; /* Optional: Add a max-height for better control on very large screens */
-        border-radius: 50%; /* Circular shape */
+        left: 70px;
+        top: 170px;
+        width: 56vw;
+        height: 36vh;
+        max-width: 310px;
+        max-height: 310px;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 3vw; /* Space for the line to move around */
-        position: relative; /* For pseudo-element positioning */
+        padding: 3vw;
+        position: relative;
     }
 
-    /* The Profile Image */
     body > main:nth-child(1) > section > div:nth-child(2) > img {
         width: 100%;
         height: 100%;
-        border-radius: 50%;  /* Circular image */
-        box-shadow: 3px 3px 3px rgb(26, 145, 214);  /* Optional shadow */
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);
     }
 
-    /* Glowing Animated Line (pseudo-element) */
     body > main:nth-child(1) > section > div:nth-child(2):before {
         content: '';
         position: absolute;
-        top: -3px; /* Center the border around the container */
-        left: -2px; /* Center the border around the container */
+        top: -3px;
+        left: -2px;
         width: 100%;
         height: 100%;
-        border-radius: 50%; /* Circular path */
-        border: 4px solid transparent; /* Invisible border for structure */
-        border-top: 4px solid #3498db; /* Start with a thin blue line */
-        box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Initial strong glow */
-        animation: glowingLine 2s linear infinite; /* Animate the glowing line around */
+        border-radius: 50%;
+        border: 4px solid transparent;
+        border-top: 4px solid #3498db;
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1);
+        animation: glowingLine 2s linear infinite;
     }
 
-    /* Glowing Line Animation */
     @keyframes glowingLine {
         0% {
             transform: rotate(0deg);
-            border-top-width: 4px; /* Thinner line */
-            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow */
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1);
         }
         50% {
-            transform: rotate(180deg); /* Half rotation */
-            border-top-width: 6px; /* Thicker line */
-            box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Stronger glow */
+            transform: rotate(180deg);
+            border-top-width: 6px;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1);
         }
         100% {
-            transform: rotate(360deg); /* Full rotation */
-            border-top-width: 4px; /* Thinner line */
-            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow again */
+            transform: rotate(360deg);
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1);
         }
     }
 
-    /*navigation bar section*/
     body > main:nth-child(1) > section:nth-child(2) > section:first-child > div {
         background-image: linear-gradient(#E0E0E0 1%, #000000 53%);
         height: 15px;
@@ -7453,20 +7421,21 @@ body>main:nth-child(9){
         bottom: 0;
         position: fixed;
         box-shadow: 3px 3px 3px rgb(26, 145, 214);
-        transition: top 3s ease; /* Smooth transition for showing/hiding */
+        transition: top 3s ease;
     }
 
     .drag-handle {
-        width: 40px; /* Width of the handle */
-        height: 90px; /* Adjust to fit the navbar */
-        background: transparent; /* Opaque to transparent */
+        width: 40px;
+        height: 90px;
+        background: transparent;
         position: absolute;
-        left: 140px; /* Position to the left of the navbar */
-        top: 12%; /* Centered vertically */
-        cursor: ew-resize; /* Change cursor to indicate dragging */
-        z-index: 1; /* Drag handle behind the navbar */
+        left: 140px;
+        top: 12%;
+        cursor: ew-resize;
+        z-index: 1;
         border-radius: 20px;
     }
+
 
     .drag-handle>img{
         width: 30px;
@@ -7655,99 +7624,90 @@ body>main:nth-child(9){
         z-index: 1;
     }
 
-    /* Card container */
     body > main:nth-child(3) > section:nth-child(2) > div {
         width: 220px;
         height: 130px;
-        background: black; /* Card background */
-        box-shadow: 0 3px 8px #3CBEFF; /* Shadow effect */
+        background: black;
+        box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
         top: 80px;
         left: 100px;
-        border-radius: 10%; /* Rounded corners */
-        overflow: hidden; /* Prevents overflow of the overlay */
+        border-radius: 10%;
+        overflow: hidden;
     }
 
-    /* Card image */
     body > main:nth-child(3) > section:nth-child(2) > div > img {
         width: 220px;
         height: 130px;
-        border-radius: 10%; /* Rounded corners */
+        border-radius: 10%;
         position: absolute;
         top: 0;
-        object-fit: cover; /* Ensures the image covers the area */
-        object-position: 80% 30%; /* Image positioning */
+        object-fit: cover;
+        object-position: 80% 30%;
     }
 
-    /* Description overlay */
     .description1 {
         position: absolute;
-        bottom: 0; /* Position at the bottom */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
         color: white;
         display: flex;
-        align-items: center; /* Center vertically */
-        justify-content: center; /* Center horizontally */
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        opacity: 0; /* Initially hidden */
-        transition: opacity 0.3s ease; /* Smooth /hiding */
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 
-    /* Show description on hover */
     body > main:nth-child(3) > section:nth-child(2) > div:hover .description1 {
-        opacity: 1; /* Show overlay on hover */
+        opacity: 1;
     }
 
-
-    /*card 2 background*/
-    /* Card container */
     body > main:nth-child(3) > section:nth-child(3) > div {
         width: 220px;
         height: 130px;
-        background: black; /* Card background */
-        box-shadow: 0 3px 8px #3CBEFF; /* Shadow effect */
+        background: black;
+        box-shadow: 0 3px 8px #3CBEFF;
         position: absolute;
         top: 245px;
         left: 100px;
         border-radius: 10%;
-        overflow: hidden; /* Prevents overflow of the overlay */
+        overflow: hidden;
     }
 
-    /* Card image */
     body > main:nth-child(3) > section:nth-child(3) > div > img {
         width: 220px;
         height: 130px;
-        border-radius: 10%; /* Rounded corners */
+        border-radius: 10%;
         position: absolute;
         top: 0;
-        object-fit: cover; /* Ensures the image covers the area */
-        object-position: 100% 40%; /* Image positioning */
+        object-fit: cover;
+        object-position: 100% 40%;
     }
 
-    /* Description overlay */
     .description1 {
         position: absolute;
-        bottom: 0; /* Position at the bottom */
-        left: 0; /* Align to the left */
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
         color: white;
         display: flex;
-        align-items: center; /* Center vertically */
-        justify-content: center; /* Center horizontally */
+        align-items: center;
+        justify-content: center;
         text-align: center;
-        opacity: 0; /* Initially hidden */
-        transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+        opacity: 0;
+        transition: opacity 0.3s ease;
     }
 
-    /* Show description on hover */
     body > main:nth-child(3) > section:nth-child(3) > div:hover .description1 {
-        opacity: 1; /* Show overlay on hover */
+        opacity: 1;
     }
+
 
 
     /*card 3 background*/
@@ -7780,20 +7740,20 @@ body>main:nth-child(9){
         left: -10px;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        background: rgba(0, 0, 0, 0.7); /* transparent background */
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
-        opacity: 0; /* Initially hidden */
-        transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+        opacity: 0;
+        transition: opacity 0.3s ease; /* smooth transition for showing/hiding */
         padding: 10px;
     }
 
     /* Show description on hover */
     body > main:nth-child(3) > section:nth-child(4) > div:hover .description1 {
-        opacity: 1; /* Show overlay on hover */
+        opacity: 1;
     }
 
     /*design box 1.1*/
@@ -8259,8 +8219,8 @@ body>main:nth-child(9){
         height: 250px;
         background: black;
         position: absolute;
-        top: 410px; /* Adjusted position */
-        left: 60px; /* Adjusted position */
+        top: 410px;
+        left: 60px;
         justify-content: center;
         align-items: center;
         border-radius: 10%;
@@ -8270,7 +8230,7 @@ body>main:nth-child(9){
     /* Card 2 image */
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(2) > div > img {
         position: absolute;
-        height: 170px; /* Changed to match card 1 */
+        height: 170px;
         width: 240px;
         border-radius: 10%;
     }
@@ -8279,10 +8239,10 @@ body>main:nth-child(9){
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(2) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 24px; /* Changed to match card 1 */
+        font-size: 24px;
         position: absolute;
-        top: 190px; /* Changed to match card 1 */
-        left: 12px; /* Changed to match card 1 */
+        top: 190px;
+        left: 12px;
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
@@ -8293,8 +8253,8 @@ body>main:nth-child(9){
         height: 250px;
         background: black;
         position: absolute;
-        top: 770px; /* Adjusted position */
-        left: 60px; /* Adjusted position */
+        top: 770px;
+        left: 60px;
         justify-content: center;
         align-items: center;
         border-radius: 10%;
@@ -8304,7 +8264,7 @@ body>main:nth-child(9){
     /* Card 3 image */
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(3) > div > img {
         position: absolute;
-        height: 170px; /* Changed to match card 1 */
+        height: 170px;
         width: 240px;
         border-radius: 10%;
     }
@@ -8313,10 +8273,10 @@ body>main:nth-child(9){
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(3) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 24px; /* Changed to match card 1 */
+        font-size: 24px;
         position: absolute;
-        top: 190px; /* Changed to match card 1 */
-        left: 12px; /* Changed to match card 1 */
+        top: 190px;
+        left: 12px;
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
@@ -8327,8 +8287,8 @@ body>main:nth-child(9){
         height: 250px;
         background: black;
         position: absolute;
-        top: 1130px; /* Adjusted position */
-        left: 60px; /* Adjusted position */
+        top: 1130px;
+        left: 60px;
         justify-content: center;
         align-items: center;
         border-radius: 10%;
@@ -8338,7 +8298,7 @@ body>main:nth-child(9){
     /* Card 4 image */
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(4) > div > img {
         position: absolute;
-        height: 170px; /* Changed to match card 1 */
+        height: 170px;
         width: 240px;
         border-radius: 10%;
     }
@@ -8347,10 +8307,10 @@ body>main:nth-child(9){
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(4) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 24px; /* Changed to match card 1 */
+        font-size: 24px;
         position: absolute;
-        top: 190px; /* Changed to match card 1 */
-        left: 12px; /* Changed to match card 1 */
+        top: 190px;
+        left: 12px;
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
@@ -8361,8 +8321,8 @@ body>main:nth-child(9){
         height: 250px;
         background: black;
         position: absolute;
-        top: 1490px; /* Adjusted position */
-        left: 60px; /* Adjusted position */
+        top: 1490px;
+        left: 60px;
         justify-content: center;
         align-items: center;
         border-radius: 10%;
@@ -8372,7 +8332,7 @@ body>main:nth-child(9){
     /* Card 5 image */
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(5) > div > img {
         position: absolute;
-        height: 170px; /* Changed to match card 1 */
+        height: 170px;
         width: 240px;
         border-radius: 10%;
     }
@@ -8381,10 +8341,10 @@ body>main:nth-child(9){
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(5) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 24px; /* Changed to match card 1 */
+        font-size: 24px;
         position: absolute;
-        top: 190px; /* Changed to match card 1 */
-        left: 12px; /* Changed to match card 1 */
+        top: 190px;
+        left: 12px;
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
     }
@@ -8395,8 +8355,8 @@ body>main:nth-child(9){
         height: 250px;
         background: black;
         position: absolute;
-        top: 1850px; /* Adjusted position */
-        left: 60px; /* Adjusted position */
+        top: 1850px;
+        left: 60px;
         margin-bottom: 100px;
         justify-content: center;
         align-items: center;
@@ -8407,7 +8367,7 @@ body>main:nth-child(9){
     /* Card 6 image */
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(6) > div > img {
         position: absolute;
-        height: 170px; /* Changed to match card 1 */
+        height: 170px;
         width: 240px;
         border-radius: 10%;
     }
@@ -8416,10 +8376,10 @@ body>main:nth-child(9){
     body > main:nth-child(5) > section:nth-child(2) > div > section:nth-child(6) > div > a {
         color: white;
         text-decoration: none;
-        font-size: 24px; /* Changed to match card 1 */
+        font-size: 24px;
         position: absolute;
-        top: 190px; /* Changed to match card 1 */
-        left: 12px; /* Changed to match card 1 */
+        top: 190px;
+        left: 12px;
         margin-bottom: 10px;
         z-index: 1;
         font-family: "Arial Rounded MT Bold";
@@ -8610,14 +8570,14 @@ body>main:nth-child(9){
         left: -10px;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        background: rgba(0, 0, 0, 0.7);
         color: white;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
         opacity: 0;
-        transition: opacity 0.3s ease; /* Smooth transition for showing/hiding */
+        transition: opacity 0.3s ease;
         padding: 10px;
     /
     }
@@ -9070,8 +9030,8 @@ body>main:nth-child(9){
     body > main:nth-child(9) {
         background: linear-gradient(to bottom, black 0%, black 50%, white 50%, white 100%);
         display: flex;
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center items horizontally */
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         height: 100vh;
         margin: 0;
@@ -9082,10 +9042,10 @@ body>main:nth-child(9){
 
     .contact1 {
         color: white;
-        font-size: 24px; /* Adjust font size for mobile */
+        font-size: 24px;
         font-family: Poppins;
         font-weight: bold;
-        margin: 10px 0; /* Margin for spacing */
+        margin: 10px 0;
         left: 27px;
         top: 20px;
     }
@@ -9107,15 +9067,15 @@ body>main:nth-child(9){
     .fName, .lName, .emails, .phone, .subject, .message {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Center labels and inputs */
-        margin: 10px 0; /* Add some space between fields */
+        align-items: center;
+        margin: 10px 0;
     }
 
     .fName > label{
         top: 400px;
         right: 335px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
 
@@ -9124,7 +9084,7 @@ body>main:nth-child(9){
         top: 400px;
         right: 10px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
     }
@@ -9132,7 +9092,7 @@ body>main:nth-child(9){
         top: 480px;
         left: 15px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
     }
@@ -9142,125 +9102,125 @@ body>main:nth-child(9){
         top: 480px;
         right: 10px;
         font-family: Inter;
-        font-size: 14px; /* Smaller font for mobile */
+        font-size: 14px;
         color: black;
         font-weight: bold;
 
     } .subject > label, .message > label {
           font-family: Inter;
-          font-size: 18px; /* Smaller font for mobile */
+          font-size: 18px;
           color: black;
           font-weight: bold;
 
       }
 
     .fName > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 420px;
         left: 10px;
     }
 
     .lName > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 420px;
         right: 10px;
     }
 
     .emails > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 500px;
         left: 10px;
     }
 
     .phone > input {
-        width: 36%; /* Adjust width */
-        height: 20px; /* Increased height for easier touch */
+        width: 36%;
+        height: 20px;
         border-radius: 10px;
         padding: 10px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 500px;
         right: 10px;
     }
 
     .message > textarea {
-        width: 26%; /* Adjust width */
-        height: 18px; /* Increased height for easier touch */
+        width: 26%;
+        height: 18px;
         border-radius: 10px;
         padding-right: 15px;
         font-family: Inter;
-        font-size: 16px; /* Smaller font for inputs */
+        font-size: 16px;
         color: black;
         background: white;
-        margin-top: 5px; /* Margin for spacing */
+        margin-top: 5px;
         top: 540px;
         left: 10px;
     }
 
     .subject > div {
         display: flex;
-        justify-content: space-around; /* Space between options */
+        justify-content: space-around;
         width: 100%;
-        margin-top: 10px; /* Space between label and options */
+        margin-top: 10px;
     }
 
     .webdesign{
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 220px;
     }
     .software{
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 340px
     }
     .complaint{
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 100px;
     }
 
     .other {
         color: black;
-        font-size: 14px; /* Smaller font for options */
+        font-size: 14px;
         top: 560px;
         right: 10px;
     }
 
     .message > textarea {
-        width: 90%; /* Adjust width */
-        height: 60px; /* Increased height for easier typing */
-        margin-top: 10px; /* Margin for spacing */
+        width: 90%;
+        height: 60px;
+        margin-top: 10px;
         position: absolute;
         top: 580px;
     }
@@ -9323,15 +9283,15 @@ body>main:nth-child(9){
 
     .contacts {
         display: flex;
-        justify-content: center; /* Center contact icons */
-        margin-top: 20px; /* Space above contacts */
+        justify-content: center;
+        margin-top: 20px;
         top: 50px;
     }
 
     .contacts > a:nth-child(1) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 190px;
@@ -9339,7 +9299,7 @@ body>main:nth-child(9){
     .contacts > a:nth-child(2) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 90px;
@@ -9347,7 +9307,7 @@ body>main:nth-child(9){
     .contacts > a:nth-child(3) {
         width: 30px;
         height: 30px;
-        margin-right: 10px; /* Space between icon and text */
+        margin-right: 10px;
         bottom: 350px;
         position: absolute;
         left: 290px;
@@ -9425,71 +9385,71 @@ body>main:nth-child(9){
     /* My Image Container (for the glowing line) */
     body > main:nth-child(1) > section > div:nth-child(2) {
         position: absolute;
-        left: 140px; /* Responsive horizontal positioning */
-        top: 190px; /* Responsive vertical positioning */
-        width: 38vw; /* Responsive width */
-        height: 44vh; /* Equal width and height for a perfect circle */
-        max-width: 310px; /* Optional: Add a max-width for better control on very large screens */
-        max-height: 310px; /* Optional: Add a max-height for better control on very large screens */
-        border-radius: 50%; /* Circular shape */
+        left: 140px;
+        top: 190px;
+        width: 38vw;
+        height: 44vh;
+        max-width: 310px;
+        max-height: 310px;
+        border-radius: 50%;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 3vw; /* Space for the line to move around */
-        position: relative; /* For pseudo-element positioning */
+        padding: 3vw;
+        position: relative;
     }
 
     /* The Profile Image */
     body > main:nth-child(1) > section > div:nth-child(2) > img {
         width: 100%;
         height: 100%;
-        border-radius: 50%;  /* Circular image */
-        box-shadow: 3px 3px 3px rgb(26, 145, 214);  /* Optional shadow */
+        border-radius: 50%;
+        box-shadow: 3px 3px 3px rgb(26, 145, 214);
     }
 
     /* Glowing Animated Line (pseudo-element) */
     body > main:nth-child(1) > section > div:nth-child(2):before {
         content: '';
         position: absolute;
-        top: -3px; /* Center the border around the container */
-        left: -2px; /* Center the border around the container */
+        top: -3px;
+        left: -2px;
         width: 100%;
         height: 100%;
-        border-radius: 50%; /* Circular path */
-        border: 4px solid transparent; /* Invisible border for structure */
-        border-top: 4px solid #3498db; /* Start with a thin blue line */
-        box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Initial strong glow */
-        animation: glowingLine 2s linear infinite; /* Animate the glowing line around */
+        border-radius: 50%;
+        border: 4px solid transparent;
+        border-top: 4px solid #3498db;
+        box-shadow: 0 0 15px rgba(52, 152, 219, 1);
+        animation: glowingLine 2s linear infinite;
     }
 
     /* Glowing Line Animation */
     @keyframes glowingLine {
         0% {
             transform: rotate(0deg);
-            border-top-width: 4px; /* Thinner line */
-            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow */
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1);
         }
         50% {
-            transform: rotate(180deg); /* Half rotation */
-            border-top-width: 6px; /* Thicker line */
-            box-shadow: 0 0 20px rgba(52, 152, 219, 1); /* Stronger glow */
+            transform: rotate(180deg);
+            border-top-width: 6px;
+            box-shadow: 0 0 20px rgba(52, 152, 219, 1);
         }
         100% {
-            transform: rotate(360deg); /* Full rotation */
-            border-top-width: 4px; /* Thinner line */
-            box-shadow: 0 0 15px rgba(52, 152, 219, 1); /* Strong glow again */
+            transform: rotate(360deg);
+            border-top-width: 4px;
+            box-shadow: 0 0 15px rgba(52, 152, 219, 1);
         }
     }
 
     .drag-handle {
-        width: 110px; /* Width of the handle */
-        height: 20%; /* Adjust to fit the navbar */
-        background: transparent; /* Opaque to transparent */
+        width: 110px;
+        height: 20%;
+        background: transparent;
         position: absolute;
-        left: 12px; /* Position to the left of the navbar */
-        top: 40%; /* Centered vertically */
-        cursor: ew-resize; /* Change cursor to indicate dragging */
-        z-index: 1; /* Drag handle behind the navbar */
+        left: 12px;
+        top: 40%;
+        cursor: ew-resize;
+        z-index: 1;
         border-radius: 20px;
     }
 
@@ -10836,7 +10796,7 @@ body>main:nth-child(9){
         z-index: 1;
         top: 100px;
         object-fit: cover;
-        transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+        transition: transform 0.3s ease;
     }
 
     .img1 {
@@ -10862,7 +10822,7 @@ body>main:nth-child(9){
     }
 
     .img1:hover {
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 80vh;
         width: 400px;
         object-position: 50% 0;
@@ -10870,7 +10830,7 @@ body>main:nth-child(9){
     }
 
     .img2:hover {
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 80% 0;
@@ -10878,7 +10838,7 @@ body>main:nth-child(9){
     }
 
     .img3:hover {
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 90% 0%;
@@ -10887,7 +10847,7 @@ body>main:nth-child(9){
     }
 
     .img4:hover {
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 70% 0;
@@ -10896,7 +10856,7 @@ body>main:nth-child(9){
     }
 
     .img5:hover {
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 50% 0;
@@ -11018,11 +10978,11 @@ body>main:nth-child(9){
 
     .github-button {
         display: block;
-        margin: 20px 8px; /* Reduced gap */
+        margin: 20px 8px;
         position: absolute;
         left: 32.5px;
-        bottom: -75px; /* Adjusted to minimize gap */
-        padding: 5px 10px; /* Smaller padding for a smaller button */
+        bottom: -75px;
+        padding: 5px 10px;
         background-color: #3CBEFF;
         color: white;
         text-align: center;
@@ -11182,8 +11142,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card1111 > img {
@@ -11192,8 +11152,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
@@ -11204,10 +11164,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -11216,27 +11176,27 @@ body>main:nth-child(9){
     }
 
     .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -11249,8 +11209,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card2222 > img {
@@ -11259,8 +11219,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -11444,163 +11404,6 @@ body>main:nth-child(9){
         background-color: #2a9bd5;
     }
 
-    /*@keyframes animation-slide {*/
-    /*    0%, 20% {*/
-    /*        transform: translateX(0);*/
-    /*    }*/
-    /*    25%, 50% {*/
-    /*        transform: translateX(-100%);*/
-    /*    }*/
-    /*    55%, 70% {*/
-    /*        transform: translateX(-200%);*/
-    /*    }*/
-    /*    75%, 100% {*/
-    /*        transform: translateX(-300%);*/
-    /*    }*/
-    /*}*/
-    /*.assignment>div:nth-child(3){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 100px;*/
-    /*    right: 50px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(3)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 100px;*/
-    /*    color: white;*/
-    /*}*/
-    /*!*=======================================================*!*/
-    /*.assignment>div:nth-child(6){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 400px;*/
-    /*    right: 50px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(6)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*!*=======================================================*!*/
-    /*.assignment>div:nth-child(9){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 400px;*/
-    /*    right: 300px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(9)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
     body > main:nth-child(9) {
         background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
         display: flex;
@@ -12059,14 +11862,14 @@ body>main:nth-child(9){
     }
 
     .drag-handle {
-        width: 110px; /* Width of the handle */
-        height: 20%; /* Adjust to fit the navbar */
-        background: transparent; /* Opaque to transparent */
+        width: 110px;
+        height: 20%;
+        background: transparent;
         position: absolute;
-        left: 12px; /* Position to the left of the navbar */
-        top: 40%; /* Centered vertically */
-        cursor: ew-resize; /* Change cursor to indicate dragging */
-        z-index: 1; /* Drag handle behind the navbar */
+        left: 12px;
+        top: 40%;
+        cursor: ew-resize;
+        z-index: 1;
         border-radius: 20px;
     }
 
@@ -13386,7 +13189,7 @@ body>main:nth-child(9){
         z-index: 1;
         top: 100px;
         object-fit: cover;
-        transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+        transition: transform 0.3s ease;
     }
 
     .img1 {
@@ -13412,35 +13215,35 @@ body>main:nth-child(9){
     }
 
     .img1:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 80vh;
         width: 400px;
         object-position: 50% 0;
         z-index: 2;
     }
     .img2:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 80% 0;
         z-index: 2;
     }
     .img3:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 90% 0%;
         z-index: 2;
     }
     .img4:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 70% 0;
         z-index: 2;
     }
     .img5:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 50% 0;
@@ -13596,7 +13399,7 @@ body>main:nth-child(9){
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 3*/
@@ -13609,8 +13412,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
 
@@ -13620,15 +13423,15 @@ body>main:nth-child(9){
     }
 
     .card3:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card3:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 4*/
@@ -13641,8 +13444,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     /* Hover effects */
@@ -13651,15 +13454,15 @@ body>main:nth-child(9){
     }
 
     .card4:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card4:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
 
@@ -13673,8 +13476,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
 
@@ -13684,16 +13487,16 @@ body>main:nth-child(9){
     }
 
     .card5:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card5:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 6*/
@@ -13706,8 +13509,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     /* Hover effects */
@@ -13716,11 +13519,11 @@ body>main:nth-child(9){
     }
 
     .card6:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card6:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
@@ -13773,8 +13576,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card11 > img {
@@ -13783,8 +13586,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card11 > h3, card22 > h3, card33 > h3, card44 > h3, card55 > h3, card66 > h3 {
@@ -13795,10 +13598,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -13807,27 +13610,27 @@ body>main:nth-child(9){
     }
 
     .card11:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card11:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -13840,8 +13643,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card22 > img {
@@ -13850,8 +13653,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -13860,11 +13663,11 @@ body>main:nth-child(9){
     }
 
     .card22:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card22:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
@@ -13902,16 +13705,16 @@ body>main:nth-child(9){
     }
 
     .card33:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card33:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;/
     }
 
     /*card 4*/
@@ -13924,8 +13727,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card44 > img {
@@ -13934,8 +13737,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -13944,15 +13747,15 @@ body>main:nth-child(9){
     }
 
     .card44:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card44:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
 
@@ -13966,8 +13769,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card55 > img {
@@ -13976,8 +13779,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -13986,15 +13789,15 @@ body>main:nth-child(9){
     }
 
     .card55:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card55:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 6*/
@@ -14007,8 +13810,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card66 > img {
@@ -14017,8 +13820,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -14027,15 +13830,15 @@ body>main:nth-child(9){
     }
 
     .card66:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card66:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*====================================================================================================================*/
@@ -14071,8 +13874,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card111 > img {
@@ -14081,8 +13884,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card111 > h3, card222 > h3, card333 > h3, card444 > h3, card555 > h3, card666 > h3 {
@@ -14093,10 +13896,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -14105,27 +13908,27 @@ body>main:nth-child(9){
     }
 
     .card111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -14138,8 +13941,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card222 > img {
@@ -14148,8 +13951,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -14158,11 +13961,11 @@ body>main:nth-child(9){
     }
 
     .card222:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card222:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
@@ -14199,15 +14002,15 @@ body>main:nth-child(9){
     }
 
     .card333:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card333:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 4*/
@@ -14220,8 +14023,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card444 > img {
@@ -14230,8 +14033,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
 
@@ -14241,16 +14044,16 @@ body>main:nth-child(9){
     }
 
     .card444:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card444:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
 
@@ -14264,8 +14067,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card555 > img {
@@ -14274,8 +14077,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -14284,16 +14087,16 @@ body>main:nth-child(9){
     }
 
     .card555:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card555:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 6*/
@@ -14306,8 +14109,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card666 > img {
@@ -14316,8 +14119,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -14326,16 +14129,16 @@ body>main:nth-child(9){
     }
 
     .card666:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card666:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*====================================================================================================================*/
@@ -14371,8 +14174,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card1111 > img {
@@ -14381,8 +14184,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
@@ -14393,10 +14196,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -14405,27 +14208,27 @@ body>main:nth-child(9){
     }
 
     .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -14438,8 +14241,8 @@ body>main:nth-child(9){
         left: 105px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card2222 > img {
@@ -14448,8 +14251,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -14666,8 +14469,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card1111 > img {
@@ -14676,8 +14479,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card1111 > h3, card2222 > h3, card3333 > h3, card4444 > h3, card5555 > h3, card6666 > h3 {
@@ -14688,10 +14491,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -14700,27 +14503,27 @@ body>main:nth-child(9){
     }
 
     .card1111:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card1111:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -14733,8 +14536,8 @@ body>main:nth-child(9){
         left: 45px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card2222 > img {
@@ -14743,8 +14546,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     /* Hover effects */
@@ -14928,163 +14731,6 @@ body>main:nth-child(9){
         background-color: #2a9bd5;
     }
 
-    /*@keyframes animation-slide {*/
-    /*    0%, 20% {*/
-    /*        transform: translateX(0);*/
-    /*    }*/
-    /*    25%, 50% {*/
-    /*        transform: translateX(-100%);*/
-    /*    }*/
-    /*    55%, 70% {*/
-    /*        transform: translateX(-200%);*/
-    /*    }*/
-    /*    75%, 100% {*/
-    /*        transform: translateX(-300%);*/
-    /*    }*/
-    /*}*/
-    /*.assignment>div:nth-child(3){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 100px;*/
-    /*    right: 50px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(3)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 100px;*/
-    /*    color: white;*/
-    /*}*/
-    /*!*=======================================================*!*/
-    /*.assignment>div:nth-child(6){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 400px;*/
-    /*    right: 50px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(6)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*!*=======================================================*!*/
-    /*.assignment>div:nth-child(9){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 400px;*/
-    /*    right: 300px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(9)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
     body > main:nth-child(9) {
         background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
         display: flex;
@@ -15430,14 +15076,6 @@ body>main:nth-child(9){
         scroll-behavior: smooth;
     }
 
-    /*.page {*/
-    /*    height: 100vh;*/
-    /*    scroll-snap-align: start; !*snap alignment*!*/
-    /*    display: flex;*/
-    /*    color: white;*/
-    /*    position: relative;*/
-    /*}*/
-
     /*1st page main*/
     body>main:nth-child(1){
         background: black;
@@ -15547,23 +15185,23 @@ body>main:nth-child(9){
         border-radius: 25px;
         padding: 20px;
         top: 100px;
-        left: -70px; /* Hidden position */
+        left: -70px;
         bottom: 0;
         position: fixed;
         box-shadow: 6px 6px 3px rgb(26, 145, 214);
-        z-index: 3; /* Navbar on top */
-        transition: left 3s ease; /* Smooth transition for showing/hiding */
+        z-index: 3;
+        transition: left 3s ease;
     }
 
     .drag-handle {
-        width: 110px; /* Width of the handle */
-        height: 20%; /* Adjust to fit the navbar */
-        background: transparent; /* Opaque to transparent */
+        width: 110px;
+        height: 20%;
+        background: transparent;
         position: absolute;
-        left: 12px; /* Position to the left of the navbar */
-        top: 40%; /* Centered vertically */
-        cursor: ew-resize; /* Change cursor to indicate dragging */
-        z-index: 1; /* Drag handle behind the navbar */
+        left: 12px;
+        top: 40%;
+        cursor: ew-resize;
+        z-index: 1;
         border-radius: 20px;
     }
 
@@ -15584,14 +15222,6 @@ body>main:nth-child(9){
         height: 45px;
         width: 45px;
     }
-    /* Na
-
-
-    /*body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:hover{*/
-    /*    left: 40px;*/
-    /*    object-position: 80% 0;*/
-    /*    transition-duration: 2s;*/
-    /*}*/
 
     /*navigation bar images*/
     body>main:nth-child(1)>section:nth-child(2)>section:first-child>div:first-child>nav:first-child {
@@ -16859,7 +16489,7 @@ body>main:nth-child(9){
         z-index: 1;
         top: 100px;
         object-fit: cover;
-        transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+        transition: transform 0.3s ease;
     }
 
     .img1 {
@@ -16885,35 +16515,35 @@ body>main:nth-child(9){
     }
 
     .img1:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 50% 0;
         z-index: 2;
     }
     .img2:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 80% 0;
         z-index: 2;
     }
     .img3:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 90% 0%;
         z-index: 2;
     }
     .img4:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         object-position: 70% 0;
         z-index: 2;
     }
     .img5:hover{
-        transform: scale(1.15); /* Scales the image up by 10% */
+        transform: scale(1.15);
         height: 90vh;
         width: 400px;
         left: 900px;
@@ -16985,9 +16615,8 @@ body>main:nth-child(9){
         left: 100px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-        /* Add relative positioning to position the overlay */
+        overflow: hidden;
+        transition: transform 0.3s;
         position: relative;
     }
 
@@ -16997,8 +16626,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card1 > .overlay {
@@ -17007,10 +16636,10 @@ body>main:nth-child(9){
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for overlay */
-        z-index: 2; /* Ensure overlay is above the image */
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
     }
 
     .run  {
@@ -17020,10 +16649,10 @@ body>main:nth-child(9){
         font-weight: normal;
         top: -80px;
         left: 65px;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 4; /* Ensure the text is above the overlay */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 4;
+        position: relative;
     }
 
     .card1 > h6 {
@@ -17045,7 +16674,7 @@ body>main:nth-child(9){
     }
 
     .card1:hover > .overlay {
-        opacity: 1; /* Show the overlay on hover */
+        opacity: 1;
     }
 
     .card1 > h6:hover {
@@ -17058,29 +16687,29 @@ body>main:nth-child(9){
     .card4:hover > .run,
     .card5:hover > .run,
     .card6:hover > .run {
-        opacity: 1; /* Show the button on hover */
+        opacity: 1;
     }
 
     .card1:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
+        display: block;
         bottom: -65px;
         left: 35px;
         position: absolute;
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
         z-index: 10;
 
     }
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -17093,9 +16722,8 @@ body>main:nth-child(9){
         left: 100px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-        /* Add relative positioning to position the overlay */
+        overflow: hidden;
+        transition: transform 0.3s;
         position: relative;
     }
 
@@ -17105,8 +16733,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card2 > .overlay {
@@ -17115,10 +16743,10 @@ body>main:nth-child(9){
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for overlay */
-        z-index: 2; /* Ensure overlay is above the image */
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
     }
 
 
@@ -17141,7 +16769,7 @@ body>main:nth-child(9){
     }
 
     .card2:hover > .overlay {
-        opacity: 1; /* Show the overlay on hover */
+        opacity: 1;
     }
 
     .card2 > h6:hover {
@@ -17150,23 +16778,23 @@ body>main:nth-child(9){
 
 
     .card2:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 3*/
@@ -17179,9 +16807,8 @@ body>main:nth-child(9){
         left: 475px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-        /* Add relative positioning to position the overlay */
+        overflow: hidden;
+        transition: transform 0.3s;
         position: relative;
     }
 
@@ -17191,8 +16818,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card3 > .overlay {
@@ -17201,10 +16828,10 @@ body>main:nth-child(9){
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for overlay */
-        z-index: 2; /* Ensure overlay is above the image */
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
     }
 
     .card3 > h6 {
@@ -17226,7 +16853,7 @@ body>main:nth-child(9){
     }
 
     .card3:hover > .overlay {
-        opacity: 1; /* Show the overlay on hover */
+        opacity: 1;
     }
 
     .card3 > h6:hover {
@@ -17234,7 +16861,7 @@ body>main:nth-child(9){
     }
 
     .card3:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
@@ -17247,9 +16874,8 @@ body>main:nth-child(9){
         left: 475px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-        /* Add relative positioning to position the overlay */
+        overflow: hidden;
+        transition: transform 0.3s;
         position: relative;
     }
 
@@ -17259,8 +16885,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card4 > .overlay {
@@ -17269,10 +16895,10 @@ body>main:nth-child(9){
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for overlay */
-        z-index: 2; /* Ensure overlay is above the image */
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
     }
 
     .card4 > h6 {
@@ -17294,7 +16920,7 @@ body>main:nth-child(9){
     }
 
     .card4:hover > .overlay {
-        opacity: 1; /* Show the overlay on hover */
+        opacity: 1;
     }
 
     .card4 > h6:hover {
@@ -17302,7 +16928,7 @@ body>main:nth-child(9){
     }
 
     .card4:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
 
@@ -17316,9 +16942,8 @@ body>main:nth-child(9){
         left: 850px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-        /* Add relative positioning to position the overlay */
+        overflow: hidden;
+        transition: transform 0.3s;
         position: relative;
     }
 
@@ -17328,8 +16953,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card5 > .overlay {
@@ -17338,10 +16963,10 @@ body>main:nth-child(9){
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for overlay */
-        z-index: 2; /* Ensure overlay is above the image */
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
     }
 
     .card5 > h6 {
@@ -17363,7 +16988,7 @@ body>main:nth-child(9){
     }
 
     .card5:hover > .overlay {
-        opacity: 1; /* Show the overlay on hover */
+        opacity: 1;
     }
 
     .card5 > h6:hover {
@@ -17371,7 +16996,7 @@ body>main:nth-child(9){
     }
 
     .card5:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     /*card 6*/
@@ -17384,9 +17009,8 @@ body>main:nth-child(9){
         left: 850px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
-        /* Add relative positioning to position the overlay */
+        overflow: hidden;
+        transition: transform 0.3s;
         position: relative;
     }
 
@@ -17396,8 +17020,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card6 > .overlay {
@@ -17406,10 +17030,10 @@ body>main:nth-child(9){
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for overlay */
-        z-index: 2; /* Ensure overlay is above the image */
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
     }
 
     .card6 > h6 {
@@ -17431,7 +17055,7 @@ body>main:nth-child(9){
     }
 
     .card6:hover > .overlay {
-        opacity: 1; /* Show the overlay on hover */
+        opacity: 1;
     }
 
     .card6 > h6:hover {
@@ -17439,7 +17063,7 @@ body>main:nth-child(9){
     }
 
     .card6:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
     .sliderButton{
         position: absolute;
@@ -17481,8 +17105,8 @@ body>main:nth-child(9){
         left: 100px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card11 > img {
@@ -17491,8 +17115,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card11 > h3 {
@@ -17503,10 +17127,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -17515,27 +17139,27 @@ body>main:nth-child(9){
     }
 
     .card11:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card11:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 2*/
@@ -17548,8 +17172,8 @@ body>main:nth-child(9){
         left: 100px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card22 > img {
@@ -17558,8 +17182,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card22 > h3 {
@@ -17570,10 +17194,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -17582,11 +17206,11 @@ body>main:nth-child(9){
     }
 
     .card22:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card22:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
@@ -17649,27 +17273,27 @@ body>main:nth-child(9){
     }
 
     .card33:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card33:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 4*/
@@ -17682,8 +17306,8 @@ body>main:nth-child(9){
         left: 475px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card44 > img {
@@ -17692,8 +17316,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card44 > h3 {
@@ -17704,10 +17328,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -17716,27 +17340,27 @@ body>main:nth-child(9){
     }
 
     .card44:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card44:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
 
@@ -17750,8 +17374,8 @@ body>main:nth-child(9){
         left: 850px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card55 > img {
@@ -17760,8 +17384,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card55 > h3 {
@@ -17772,10 +17396,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -17784,27 +17408,27 @@ body>main:nth-child(9){
     }
 
     .card55:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card55:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
 
     /*card 6*/
@@ -17817,8 +17441,8 @@ body>main:nth-child(9){
         left: 850px;
         z-index: 2;
         border-radius: 20px;
-        overflow: hidden; /* Ensure the text stays within the card */
-        transition: transform 0.3s; /* Smooth scaling */
+        overflow: hidden;
+        transition: transform 0.3s;
     }
 
     .card66 > img {
@@ -17827,8 +17451,8 @@ body>main:nth-child(9){
         position: absolute;
         top: 0;
         object-fit: cover;
-        border-radius: 20px 20px 0 0; /* Round only the top corners */
-        z-index: 1; /* Ensure the image is below the text */
+        border-radius: 20px 20px 0 0;
+        z-index: 1;
     }
 
     .card66 > h3 {
@@ -17839,10 +17463,10 @@ body>main:nth-child(9){
         margin-top: 50px;
         padding: 0;
         text-align: center;
-        opacity: 0; /* Start as invisible */
-        transition: opacity 0.3s; /* Smooth transition for opacity */
-        z-index: 2; /* Ensure the text is above the image */
-        position: relative; /* Ensure it respects z-index */
+        opacity: 0;
+        transition: opacity 0.3s;
+        z-index: 2;
+        position: relative;
     }
 
     /* Hover effects */
@@ -17851,187 +17475,28 @@ body>main:nth-child(9){
     }
 
     .card66:hover > h3 {
-        opacity: 1; /* Show the text on hover */
+        opacity: 1;
     }
 
     .card66:hover > img {
-        filter: brightness(0.4); /* Optional: dim the image on hover */
+        filter: brightness(0.4);
     }
 
     .github-button {
-        display: block; /* Makes the button take the full width */
-        margin: 85px 35px; /* Center the button */
-        padding: 10px 20px; /* Add padding */
-        background-color: #3CBEFF; /* Button color */
-        color: white; /* Text color */
-        text-align: center; /* Center the text */
-        border-radius: 5px; /* Rounded corners */
-        text-decoration: none; /* Remove underline */
-        transition: background-color 0.3s; /* Smooth hover effect */
+        display: block;
+        margin: 85px 35px;
+        padding: 10px 20px;
+        background-color: #3CBEFF;
+        color: white;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
     }
 
     .github-button:hover {
-        background-color: #2a9bd5; /* Darker shade on hover */
+        background-color: #2a9bd5;
     }
-
-
-    /*@keyframes animation-slide {*/
-    /*    0%, 20% {*/
-    /*        transform: translateX(0);*/
-    /*    }*/
-    /*    25%, 50% {*/
-    /*        transform: translateX(-100%);*/
-    /*    }*/
-    /*    55%, 70% {*/
-    /*        transform: translateX(-200%);*/
-    /*    }*/
-    /*    75%, 100% {*/
-    /*        transform: translateX(-300%);*/
-    /*    }*/
-    /*}*/
-    /*.assignment>div:nth-child(3){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 100px;*/
-    /*    right: 50px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(3)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 100px;*/
-    /*    color: white;*/
-    /*}*/
-    /*!*=======================================================*!*/
-    /*.assignment>div:nth-child(6){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 400px;*/
-    /*    right: 50px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(6)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*!*=======================================================*!*/
-    /*.assignment>div:nth-child(9){*/
-    /*    background-color: white;*/
-    /*    width: 200px;*/
-    /*    height: 250px;*/
-    /*    position: absolute;*/
-    /*    top: 400px;*/
-    /*    right: 300px;*/
-    /*    z-index: 2;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.assignment>div:nth-child(9)>img{*/
-    /*    width: 100%;*/
-    /*    height: 120px;*/
-    /*    object-fit: cover;*/
-    /*    text-align: center;*/
-    /*    border-radius: 20px;*/
-    /*}*/
-    /*.view{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 135px;*/
-    /*}*/
-    /*.view>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
-    /*.try{*/
-    /*    width: 150px;*/
-    /*    height: 40px;*/
-    /*    background-color: #3CBEFF;*/
-    /*    border-radius: 20px;*/
-    /*    left: 12%;*/
-    /*    position: absolute;*/
-    /*    top: 195px;*/
-    /*}*/
-    /*.try>a{*/
-    /*    position: absolute;*/
-    /*    top: 10px;*/
-    /*    left: 57px;*/
-    /*    color: white;*/
-    /*}*/
     body>main:nth-child(9){
         background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
         display: flex;
