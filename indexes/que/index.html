@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Que-01</title>
+    <style>
+        section {
+            display: flex;
+        }
+
+        section > div {
+            width: 200px;
+            height: 300px;
+            background-color: transparent;
+            border-radius: 8px;
+            margin: 4px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin-top: 15%;
+        }
+
+        .walker {
+            position: absolute;
+            top: 10px;
+            width: 80%;
+        }
+
+        .letter {
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .home {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: -5%;
+        }
+
+        .controls {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <label for="walker" class="letter">A</label>
+        <img src="assets/gif/walk-cycle-sick.gif" id="walker" class="walker">
+    </div>
+    <div>
+        <label for="walker1" class="letter">B</label>
+        <img src="assets/gif/walk-cycle-sick.gif" id="walker1" class="walker">
+    </div>
+    <div>
+        <label for="walker2" class="letter">C</label>
+        <img src="assets/gif/walk-cycle-sick.gif" id="walker2" class="walker">
+    </div>
+    <div>
+        <label for="walker3" class="letter">D</label>
+        <img src="assets/gif/walk-cycle-sick.gif" id="walker3" class="walker">
+    </div>
+    <div>
+        <label for="walker4" class="letter">E</label>
+        <img src="assets/gif/walk-cycle-sick.gif" id="walker4" class="walker">
+    </div>
+    <div>
+        <label for="walker5" class="letter">F</label>
+        <img src="assets/gif/walk-cycle-sick.gif" id="walker5" class="walker">
+    </div>
+    <div>
+        <img class="home" src="assets/gif/rsv-bddr-rsv.gif">
+    </div>
+</section>
+
+<div class="controls" style="margin-left: 5%">
+    <button id="startBtn" style="background-color: dodgerblue;height: 30px; width: 50px">Start</button>
+    <button id="stopBtn" style="background-color: red;height: 30px; width: 50px">Stop</button>
+</div>
+
+<script>
+    let arr = ["A", "B", "C", "D", "E", "F"];
+    let intervalId;
+
+    const updateLabels = () => {
+        let last_value = arr.pop();
+        arr.unshift(last_value);
+        console.log(arr);
+
+        let labels = document.querySelectorAll('.letter');
+        labels.forEach((label, index) => {
+            label.innerText = arr[index];
+        });
+
+    };
+
+    document.getElementById('startBtn').addEventListener('click', () => {
+        if (!intervalId) {
+            intervalId = setInterval(updateLabels, 2000);
+        }
+    });
+
+    document.getElementById('stopBtn').addEventListener('click', () => {
+        clearInterval(intervalId);
+        intervalId = null;
+
+    });
+</script>
+</body>
+</html>

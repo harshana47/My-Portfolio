@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 02</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background-color: dimgrey;
+        }
+        section>div{
+            height: 100px;
+            width: 200px;
+            border-radius: 20px;
+            position: absolute;
+            background: blue;
+            animation-name: my-animation;
+            animation-duration: 4s;
+            animation-direction: alternate-reverse;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            0%{
+                top: 0;
+                left: 0;
+            }
+            25%{
+                top: 0;
+                left: 1320px;
+                transform: rotate(180deg);
+                background: yellow;
+            }
+            50%{
+                top: 600px;
+                left: 1320px;
+                transform: rotate(0);
+                background: red;
+
+            }
+            75%{
+                top: 600px;
+                left: 0;
+                transform: rotate(180deg);
+                background: deeppink;
+            }
+            100%{
+                top: 0;
+                left: 0;
+                transform: rotate(0deg);
+                background: orange;
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>case 1</title>
+    <style>
+        body{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            background-color: black;
+        }
+        /*card1*/
+        .card1{
+            width: 250px;
+            height: 50px;
+            background: purple;
+            left: -200px;
+            top: 100px;
+            position: absolute;
+            box-shadow: 0 5px 5px black;
+            transition: left 2s, top 2s, object-position 2s, z-index 2s;
+
+        }
+        .card1:hover{
+            left: -15px;
+            top: 100px;
+            object-position: 80% 0;
+            z-index: 2;
+            transition-duration: 2s;
+            transition-timing-function: linear;
+        }
+        .card1>h1{
+            position: absolute;
+            left: 30px;
+            top: -8px;
+            color: white;
+        }
+        .card1>img{
+            position: absolute;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            top: 5px;
+        }
+        /*card2*/
+        .card2{
+            width: 250px;
+            height: 50px;
+            background: purple;
+            left: -200px;
+            top: 200px;
+            position: absolute;
+            box-shadow: 0 5px 5px black;
+        }
+        .card2:hover{
+            left: -15px;
+            top: 200px;
+            object-position: 80% 0;
+            transition-duration: 2s;
+        }
+        .card2>h2{
+            position: absolute;
+            left: 30px;
+            top: -8px;
+            color: white;
+        }
+        .card2>img{
+            position: absolute;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            top: 5px;
+        }
+        /*card3*/
+        .card3{
+            width: 250px;
+            height: 50px;
+            background: purple;
+            left: -200px;
+            top: 300px;
+            position: absolute;
+            box-shadow: 0 5px 5px black;
+        }
+        .card3:hover{
+            left: -15px;
+            top: 300px;
+            object-position: 80% 0;
+            transition-duration: 2s;
+        }
+        .card3>h3{
+            position: absolute;
+            left: 30px;
+            top: -8px;
+            color: white;
+        }
+        .card3>img{
+            position: absolute;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            top: 5px;
+        }
+        /*card4*/
+        .card4{
+            width: 250px;
+            height: 50px;
+            background: purple;
+            left: -200px;
+            top: 400px;
+            position: absolute;
+            box-shadow: 0 5px 5px black;
+        }
+        .card4:hover{
+            left: -15px;
+            top: 400px;
+            object-position: 80% 0;
+            transition-duration: 2s;
+        }
+        .card4>h4{
+            position: absolute;
+            left: 30px;
+            top: -8px;
+            color: white;
+        }
+        .card4>img{
+            position: absolute;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            top: 5px;
+        }
+        /*card5*/
+        .card5{
+            width: 250px;
+            height: 50px;
+            background: purple;
+            left: -200px;
+            top: 500px;
+            position: absolute;
+            box-shadow: 0 5px 5px black;
+        }
+        .card5:hover{
+            left: -15px;
+            top: 500px;
+            object-position: 80% 0;
+            transition-duration: 2s;
+        }
+        .card5>h5{
+            position: absolute;
+            left: 30px;
+            top: -8px;
+            color: white;
+        }
+        .card5>img{
+            position: absolute;
+            right: 10px;
+            height: 40px;
+            width: 40px;
+            top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="card1">
+        <h1>Menu One</h1>
+        <img src="../assets/images/img_1.png" alt="contact book">
+    </div>
+    <div class="card2">
+        <h2>Menu Two</h2>
+        <img src="../assets/images/img_2.png" alt="contact book">
+    </div>
+    <div class="card3">
+        <h3>Menu Three</h3>
+        <img src="../assets/images/img_3.png" alt="contact book">
+    </div>
+    <div class="card4">
+        <h4>Menu Four</h4>
+        <img src="../assets/images/img_4.png" alt="contact book">
+    </div>
+    <div class="card5">
+        <h5>Menu Five</h5>
+        <img src="../assets/images/img_5.png" alt="contact book">
+    </div>
+
+</section>
+</body>
+</html>

@@ -94,20 +94,20 @@ body > main:nth-child(1) > section > div:nth-child(2):before {
     0% {
         transform: rotate(0deg);
         border-top-width: 8px;
-        border-top-color: rgb(77, 166, 227); /* Bright glow */
-        box-shadow: 0 0 15px rgb(77, 166, 227); /* Strong glow */
+        border-top-color: rgb(77, 166, 227);
+        box-shadow: 0 0 15px rgb(77, 166, 227);
     }
     50% {
         transform: rotate(180deg);
-        border-top-width: 4px; /* Tail becomes thinner */
-        border-top-color: rgb(77, 166, 227); /* Faded glow */
-        box-shadow: 0 0 10px rgb(77, 166, 227); /* Faded glow */
+        border-top-width: 4px;
+        border-top-color: rgb(77, 166, 227);
+        box-shadow: 0 0 10px rgb(77, 166, 227);
     }
     100% {
         transform: rotate(360deg);
-        border-top-width: 8px; /* Head thicker again */
-        border-top-color: rgb(77, 166, 227); /* Bright glow */
-        box-shadow: 0 0 15px rgb(77, 166, 227); /* Strong glow */
+        border-top-width: 8px;
+        border-top-color: rgb(77, 166, 227);
+        box-shadow: 0 0 15px rgb(77, 166, 227);
     }
 }
 
@@ -1516,7 +1516,7 @@ body>main:nth-child(8) {
     left: 65px;
     opacity: 0; /*invisible */
     transition: opacity 0.3s;
-    z-index: 4; /
+    z-index: 5;
     position: relative;
 }
 
@@ -1524,7 +1524,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -1553,6 +1553,7 @@ body>main:nth-child(8) {
 .card5:hover > .run,
 .card6:hover > .run {
     opacity: 1; /* Show the button on hover */
+
 }
 
 .card1:hover > img {
@@ -1619,7 +1620,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -1703,7 +1704,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -1771,7 +1772,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -1839,7 +1840,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -1906,7 +1907,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -2015,7 +2016,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -2095,7 +2096,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -2176,7 +2177,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -2237,10 +2238,10 @@ body>main:nth-child(8) {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    opacity: 0; /* Start as invisible */
-    transition: opacity 0.3s; /* Smooth transition for overlay */
-    z-index: 2; /* Ensure overlay is above the image */
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
 }
 
 .card44 > img {
@@ -2249,15 +2250,15 @@ body>main:nth-child(8) {
     position: absolute;
     top: 0;
     object-fit: cover;
-    border-radius: 20px 20px 0 0; /* Round only the top corners */
-    z-index: 1; /* Ensure the image is below the text */
+    border-radius: 20px 20px 0 0;
+    z-index: 1;
 }
 
 .card44 > h6 {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -2338,7 +2339,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -2418,7 +2419,7 @@ body>main:nth-child(8) {
     color: #3CBEFF;
     font-size: 25px;
     font-family: Inter;
-    font-weight: normal;
+    font-weight: bold;
     padding: 0;
     z-index: 3;
     top: -30px;
@@ -4853,7 +4854,7 @@ body>main:nth-child(9){
         display: none;
     }
 }
-@media all and (min-width: 321px) and (max-width: 375px)  {
+@media all and (min-width: 321px) and (max-width: 376px)  {
     html, body {
         margin: 0;
         padding: 0;
@@ -7278,7 +7279,7 @@ body>main:nth-child(9){
         display: none;
     }
 }
-@media all and (min-width: 376px) and (max-width: 425px)  {
+@media all and (min-width: 376px) and (max-width: 426px)  {
     html, body {
         margin: 0;
         padding: 0;
@@ -8744,12 +8745,12 @@ body>main:nth-child(9){
     }
 
     .box {
-        width: 88vw;
+        width: 68vw;
         height: 85vh;
         border: 0 solid #3CBEFF;
         top: 70px;
         display: flex;
-        left: 40px;
+        left: 66px;
         position: relative;
         background-color: transparent;
         overflow-x: hidden;
@@ -8778,7 +8779,7 @@ body>main:nth-child(9){
         margin-top: 10px;
         padding: 0;
         text-align: center;
-        left: 140px;
+        left: 20px;
         position: absolute;
     }
 
@@ -8846,7 +8847,7 @@ body>main:nth-child(9){
     }
 
     /* Specific card instances with exact positions */
-    .card1 { top: 80px; left: 45px; }
+    .card1 { top: 100px; left: 45px; }
     .card2 { top: 350px; left: 45px; }
     .card3 { top: 640px; left: 45px; }
     .card4 { top: 930px; left: 45px; }
@@ -8935,12 +8936,12 @@ body>main:nth-child(9){
     }
 
     .arrow {
-        width: 70px;
-        height: 70px;
+        width: 40px;
+        height: 40px;
         position: absolute;
         z-index: 2;
-        top: 610px;
-        left: 170px;
+        top: 615px;
+        left: 190px;
         color: white;
         font-weight: inherit;
         transform: rotate(360deg);
